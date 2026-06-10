@@ -91,9 +91,6 @@ export default function RomanaHairLandingPage() {
             </div>
 
             <div className="relative hidden lg:block min-h-[650px]">
-              <div className="absolute top-6 left-0 right-0 text-center font-serif italic text-[150px] text-white/70 blur-[0.2px] drop-shadow-[0_0_28px_rgba(255,255,255,0.45)] opacity-80">
-                Romana
-              </div>
               <img
                 src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1100&auto=format&fit=crop"
                 alt="Cliente com cabelo produzido"
