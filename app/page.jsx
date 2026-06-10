@@ -217,7 +217,7 @@ export default function RomanaHairLandingPage() {
           </div>
           <div className="rounded-[24px] overflow-hidden border border-white/10 min-h-[360px] bg-cover bg-center" style={{ backgroundImage: "url('/images/fundo.jpg')" }}>
             <div className="min-h-[360px] bg-black/35 flex items-center justify-center">
-              <div className="font-serif italic text-6xl lg:text-7xl text-white drop-shadow-[0_0_24px_rgba(255,255,255,0.7)]">Romana</div>
+              
             </div>
           </div>
         </div>
