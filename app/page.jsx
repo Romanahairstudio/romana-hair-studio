@@ -29,7 +29,7 @@ export default function RomanaHairLandingPage() {
     '/images/Cintia2.webp',
     '/images/depois-tati.webp',
     '/images/depois-rafa.jpg',
-    '/images/depois-paloma.jpg'
+    '/images/depois-paloma.webp'
   ]
 
   return (
