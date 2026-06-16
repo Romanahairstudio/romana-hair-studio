@@ -23,7 +23,6 @@ export default function RomanaHairLandingPage() {
     { name: 'Alongamento Premium', before: '/images/c1.webp', after: '/images/c2.webp', description: 'Fios alinhados, acabamento elegante e natural.' },
     { name: 'Mega Hair com Volume', before: '/images/d1.webp', after: '/images/d2.webp', description: 'Transformação completa com efeito glamouroso.' },
     { name: 'Resultado Final Premium', before: '/images/e1.webp', after: '/images/e2.webp', description: 'Cabelo com brilho, caimento e presença.' }
-    { name: 'Resultado Maravilhoso', before: '/images/h1.webp', after: '/images/h2.webp', description: 'Cabelo com brilho, caimento e presença.' }
   ]
 
   const showcase = [
