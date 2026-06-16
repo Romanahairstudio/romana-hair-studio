@@ -26,7 +26,7 @@ export default function RomanaHairLandingPage() {
   ]
 
   const showcase = [
-    '/images/Cintia2.webp',
+    '/images/Cintia2-1.webp',
     '/images/depois-tati.webp',
     '/images/depois-dirce.webp',
     '/images/depois-paloma.webp'
