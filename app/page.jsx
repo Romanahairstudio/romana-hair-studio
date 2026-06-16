@@ -93,7 +93,7 @@ export default function RomanaHairLandingPage() {
               <img
                 src="/images/L2.webp"
                 alt="Cliente com cabelo produzido"
-                className="absolute right-0 bottom-0 w-[560px] h-[680px] object-cover object-top rounded-t-[48px] opacity-95 shadow-[0_0_80px_rgba(0,0,0,0.65)]"
+                className="absolute right-0 bottom-10 w-[560px] h-[680px] object-cover object-top rounded-t-[48px] opacity-95 shadow-[0_0_80px_rgba(0,0,0,0.65)]"
               />
               <div className="absolute right-0 bottom-0 w-[560px] h-[680px] rounded-t-[48px] bg-gradient-to-t from-black via-transparent to-transparent" />
             </div>
