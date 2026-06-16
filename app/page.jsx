@@ -18,11 +18,11 @@ export default function RomanaHairLandingPage() {
   ]
 
   const transformations = [
-    { name: 'Transformação Mega Hair', before: '/images/antes-tati.jpg', after: '/images/depois-tati.jpg', description: 'Mais comprimento, volume e acabamento natural.' },
-    { name: 'Mega Hair Loiro Iluminado', before: '/images/antes-paloma.jpg', after: '/images/depois-paloma.jpg', description: 'Resultado sofisticado com brilho e movimento.' },
-    { name: 'Alongamento Premium', before: '/images/antes-dirce.jpg', after: '/images/depois-dirce.jpg', description: 'Fios alinhados, acabamento elegante e natural.' },
-    { name: 'Mega Hair com Volume', before: '/images/antes-rafa.jpg', after: '/images/depois-rafa.jpg', description: 'Transformação completa com efeito glamouroso.' },
-    { name: 'Resultado Final Premium', before: '/images/antes-phani.jpg', after: '/images/depois-phani.jpg', description: 'Cabelo com brilho, caimento e presença.' }
+    { name: 'Transformação Mega Hair', before: '/images/b1.webp', after: '/images/b2.webp', description: 'Mais comprimento, volume e acabamento natural.' },
+    { name: 'Mega Hair Loiro Iluminado', before: '/images/a1.webp', after: '/images/a2.webp', description: 'Resultado sofisticado com brilho e movimento.' },
+    { name: 'Alongamento Premium', before: '/images/c1.webp', after: '/images/c2.webp', description: 'Fios alinhados, acabamento elegante e natural.' },
+    { name: 'Mega Hair com Volume', before: '/images/d1.webp', after: '/images/d2.webp', description: 'Transformação completa com efeito glamouroso.' },
+    { name: 'Resultado Final Premium', before: '/images/e1.webp', after: '/images/e2.webp', description: 'Cabelo com brilho, caimento e presença.' }
   ]
 
   const showcase = [
