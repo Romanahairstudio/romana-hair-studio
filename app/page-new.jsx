@@ -36,7 +36,7 @@ export default function RomanaHairLandingPage() {
   const professionals = [
     {
       name: 'John',
-      role: 'Cabeleireiro especialista em Mega Hair',
+      role: 'Hairstylist, Especialista em mechas, cortes modernos e cor',
       cover: '/images/Cintia2-1.webp',
       description: 'Resultados com comprimento, volume e acabamento natural para realçar cada cliente.',
       works: [
@@ -47,8 +47,8 @@ export default function RomanaHairLandingPage() {
       ]
     },
     {
-      name: 'Cintia',
-      role: 'Especialista em loiros e finalização',
+      name: 'Selma',
+      role: 'Hairstylist e Visagista, especialista em cortes e cor',
       cover: '/images/IMG_3811.webp',
       description: 'Trabalhos voltados para brilho, movimento e acabamento sofisticado.',
       works: [
@@ -58,8 +58,19 @@ export default function RomanaHairLandingPage() {
       ]
     },
     {
-      name: 'Rafa',
-      role: 'Cabeleireiro e colorista',
+      name: 'Nando',
+      role: 'Especialista em Mega Hair, mechas e cor',
+      cover: '/images/rafa-3.jpg',
+      description: 'Transformações com cor, corte e acabamento moderno.',
+      works: [
+        { title: 'Antes do processo', image: '/images/Antes Rafa.JPG' },
+        { title: 'Resultado final', image: '/images/Depois Rafa.JPG' },
+        { title: 'Detalhe do acabamento', image: '/images/rafa-4.jpg' }
+      ]
+    }
+    {
+      name: 'Vytor',
+      role: 'Barbeiro, Corte Masculino e Feminino, Especialista em Progressiva',
       cover: '/images/rafa-3.jpg',
       description: 'Transformações com cor, corte e acabamento moderno.',
       works: [
