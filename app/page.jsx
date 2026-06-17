@@ -260,7 +260,8 @@ export default function RomanaHairLandingPage() {
           <div className="lg:pl-8">
             <p className="text-[#d6b35f] uppercase tracking-[0.24em] text-sm font-bold mb-5">Fale Conosco</p>
             <p className="text-white/90 text-xl mb-4">☏ (11) 98120-1661</p>
-            <p className="text-white/90 text-xl">◎ @romanahairstudio</p>
+            <p className="text-white/90 text-xl mb-4">☏ (11) 91793-5219</p>
+            <p className="text-white/90 text-xl">◎ No Instagram @romanahairstudio</p>
           </div>
         </div>
       </section>
