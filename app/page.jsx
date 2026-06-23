@@ -66,7 +66,7 @@ export default function RomanaHairLandingPage() {
         { title: 'Resultado final', image: '/images/n2.webp' },
         { title: 'Detalhe do acabamento', image: '/images/n3.webp' }
       ]
-    }
+    },
     {
       name: 'Vytor',
       role: 'Barbeiro, Corte Masculino e Feminino, Especialista em Progressiva',
