@@ -7,8 +7,8 @@ export default function RomanaHairLandingPage() {
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=700&auto=format&fit=crop' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
-    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronze.jpg' },
-    { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada para valorizar seu estilo e sua personalidade.', icon: '✦', img: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=700&auto=format&fit=crop' }
+    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bza.webp' },
+    { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada para valorizar seu estilo e sua personalidade.', icon: '✦', img: '/images/cbm.webp' }
   ]
 
   const benefits = [
