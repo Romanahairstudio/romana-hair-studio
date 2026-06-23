@@ -40,11 +40,10 @@ export default function RomanaHairLandingPage() {
       cover: '/images/Cintia2-1.webp',
       description: 'Resultados com comprimento, volume e acabamento natural para realçar cada cliente.',
       works: [
-        { title: 'Mega Hair iluminado', image: '/images/a2.webp' },
-        { title: 'Alongamento premium', image: '/images/b2.webp' },
-        { title: 'Volume natural', image: '/images/d2.webp' },
-        { title: 'Finalização com brilho', image: '/images/e2.webp' }
-      ]
+        { title: 'Mega Hair iluminado', image: '/images/j1.webp' },
+        { title: 'Alongamento premium', image: '/images/j2.webp' },
+        { title: 'Volume natural', image: '/images/j3.webp' },
+       ]
     },
     {
       name: 'Selma',
