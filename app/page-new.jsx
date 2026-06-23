@@ -8,7 +8,7 @@ export default function RomanaHairLandingPage() {
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=700&auto=format&fit=crop' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
     { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronze.jpg' },
-    { title: 'Piercing', text: 'Estilo, personalidade e segurança com atendimento profissional.', icon: '✦', img: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=700&auto=format&fit=crop' }
+    { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada para valorizar seu estilo e sua personalidade.', icon: '✦', img: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=700&auto=format&fit=crop' }
   ]
 
   const benefits = [
@@ -52,26 +52,26 @@ export default function RomanaHairLandingPage() {
       cover: '/images/Selmaf.webp',
       description: 'Trabalhos voltados para brilho, movimento e acabamento sofisticado.',
       works: [
-        { title: 'Loiro iluminado', image: '/images/Cintia1.webp' },
-        { title: 'Morena iluminada', image: '/images/Cintia2.webp' },
-        { title: 'Finalização modelada', image: '/images/Cintia2-1.webp' }
+        { title: 'Loiro iluminado', image: '/images/s1.webp' },
+        { title: 'Morena iluminada', image: '/images/s2.webp' },
+        { title: 'Finalização modelada', image: '/images/s3.webp' }
       ]
     },
     {
       name: 'Nando',
       role: 'Especialista em Mega Hair, mechas e cor',
-      cover: '/images/rafa-3.jpg',
+      cover: '/images/Nandof.webp',
       description: 'Transformações com cor, corte e acabamento moderno.',
       works: [
-        { title: 'Antes do processo', image: '/images/Antes Rafa.JPG' },
-        { title: 'Resultado final', image: '/images/Depois Rafa.JPG' },
-        { title: 'Detalhe do acabamento', image: '/images/rafa-4.jpg' }
+        { title: 'Antes do processo', image: '/images/n1.webp' },
+        { title: 'Resultado final', image: '/images/n2.webp' },
+        { title: 'Detalhe do acabamento', image: '/images/n3.webp' }
       ]
     }
     {
       name: 'Vytor',
       role: 'Barbeiro, Corte Masculino e Feminino, Especialista em Progressiva',
-      cover: '/images/rafa-3.jpg',
+      cover: '/images/Vytorf.webp',
       description: 'Transformações com cor, corte e acabamento moderno.',
       works: [
         { title: 'Antes do processo', image: '/images/Antes Rafa.JPG' },
