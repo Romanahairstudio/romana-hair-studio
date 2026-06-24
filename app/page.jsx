@@ -77,7 +77,7 @@ export default function RomanaHairLandingPage() {
         { title: 'Resultado final', image: '/images/Depois Rafa.JPG' },
         { title: 'Detalhe do acabamento', image: '/images/rafa-4.jpg' }
       ]
-    }
+    },
   ]
 
   return (
