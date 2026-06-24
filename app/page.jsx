@@ -70,7 +70,7 @@ export default function RomanaHairLandingPage() {
     {
       name: 'Vytor',
       role: 'Barbeiro, Corte Masculino e Feminino, Especialista em Progressiva',
-      cover: '/images/Vytorf.webp',
+      cover: '/images/Vytor.webp',
       description: 'Transformações com cor, corte e acabamento moderno.',
       works: [
         { title: 'Antes do processo', image: '/images/Antes Rafa.JPG' },
