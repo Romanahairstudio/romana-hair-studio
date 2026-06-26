@@ -37,7 +37,7 @@ export default function RomanaHairLandingPage() {
     {
       name: 'John',
       role: 'Hairstylist, Especialista em mechas, cortes modernos e cor',
-      cover: '/images/Cintia2-1.webp',
+      cover: '/images/Johnf2.webp',
       description: 'Resultados com comprimento, volume e acabamento natural para realçar cada cliente.',
       works: [
         { title: 'Mega Hair iluminado', image: '/images/j1.webp' },
