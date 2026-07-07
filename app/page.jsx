@@ -40,9 +40,9 @@ export default function RomanaHairLandingPage() {
       cover: '/images/John.webp',
       description: 'Resultados com comprimento, volume e acabamento natural para realçar cada cliente.',
       works: [
-        { title: 'Mega Hair iluminado', image: '/images/j1.webp' },
-        { title: 'Alongamento premium', image: '/images/j2.webp' },
-        { title: 'Volume natural', image: '/images/j3.webp' },
+        { title: 'Tons que encantam', image: '/images/j1.webp' },
+        { title: 'O corte perfeito', image: '/images/j2.webp' },
+        { title: 'Seu cabelo dos sonhos', image: '/images/j3.webp' },
        ]
     },
     {
