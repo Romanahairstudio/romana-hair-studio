@@ -37,7 +37,7 @@ export default function RomanaHairLandingPage() {
     {
       name: 'John',
       role: 'Hairstylist, Especialista em mechas, cortes modernos e cor',
-      cover: '/images/John.webp',
+      contain: '/images/John.webp',
       description: 'Resultados com comprimento, volume e acabamento natural para realçar cada cliente.',
       works: [
         { title: 'Tons que encantam', image: '/images/j1.webp' },
