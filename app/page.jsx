@@ -48,7 +48,7 @@ export default function RomanaHairLandingPage() {
     {
       name: 'Selma',
       role: 'Hairstylist e Visagista, especialista em cortes e cor',
-      cover: '/images/Selmaf2.webp',
+      cover: '/images/Selmaf.webp',
       description: 'Trabalhos voltados para brilho, movimento e acabamento sofisticado.',
       works: [
         { title: 'Loiro iluminado', image: '/images/s1.webp' },
