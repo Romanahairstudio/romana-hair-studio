@@ -75,7 +75,7 @@ export default function RomanaHairLandingPage() {
       works: [
         { title: 'Barba Perfeita', image: '/images/v1.webp' },
         { title: 'Corte + Barba', image: '/images/v2.webp' },
-        { title: 'Seu melhor visual', image: '/v3.webp' }
+        { title: 'Seu melhor visual', image: '/images/v3.webp' }
       ]
     },
   ]
