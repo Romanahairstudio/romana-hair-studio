@@ -73,9 +73,9 @@ export default function RomanaHairLandingPage() {
       cover: '/images/Vytor.webp',
       description: 'Transformações com cor, corte e acabamento moderno.',
       works: [
-        { title: 'Antes do processo', image: '/images/Antes Rafa.JPG' },
-        { title: 'Resultado final', image: '/images/Depois Rafa.JPG' },
-        { title: 'Detalhe do acabamento', image: '/images/rafa-4.jpg' }
+        { title: 'Barba Perfeita', image: '/images/v1.webp' },
+        { title: 'Corte + Barba', image: '/images/v2.webp' },
+        { title: 'Seu melhor visual', image: '/v3.webp' }
       ]
     },
   ]
