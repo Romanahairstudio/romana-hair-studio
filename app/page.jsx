@@ -283,7 +283,7 @@ export default function RomanaHairLandingPage() {
                   <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-7">
                     {professional.works.map((work) => (
                       <figure key={work.title} className="rounded-[24px] overflow-hidden bg-black border border-white/10">
-                        <div className="h-[290px] overflow-hidden">
+                        <div className="h-[350px] overflow-hidden">
                           <img src={work.image} alt={`${work.title} - ${professional.name}`} className="h-full w-full object-cover hover:scale-110 transition duration-700" />
                         </div>
                         <figcaption className="px-5 py-4 text-sm font-bold uppercase tracking-wide text-white/78">{work.title}</figcaption>
