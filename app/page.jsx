@@ -280,10 +280,10 @@ export default function RomanaHairLandingPage() {
                 </summary>
 
                 <div className="border-t border-white/10 px-5 pb-7 lg:px-7 lg:pb-8">
-                  <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-7">
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-7">
                     {professional.works.map((work) => (
                       <figure key={work.title} className="rounded-[24px] overflow-hidden bg-black border border-white/10">
-                        <div className="h-[350px] overflow-hidden">
+                        <div className="h-[380px] overflow-hidden">
                           <img src={work.image} alt={`${work.title} - ${professional.name}`} className="h-full w-full object-cover hover:scale-110 transition duration-700" />
                         </div>
                         <figcaption className="px-5 py-4 text-sm font-bold uppercase tracking-wide text-white/78">{work.title}</figcaption>
