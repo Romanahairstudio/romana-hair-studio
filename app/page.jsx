@@ -40,7 +40,7 @@ export default function RomanaHairLandingPage() {
       cover: '/images/Johnf.webp',
       description: 'Resultados com comprimento, volume e acabamento natural para realçar cada cliente.',
       works: [
-        { title: 'Tons que encantam', image: '/images/j1.webp' },
+        { title: 'Tons que encantam', image: '/images/j1-1.webp' },
         { title: 'O corte perfeito', image: '/images/j2.webp' },
         { title: 'Seu cabelo dos sonhos', image: '/images/j3.webp' },
        ]
