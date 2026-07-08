@@ -215,7 +215,7 @@ export default function RomanaHairLandingPage() {
 
           <div className="grid lg:grid-cols-4 gap-6 mb-16">
             {showcase.map((image, index) => (
-              <div key={image} className={`${index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''} group relative min-h-[450px] lg:min-h-[550px] rounded-[28px] overflow-hidden border border-white/10 bg-zinc-900 shadow-2xl`}>
+              <div key={image} className={`${index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''} group relative min-h-[420px] lg:min-h-[480px] rounded-[28px] overflow-hidden border border-white/10 bg-zinc-900 shadow-2xl`}>
                 <img src={image} alt="Resultado Mega Hair Romana Hair Studio" className="absolute inset-0 w-full h-full object-contain group-hover:scale-110 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
                 <div className="absolute bottom-5 left-5 right-5">
