@@ -62,9 +62,9 @@ export default function RomanaHairLandingPage() {
       cover: '/images/Nandof.webp',
       description: 'Transformações com cor, corte e acabamento moderno.',
       works: [
-        { title: 'Antes do processo', image: '/images/n1.webp' },
-        { title: 'Resultado final', image: '/images/n2.webp' },
-        { title: 'Detalhe do acabamento', image: '/images/n3.webp' }
+        { title: 'Mega Hair Natural', image: '/images/n1.webp' },
+        { title: 'Volume dos Sonhos', image: '/images/n2.webp' },
+        { title: 'Fios Perfeitos', image: '/images/n3.webp' }
       ]
     },
     {
