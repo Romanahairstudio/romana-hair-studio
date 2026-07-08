@@ -51,9 +51,9 @@ export default function RomanaHairLandingPage() {
       cover: '/images/Selmaf.webp',
       description: 'Trabalhos voltados para brilho, movimento e acabamento sofisticado.',
       works: [
-        { title: 'Loiro iluminado', image: '/images/s1.webp' },
-        { title: 'Morena iluminada', image: '/images/s2.webp' },
-        { title: 'Finalização modelada', image: '/images/s3.webp' }
+        { title: 'Resultado apaixonante', image: '/images/s1.webp' },
+        { title: 'Renove seu estilo', image: '/images/s2.webp' },
+        { title: 'Novo visual, nova energia', image: '/images/s3.webp' }
       ]
     },
     {
