@@ -257,14 +257,13 @@ export default function RomanaHairLandingPage() {
 
           <iframe title="Mapa Romana Hair Studio" src="https://www.google.com/maps?q=Rua+Roma,+236+-+Lapa,+São+Paulo&output=embed" className="w-full h-[230px] rounded-2xl border border-white/10" />
 
-                  <div className="lg:pl-8">
+          <div className="lg:pl-8">
             <p className="text-[#d6b35f] uppercase tracking-[0.24em] text-sm font-bold mb-5">Fale Conosco</p>
             <p className="text-white/90 text-xl mb-4">☏ (11) 98120-1661</p>
-            <p className="text-white/90 text-xl mb-4">☏ (11) 91793-5219</p>
-            <p className="text-white/90 text-xl">No Instagram @romanahairstudio</p>
+            <p className="text-white/90 text-xl">◎ @romanahairstudio</p>
           </div>
-  
-      </section>
+        </div>  
+        </section>
 
       <div className="sticky bottom-0 z-50 bg-gradient-to-r from-[#a77b2d] via-[#e0c06a] to-[#a77b2d] px-5 py-4 shadow-[0_-12px_40px_rgba(0,0,0,0.45)]">
         <div className="max-w-[1260px] mx-auto flex flex-col sm:flex-row gap-4 items-center justify-between text-black">
