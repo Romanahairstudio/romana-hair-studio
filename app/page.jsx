@@ -1,5 +1,5 @@
 export default function RomanaHairLandingPage() {
-  const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
+  const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20informacoes%20sobre%20os%20serviços%20do%20Salão.'
 
   const services = [
     { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=700&auto=format&fit=crop' },
