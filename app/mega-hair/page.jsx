@@ -12,12 +12,9 @@ const results = [
   { src: '/images/depois-paloma.webp', alt: 'Transformação com Mega Hair na Vila Romana' },
   { src: '/images/Mega (1).webp', alt: 'Resultado real de Mega Hair no Romana Hair Studio' },
   { src: '/images/Mega (2).webp', alt: 'Mega Hair com comprimento e acabamento natural' },
-  { src: '/images/Mega (3).webp', alt: 'Transformação de Mega Hair realizada no salão' },
   { src: '/images/Mega (4).webp', alt: 'Resultado de alongamento capilar na Vila Romana' },
-  { src: '/images/Mega (5).webp', alt: 'Mega Hair com integração aos fios naturais' },
   { src: '/images/Mega (6).webp', alt: 'Resultado de Mega Hair com volume e movimento' },
   { src: '/images/Mega (7).webp', alt: 'Cabelo longo após transformação com Mega Hair' },
-  { src: '/images/Mega (8).webp', alt: 'Resultado personalizado de Mega Hair' },
   { src: '/images/Mega (9).webp', alt: 'Aplicação de Mega Hair com acabamento natural' },
   { src: '/images/Mega (10).webp', alt: 'Transformação real de Mega Hair no Romana Hair Studio' },
 ]
