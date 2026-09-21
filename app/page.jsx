@@ -3,7 +3,7 @@ export default function RomanaHairLandingPage() {
 
   const services = [
     { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=700&auto=format&fit=crop' },
-    { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=700&auto=format&fit=crop' },
+    { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=700&auto=format&fit=crop', href: '/mega-hair' },
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=700&auto=format&fit=crop' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
@@ -137,6 +137,11 @@ export default function RomanaHairLandingPage() {
                   </div>
                   <h3 className="uppercase font-black text-sm mb-3 min-h-[38px] flex items-center justify-center">{service.title}</h3>
                   <p className="text-white/65 text-xs leading-relaxed">{service.text}</p>
+                  {service.href && (
+                    <a href={service.href} className="inline-flex mt-5 text-[#d6b35f] text-xs font-extrabold uppercase tracking-wide hover:text-white transition">
+                      Conheça o serviço →
+                    </a>
+                  )}
                 </div>
               </article>
             ))}
