@@ -16,6 +16,7 @@ const results = [
   { src: '/images/Mega (7).webp', alt: 'Cabelo longo após transformação com Mega Hair' },
   { src: '/images/Mega (9).webp', alt: 'Aplicação de Mega Hair com acabamento natural' },
   { src: '/images/Mega (10).webp', alt: 'Transformação real de Mega Hair no Romana Hair Studio' },
+  { src: '/images/IMG_1200.webp', alt: 'Resultado real de Mega Hair no Romana Hair Studio' },
 ]
 
 const techniques = [
