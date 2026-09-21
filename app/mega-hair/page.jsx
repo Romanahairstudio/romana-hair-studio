@@ -237,7 +237,7 @@ export default function MegaHairPage() {
           <h2 className="font-serif text-4xl lg:text-6xl mb-6">Vamos planejar sua transformação?</h2>
           <p className="text-white/70 text-lg max-w-2xl mx-auto mb-9">Fale conosco pelo WhatsApp para agendar uma avaliação personalizada na Vila Romana.</p>
           <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl bg-gradient-to-r from-[#b98b32] via-[#e6c977] to-[#b98b32] px-9 py-5 text-black font-extrabold uppercase tracking-wide hover:scale-105 transition">Agendar minha avaliação</a>
-          <p className="text-white/50 text-sm mt-7">Rua Roma, 236 — Lapa, São Paulo, SP — Estacionamento no local para clientes.</p>
+          <p className="text-white/50 text-sm mt-7">Rua Roma, 236 — Lapa, São Paulo, SP — Tel. (11) 3805-3149 — (11) 2609-3149 — (11) 98120-1661 — Estacionamento no local para clientes.</p>
         </div>
       </section>
 
