@@ -10,6 +10,16 @@ const results = [
   { src: '/images/IMG_3811.webp', alt: 'Resultado de Mega Hair realizado no Romana Hair Studio' },
   { src: '/images/h2.webp', alt: 'Cabelo longo após aplicação de Mega Hair' },
   { src: '/images/depois-paloma.webp', alt: 'Transformação com Mega Hair na Vila Romana' },
+  { src: '/images/Mega (1).webp', alt: 'Resultado real de Mega Hair no Romana Hair Studio' },
+  { src: '/images/Mega (2).webp', alt: 'Mega Hair com comprimento e acabamento natural' },
+  { src: '/images/Mega (3).webp', alt: 'Transformação de Mega Hair realizada no salão' },
+  { src: '/images/Mega (4).webp', alt: 'Resultado de alongamento capilar na Vila Romana' },
+  { src: '/images/Mega (5).webp', alt: 'Mega Hair com integração aos fios naturais' },
+  { src: '/images/Mega (6).webp', alt: 'Resultado de Mega Hair com volume e movimento' },
+  { src: '/images/Mega (7).webp', alt: 'Cabelo longo após transformação com Mega Hair' },
+  { src: '/images/Mega (8).webp', alt: 'Resultado personalizado de Mega Hair' },
+  { src: '/images/Mega (9).webp', alt: 'Aplicação de Mega Hair com acabamento natural' },
+  { src: '/images/Mega (10).webp', alt: 'Transformação real de Mega Hair no Romana Hair Studio' },
 ]
 
 const techniques = [
@@ -153,8 +163,8 @@ export default function MegaHairPage() {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {results.map((result) => (
-              <div key={result.src} className="relative h-[440px] rounded-[28px] overflow-hidden border border-white/10 bg-zinc-900 group">
-                <img src={result.src} alt={result.alt} className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-700" />
+              <div key={result.src} className="relative aspect-[4/5] rounded-[28px] overflow-hidden border border-white/10 bg-zinc-900 group">
+                <img src={result.src} alt={result.alt} loading="lazy" className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
                 <span className="absolute bottom-5 left-5 rounded-full bg-[#d6b35f] text-black px-4 py-2 text-xs font-black uppercase tracking-wide">Resultado real</span>
               </div>
