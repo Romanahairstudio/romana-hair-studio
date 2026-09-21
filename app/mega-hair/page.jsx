@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Mega Hair na Vila Romana | Romana Hair Studio',
-  description: 'Mega Hair na Vila Romana com avaliação personalizada, aplicação cuidadosa e resultados naturais. Agende sua avaliação no Romana Hair Studio.',
+  description: 'Mega Hair na Vila Romana com queratina, fita adesiva, ponto americano, microlink e nanocápsulas. Avaliação personalizada no Romana Hair Studio.',
 }
 
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
@@ -12,18 +12,28 @@ const results = [
   { src: '/images/depois-paloma.webp', alt: 'Transformação com Mega Hair na Vila Romana' },
 ]
 
+const techniques = [
+  ['Queratina', 'Aplicação distribuída em mechas e planejada conforme a densidade e o objetivo de cada cliente.'],
+  ['Fita adesiva', 'Opção avaliada para distribuir os fios em faixas e buscar um acabamento discreto e integrado.'],
+  ['Ponto americano', 'Técnica selecionada de acordo com a estrutura do cabelo, o volume desejado e a rotina da cliente.'],
+  ['Microlink', 'Alternativa escolhida após a análise dos fios e do resultado esperado para a transformação.'],
+  ['Nanocápsulas', 'Pontos pequenos que podem favorecer um acabamento delicado, conforme a indicação profissional.'],
+]
+
 const care = [
   ['Higienização cuidadosa', 'Orientamos a lavagem e a secagem adequadas para preservar os fios e os pontos de aplicação.'],
-  ['Manutenção programada', 'O intervalo é definido de acordo com o crescimento do cabelo e com a técnica indicada na avaliação.'],
+  ['Manutenção programada', 'Em geral, a manutenção acontece entre 60 e 90 dias, variando conforme o crescimento do cabelo, a técnica e os cuidados de cada cliente.'],
   ['Rotina personalizada', 'Cada cabelo recebe recomendações próprias de escovação, produtos e cuidados em casa.'],
 ]
 
 const faqs = [
-  ['Qual técnica é indicada para mim?', 'A escolha depende do seu cabelo, do resultado desejado e da rotina de cuidados. Por isso, a avaliação presencial é uma etapa importante.'],
+  ['Quais técnicas vocês oferecem?', 'Trabalhamos com queratina, fita adesiva, ponto americano, microlink e nanocápsulas. A indicação é definida após avaliarmos o cabelo, o objetivo e a rotina da cliente.'],
+  ['Quais opções de cabelo estão disponíveis?', 'Trabalhamos com cabelos brasileiros e vietnamitas. A cliente participa da escolha da opção mais adequada ao resultado desejado.'],
   ['O resultado pode ficar natural?', 'Sim. Cor, textura, quantidade de cabelo e distribuição dos fios são planejadas para buscar integração e movimento natural.'],
-  ['Preciso fazer manutenção?', 'Sim. A manutenção ajuda a acompanhar o crescimento do cabelo natural e a conservar o acabamento da aplicação.'],
+  ['Quando devo fazer a manutenção?', 'O intervalo varia de cliente para cliente, mas normalmente consideramos um período de 60 a 90 dias. A orientação final depende da técnica, do crescimento e dos cuidados com os fios.'],
   ['Posso escolher comprimento e volume?', 'Durante a avaliação, alinhamos suas referências e indicamos uma composição compatível com o seu cabelo e com o resultado que você deseja.'],
-  ['Como recebo um orçamento?', 'O orçamento é personalizado após avaliarmos o cabelo, o volume, o comprimento e o resultado pretendido.'],
+  ['Como recebo um orçamento?', 'Podemos conversar sobre uma estimativa inicial, mas o orçamento mais assertivo é apresentado após a avaliação presencial do cabelo e do resultado pretendido.'],
+  ['Quais são as formas de pagamento?', 'O procedimento pode ser parcelado em até 12 vezes sem juros.'],
 ]
 
 export default function MegaHairPage() {
@@ -38,6 +48,7 @@ export default function MegaHairPage() {
             <div className="font-serif italic text-base text-white/90 ml-12 -mt-1">Hair Studio</div>
           </a>
           <nav className="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.12em] font-semibold text-white/80">
+            <a className="hover:text-[#d6b35f] transition" href="#tecnicas">Técnicas</a>
             <a className="hover:text-[#d6b35f] transition" href="#resultados">Resultados</a>
             <a className="hover:text-[#d6b35f] transition" href="#avaliacao">Avaliação</a>
             <a className="hover:text-[#d6b35f] transition" href="#cuidados">Cuidados</a>
@@ -93,6 +104,43 @@ export default function MegaHairPage() {
               <p className="text-white/65 leading-relaxed">{text}</p>
             </article>
           ))}
+        </div>
+      </section>
+
+      <section id="tecnicas" className="relative z-10 px-5 lg:px-10 py-24 bg-[#050505] scroll-mt-20">
+        <div className="max-w-[1260px] mx-auto">
+          <div className="grid lg:grid-cols-[0.78fr_1.22fr] gap-12 items-end mb-12">
+            <div>
+              <p className="text-[#d6b35f] uppercase tracking-[0.3em] text-sm font-bold mb-4">Técnicas disponíveis</p>
+              <h2 className="font-serif text-4xl lg:text-6xl leading-tight">Uma indicação para cada cabelo e objetivo</h2>
+            </div>
+            <p className="text-white/70 text-lg leading-relaxed max-w-2xl lg:ml-auto">
+              Trabalhamos com diferentes técnicas de Mega Hair. A escolha é feita após a avaliação presencial, considerando a base natural, a densidade dos fios, a rotina e o acabamento desejado.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-5 mb-8">
+            {techniques.map(([title, text], index) => (
+              <article key={title} className="rounded-[24px] border border-white/10 bg-[#0d0d0d] p-7 hover:border-[#d6b35f]/55 transition">
+                <div className="text-[#d6b35f] text-sm font-black tracking-[0.18em] mb-5">0{index + 1}</div>
+                <h3 className="font-serif text-2xl mb-4">{title}</h3>
+                <p className="text-white/65 text-sm leading-relaxed">{text}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-5">
+            <article className="rounded-[26px] border border-[#d6b35f]/25 bg-[radial-gradient(circle_at_0%_0%,rgba(201,163,77,0.16),transparent_50%),#0d0d0d] p-8">
+              <p className="text-[#d6b35f] uppercase tracking-[0.22em] text-xs font-bold mb-3">Escolha dos cabelos</p>
+              <h3 className="font-serif text-3xl mb-4">Opções brasileiras e vietnamitas</h3>
+              <p className="text-white/70 leading-relaxed">A cliente participa da escolha da opção, cor, comprimento e volume mais adequados ao resultado que deseja alcançar.</p>
+            </article>
+            <article className="rounded-[26px] border border-[#d6b35f]/25 bg-[radial-gradient(circle_at_0%_0%,rgba(201,163,77,0.16),transparent_50%),#0d0d0d] p-8">
+              <p className="text-[#d6b35f] uppercase tracking-[0.22em] text-xs font-bold mb-3">Orçamento e pagamento</p>
+              <h3 className="font-serif text-3xl mb-4">Avaliação para um valor assertivo</h3>
+              <p className="text-white/70 leading-relaxed">Podemos informar uma estimativa inicial. O orçamento final é definido após a avaliação presencial e pode ser parcelado em até 12x sem juros.</p>
+            </article>
+          </div>
         </div>
       </section>
 
