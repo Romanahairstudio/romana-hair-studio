@@ -3,6 +3,7 @@ export default function RomanaHairLandingPage() {
 
   const services = [
     { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/j3.webp', href: '/resultados-cortes', linkText: 'Ver resultados de cortes' },
+    { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/penteados-card.webp', alt: 'Penteado preso com trança e pérolas, foto ilustrativa', href: '/penteados', linkText: 'Conheça a Rafaela' },
     { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=700&auto=format&fit=crop', href: '/mega-hair' },
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=700&auto=format&fit=crop' },
@@ -120,7 +121,7 @@ export default function RomanaHairLandingPage() {
             {services.map((service) => (
               <article key={service.title} className="group rounded-2xl overflow-hidden bg-[#101010] border border-white/8 hover:border-[#d6b35f]/70 transition shadow-2xl">
                 <div className="h-44 overflow-hidden">
-                  <img src={service.img} alt={service.title} className="h-full w-full object-cover group-hover:scale-110 transition duration-700" />
+                  <img src={service.img} alt={service.alt || service.title} className="h-full w-full object-cover group-hover:scale-110 transition duration-700" />
                 </div>
                 <div className="relative px-4 pb-7 pt-10 text-center">
                   <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-gradient-to-br from-[#e2c572] to-[#a77b2d] text-black flex items-center justify-center text-2xl shadow-xl">
