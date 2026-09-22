@@ -27,6 +27,12 @@ const professionals = [
     specialty: 'Cortes, visagismo e cor',
     portrait: '/images/Selmaf.webp',
     works: [
+      { src: '/images/selma-img_6959.webp', alt: 'Corte pixie grisalho com acabamento leve' },
+      { src: '/images/selma-img_5228.webp', alt: 'Corte chanel castanho com contorno arredondado' },
+      { src: '/images/selma-img_5008.webp', alt: 'Corte bob acobreado com base reta' },
+      { src: '/images/selma-img_3980.webp', alt: 'Corte médio castanho em camadas com movimento' },
+      { src: '/images/selma-img_6541.webp', alt: 'Corte longo castanho em camadas e pontas modeladas' },
+      { src: '/images/selma-img_7673.webp', alt: 'Corte médio loiro em camadas visto de perfil' },
       { src: '/images/s1.webp', alt: 'Corte em camadas com cabelo ruivo' },
       { src: '/images/s2.webp', alt: 'Corte longo com movimento e finalização ruiva' },
       { src: '/images/s3.webp', alt: 'Cabelo loiro em camadas com acabamento ondulado' },
