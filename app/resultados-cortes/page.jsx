@@ -7,7 +7,7 @@ const professionals = [
   {
     name: 'John',
     id: 'john',
-    specialty: 'Cortes, mechas e cor',
+    specialty: 'Coloração, Cortes & Curtos e Mechas',
     portrait: '/images/Johnf.webp',
     works: [
       { src: '/images/john-img_5887.webp', alt: 'Corte chanel com franja e acabamento liso' },
@@ -24,7 +24,7 @@ const professionals = [
   {
     name: 'Selma',
     id: 'selma',
-    specialty: 'Cortes, visagismo e cor',
+    specialty: 'Hairstylist, Visagismo, Cortes e Coloração',
     portrait: '/images/Selmaf.webp',
     works: [
       { src: '/images/selma-img_6959.webp', alt: 'Corte pixie grisalho com acabamento leve' },
