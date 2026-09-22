@@ -2,7 +2,7 @@ export default function RomanaHairLandingPage() {
   const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Salão.'
 
   const services = [
-    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=700&auto=format&fit=crop' },
+    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/j3.webp', href: '/resultados-cortes', linkText: 'Ver resultados de cortes' },
     { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=700&auto=format&fit=crop', href: '/mega-hair' },
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=700&auto=format&fit=crop' },
@@ -18,19 +18,10 @@ export default function RomanaHairLandingPage() {
     { title: 'Ambiente Acolhedor', text: 'Conforto e bem-estar em cada detalhe', icon: '♡' }
   ]
 
-  const transformations = [
-    { name: 'Transformação Mega Hair', before: '/images/a1 (1).webp', after: '/images/a2 (1).webp', description: 'Mais comprimento, volume e acabamento natural.' },
-    { name: 'Mega Hair Loiro Iluminado', before: '/images/b1-1.webp', after: '/images/b2.webp', description: 'Resultado sofisticado com brilho e movimento.' },
-    { name: 'Alongamento Premium', before: '/images/d1.webp', after: '/images/d2.webp', description: 'Fios alinhados, acabamento elegante e natural.' },
-    { name: 'Mega Hair com Volume', before: '/images/c1.webp', after: '/images/c2.webp', description: 'Transformação completa com efeito glamouroso.' },
-    { name: 'Resultado Final Premium', before: '/images/e1.webp', after: '/images/e2.webp', description: 'Cabelo com brilho, caimento e presença.' }
-  ]
-
-  const showcase = [
-    '/images/Cintia2-1.webp',
-    '/images/IMG_3811.webp',
-    '/images/h2.webp',
-    '/images/depois-paloma.webp'
+  const haircutPreview = [
+    { name: 'John', image: '/images/j3.webp', alt: 'Cabelo em camadas com movimento, trabalho de John' },
+    { name: 'Selma', image: '/images/s1.webp', alt: 'Corte em camadas e finalização ruiva, trabalho de Selma' },
+    { name: 'Vytor', image: '/images/v2.webp', alt: 'Corte masculino com degradê, trabalho de Vytor' }
   ]
 
   return (
@@ -47,7 +38,7 @@ export default function RomanaHairLandingPage() {
           <nav className="hidden lg:flex items-center gap-9 text-[13px] uppercase tracking-[0.12em] font-semibold text-white/85">
             <a className="text-[#d6b35f] border-b border-[#d6b35f] pb-2" href="#inicio">Início</a>
             <a className="hover:text-[#d6b35f] transition" href="#servicos">Serviços</a>
-            <a className="hover:text-[#d6b35f] transition" href="#transformacoes">Resultados</a>
+            <a className="hover:text-[#d6b35f] transition" href="/resultados-cortes">Resultados de cortes</a>
             <a className="hover:text-[#d6b35f] transition" href="#sobre">Sobre</a>
             <a className="hover:text-[#d6b35f] transition" href="#depoimentos">Depoimentos</a>
             <a className="hover:text-[#d6b35f] transition" href="#contato">Contato</a>
@@ -125,7 +116,7 @@ export default function RomanaHairLandingPage() {
             <div className="w-20 h-[2px] bg-[#d6b35f] mx-auto mt-6" />
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-7 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.map((service) => (
               <article key={service.title} className="group rounded-2xl overflow-hidden bg-[#101010] border border-white/8 hover:border-[#d6b35f]/70 transition shadow-2xl">
                 <div className="h-44 overflow-hidden">
@@ -139,7 +130,7 @@ export default function RomanaHairLandingPage() {
                   <p className="text-white/65 text-xs leading-relaxed">{service.text}</p>
                   {service.href && (
                     <a href={service.href} className="inline-flex mt-5 text-[#d6b35f] text-xs font-extrabold uppercase tracking-wide hover:text-white transition">
-                      Conheça o serviço →
+                      {service.linkText || 'Conheça o serviço'} →
                     </a>
                   )}
                 </div>
@@ -156,51 +147,21 @@ export default function RomanaHairLandingPage() {
       </section>
 
       <section id="transformacoes" className="relative z-10 px-5 lg:px-10 py-24 bg-[#050505]">
-        <div className="max-w-[1360px] mx-auto">
-          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 items-end mb-16">
+        <div className="max-w-[1260px] mx-auto">
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-7 mb-10">
             <div>
-              <p className="text-[#d6b35f] uppercase tracking-[0.32em] text-sm font-bold mb-4">Transformações Reais</p>
-              <h2 className="font-serif text-4xl lg:text-6xl leading-tight">
-                Resultados de
-                <span className="block italic text-[#d6b35f]">Mega Hair</span>
-              </h2>
+              <p className="text-[#d6b35f] uppercase tracking-[0.32em] text-sm font-bold mb-4">Resultados reais</p>
+              <h2 className="font-serif text-4xl lg:text-6xl leading-tight">Cortes com a assinatura <span className="italic text-[#d6b35f]">da nossa equipe.</span></h2>
             </div>
-            <p className="text-white/70 text-lg leading-relaxed max-w-2xl lg:ml-auto">
-              Veja alguns resultados realizados no Romana Hair Studio. Cada aplicação é pensada para entregar naturalidade, volume, caimento e sofisticação.
-            </p>
+            <a href="/resultados-cortes" className="inline-flex self-start lg:self-auto rounded-xl border border-[#d6b35f] px-7 py-4 text-[#d6b35f] font-extrabold hover:bg-[#d6b35f] hover:text-black transition">Ver resultados por profissional →</a>
           </div>
-
-          <div className="grid lg:grid-cols-5 gap-5 mb-14">
-            {showcase.map((image, index) => (
-              <div key={image} className={`${index === 0 ? 'lg:col-span-2 lg:row-span-2' : ''} group relative min-h-[300px] lg:min-h-[340px] rounded-[28px] overflow-hidden border border-white/10 bg-zinc-900 shadow-2xl`}>
-                <img src={image} alt="Resultado Mega Hair Romana Hair Studio" className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/10 to-transparent" />
-                <div className="absolute bottom-5 left-5 right-5">
-                  <span className="inline-flex rounded-full bg-[#d6b35f] text-black px-4 py-2 text-xs font-black uppercase tracking-wide">Resultado Real</span>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
-            {transformations.map((item) => (
-              <article key={item.name} className="rounded-[30px] overflow-hidden bg-[#0d0d0d] border border-white/10 shadow-[0_25px_80px_rgba(0,0,0,0.45)] hover:border-[#d6b35f]/70 transition">
-                <div className="grid grid-cols-2 gap-1 p-2">
-                  <div className="relative h-[320px] rounded-[22px] overflow-hidden">
-                    <img src={item.before} alt={`Antes - ${item.name}`} className="w-full h-full object-cover" />
-                    <div className="absolute top-3 left-3 rounded-full bg-black/75 backdrop-blur px-4 py-1.5 text-xs font-bold uppercase tracking-wide">Antes</div>
-                  </div>
-                  <div className="relative h-[320px] rounded-[22px] overflow-hidden">
-                    <img src={item.after} alt={`Depois - ${item.name}`} className="w-full h-full object-cover" />
-                    <div className="absolute top-3 left-3 rounded-full bg-[#d6b35f] text-black px-4 py-1.5 text-xs font-black uppercase tracking-wide">Depois</div>
-                  </div>
-                </div>
-                <div className="p-7">
-                  <h3 className="font-serif text-2xl mb-3">{item.name}</h3>
-                  <p className="text-white/65 leading-relaxed mb-6">{item.description}</p>
-                  <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex w-full justify-center rounded-xl bg-gradient-to-r from-[#b98b32] via-[#e6c977] to-[#b98b32] px-6 py-4 text-black font-extrabold uppercase tracking-wide hover:scale-[1.02] transition">Quero esse resultado</a>
-                </div>
-              </article>
+          <div className="grid sm:grid-cols-3 gap-5">
+            {haircutPreview.map((item) => (
+              <a key={item.name} href={`/resultados-cortes#${item.name.toLowerCase()}`} className="group relative aspect-[4/5] sm:aspect-[3/4] rounded-[26px] overflow-hidden border border-white/10 bg-zinc-900">
+                <img src={item.image} alt={item.alt} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top group-hover:scale-105 transition duration-700" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                <span className="absolute bottom-6 left-6 font-serif text-3xl">{item.name}</span>
+              </a>
             ))}
           </div>
         </div>
@@ -235,10 +196,9 @@ export default function RomanaHairLandingPage() {
             <h2 className="font-serif text-4xl lg:text-5xl">O que nossas clientes dizem</h2>
             <div className="w-16 h-[2px] bg-[#d6b35f] mx-auto mt-5" />
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {[
               ['Melhor salão da Lapa! Profissionais incríveis e ambiente maravilhoso. Saio sempre realizada!', 'Juliana M.'],
-              ['Fiz mega hair e amei o resultado! Muito natural e exatamente como eu queria.', 'Mariana T.'],
               ['Atendimento impecável do começo ao fim. Super recomendo!', 'Carla S.']
             ].map(([text, name]) => (
               <div key={name} className="rounded-2xl bg-[#101010] border border-white/8 p-8 shadow-2xl">
