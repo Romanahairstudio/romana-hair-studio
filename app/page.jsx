@@ -19,7 +19,7 @@ export default function RomanaHairLandingPage() {
   ]
 
   const transformations = [
-    { name: 'Transformação Mega Hair', before: '/images/a1 (1).webp', after: '/images/a2 (2).webp', description: 'Mais comprimento, volume e acabamento natural.' },
+    { name: 'Transformação Mega Hair', before: '/images/a1 (1).webp', after: '/images/a2 (1).webp', description: 'Mais comprimento, volume e acabamento natural.' },
     { name: 'Mega Hair Loiro Iluminado', before: '/images/b1-1.webp', after: '/images/b2.webp', description: 'Resultado sofisticado com brilho e movimento.' },
     { name: 'Alongamento Premium', before: '/images/d1.webp', after: '/images/d2.webp', description: 'Fios alinhados, acabamento elegante e natural.' },
     { name: 'Mega Hair com Volume', before: '/images/c1.webp', after: '/images/c2.webp', description: 'Transformação completa com efeito glamouroso.' },
