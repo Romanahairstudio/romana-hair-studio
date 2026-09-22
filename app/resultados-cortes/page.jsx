@@ -42,7 +42,7 @@ const professionals = [
     name: 'Vytor',
     id: 'vytor',
     specialty: 'Corte masculino, feminino e barba',
-    portrait: '/images/Vytor.webp',
+    portrait: '/images/Vytor (2).webp',
     works: [
       { src: '/images/v2.webp', alt: 'Corte masculino com degradê e acabamento definido' },
       { src: '/images/v1.webp', alt: 'Corte masculino com degradê e barba alinhada' },
