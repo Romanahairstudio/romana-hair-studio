@@ -7,6 +7,7 @@ export default function RomanaHairLandingPage() {
     { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: '/images/card-mega-novo.webp', alt: 'Mega Hair longo em cabelo castanho iluminado', fit: 'contain', href: '/mega-hair' },
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Ver resultados de unhas' },
+    { title: 'Maquiagem', text: 'Produções para valorizar sua beleza em cada ocasião.', icon: '✧', img: '/images/maquiagem-card.webp', alt: 'Maquiagem com olhos iluminados e acabamento delicado', fit: 'contain', href: '/maquiagem', linkText: 'Ver resultados de maquiagem' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
     { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronze.jpg' },
     { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/cbm.webp'}
@@ -117,7 +118,7 @@ export default function RomanaHairLandingPage() {
             <div className="w-20 h-[2px] bg-[#d6b35f] mx-auto mt-6" />
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {services.map((service) => (
               <article key={service.title} className="group rounded-2xl overflow-hidden bg-[#101010] border border-white/8 hover:border-[#d6b35f]/70 transition shadow-2xl">
                 <div className="aspect-[4/5] overflow-hidden bg-[#090909]">
