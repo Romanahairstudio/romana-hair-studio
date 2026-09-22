@@ -6,7 +6,7 @@ export default function RomanaHairLandingPage() {
     { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/penteados-card.webp', alt: 'Penteado preso com trança e pérolas, foto ilustrativa', href: '/penteados', linkText: 'Conheça a Rafaela' },
     { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: '/images/card-mega-novo.webp', alt: 'Mega Hair longo em cabelo castanho iluminado', fit: 'contain', href: '/mega-hair' },
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
-    { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=700&auto=format&fit=crop' },
+    { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Ver resultados de unhas' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
     { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronze.jpg' },
     { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/cbm.webp'}
