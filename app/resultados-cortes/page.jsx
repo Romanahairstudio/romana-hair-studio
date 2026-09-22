@@ -10,6 +10,12 @@ const professionals = [
     specialty: 'Cortes, mechas e cor',
     portrait: '/images/Johnf.webp',
     works: [
+      { src: '/images/john-img_5886.webp', alt: 'Corte chanel com franja e acabamento liso' },
+      { src: '/images/john-img_6240.webp', alt: 'Corte longo em camadas com contorno do rosto' },
+      { src: '/images/john-img_7883.webp', alt: 'Corte curto loiro com textura e movimento' },
+      { src: '/images/john-img_8135.webp', alt: 'Corte longo em camadas com pontas modeladas' },
+      { src: '/images/john-img_8190.webp', alt: 'Corte bob acobreado visto de perfil' },
+      { src: '/images/john-img_8513.webp', alt: 'Corte médio em camadas com mechas e movimento' },
       { src: '/images/j3.webp', alt: 'Corte feminino em camadas com movimento' },
       { src: '/images/j2.webp', alt: 'Cabelo longo com camadas e contorno do rosto' },
       { src: '/images/j1-1.webp', alt: 'Cabelo longo com acabamento em camadas' },
