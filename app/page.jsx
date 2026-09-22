@@ -3,7 +3,7 @@ export default function RomanaHairLandingPage() {
 
   const services = [
     { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/card-cabelo-novo.webp', alt: 'Cabelo loiro com camadas e finalização', fit: 'contain', href: '/resultados-cortes', linkText: 'Ver resultados de cortes' },
-    { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/penteados-card.webp', alt: 'Penteado preso com trança e pérolas, foto ilustrativa', href: '/penteados', linkText: 'Conheça a Rafaela' },
+    { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/card-penteados-novo.webp', alt: 'Coque baixo com acessório floral e mechas soltas', fit: 'contain', href: '/penteados', linkText: 'Conheça a Rafaela' },
     { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: '/images/card-mega-novo.webp', alt: 'Mega Hair longo em cabelo castanho iluminado', fit: 'contain', href: '/mega-hair' },
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Ver resultados de unhas' },
