@@ -2,9 +2,9 @@ export default function RomanaHairLandingPage() {
   const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Salão.'
 
   const services = [
-    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/j3.webp', href: '/resultados-cortes', linkText: 'Ver resultados de cortes' },
+    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/selma-img_6541.webp', alt: 'Corte em camadas com movimento', fit: 'contain', href: '/resultados-cortes', linkText: 'Ver resultados de cortes' },
     { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/penteados-card.webp', alt: 'Penteado preso com trança e pérolas, foto ilustrativa', href: '/penteados', linkText: 'Conheça a Rafaela' },
-    { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: 'https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?q=80&w=700&auto=format&fit=crop', href: '/mega-hair' },
+    { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: '/images/h2.webp', alt: 'Resultado de Mega Hair loiro visto de costas', fit: 'contain', href: '/mega-hair' },
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=700&auto=format&fit=crop' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
@@ -120,8 +120,8 @@ export default function RomanaHairLandingPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             {services.map((service) => (
               <article key={service.title} className="group rounded-2xl overflow-hidden bg-[#101010] border border-white/8 hover:border-[#d6b35f]/70 transition shadow-2xl">
-                <div className="h-44 overflow-hidden">
-                  <img src={service.img} alt={service.alt || service.title} className="h-full w-full object-cover group-hover:scale-110 transition duration-700" />
+                <div className="aspect-[4/5] overflow-hidden bg-[#090909]">
+                  <img src={service.img} alt={service.alt || service.title} className={`h-full w-full ${service.fit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition duration-700`} />
                 </div>
                 <div className="relative px-4 pb-7 pt-10 text-center">
                   <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-gradient-to-br from-[#e2c572] to-[#a77b2d] text-black flex items-center justify-center text-2xl shadow-xl">
