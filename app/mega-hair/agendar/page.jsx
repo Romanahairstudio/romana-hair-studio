@@ -5,16 +5,46 @@ export const metadata = {
 
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
 
+const businessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HairSalon',
+  name: 'Romana Hair Studio',
+  url: 'https://www.romanahairstudio.com.br/mega-hair/agendar',
+  logo: 'https://www.romanahairstudio.com.br/images/romana-hair-studio-logo.svg',
+  image: 'https://www.romanahairstudio.com.br/images/h2.webp',
+  telephone: '+55 11 98120-1661',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Rua Roma, 236',
+    addressLocality: 'São Paulo',
+    addressRegion: 'SP',
+    addressCountry: 'BR',
+  },
+}
+
 export default function AgendarMegaHairPage() {
   return (
     <main className="min-h-screen bg-black text-white selection:bg-[#c9a34d] selection:text-black">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+      />
       <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(201,163,77,0.16),transparent_42%),linear-gradient(180deg,#050505_0%,#000_70%)] pointer-events-none" />
 
       <header className="relative z-10 border-b border-white/10 bg-black/60 backdrop-blur-xl">
-        <div className="max-w-[1100px] mx-auto px-5 lg:px-10 h-20 flex items-center justify-between">
-          <a href="/" className="leading-none" aria-label="Voltar para a página inicial">
-            <div className="font-serif italic text-3xl tracking-wide">Romana</div>
-            <div className="font-serif italic text-base text-white/90 ml-12 -mt-1">Hair Studio</div>
+        <div className="max-w-[1100px] mx-auto px-5 lg:px-10 h-24 flex items-center justify-between">
+          <a href="/" className="flex items-center gap-3" aria-label="Romana Hair Studio — voltar para a página inicial">
+            <img
+              src="/images/romana-hair-studio-logo.svg"
+              alt="Logo Romana Hair Studio"
+              width="72"
+              height="72"
+              className="h-[72px] w-[72px] rounded-2xl border border-[#d6b35f]/35 shadow-[0_8px_28px_rgba(201,163,77,0.14)]"
+            />
+            <div className="hidden sm:block leading-none">
+              <div className="font-serif italic text-3xl tracking-wide">Romana</div>
+              <div className="font-serif italic text-base text-[#d6b35f] ml-12 -mt-1">Hair Studio</div>
+            </div>
           </a>
           <a href="/mega-hair" className="text-sm font-bold text-[#d6b35f] hover:text-white transition">
             Voltar para Mega Hair
