@@ -40,7 +40,6 @@ export default function RomanaHairLandingPage() {
           <nav className="hidden lg:flex items-center gap-9 text-[13px] uppercase tracking-[0.12em] font-semibold text-white/85">
             <a className="text-[#d6b35f] border-b border-[#d6b35f] pb-2" href="#inicio">Início</a>
             <a className="hover:text-[#d6b35f] transition" href="#servicos">Serviços</a>
-            <a className="hover:text-[#d6b35f] transition" href="/resultados-cortes">Resultados de cortes</a>
             <a className="hover:text-[#d6b35f] transition" href="#sobre">Sobre</a>
             <a className="hover:text-[#d6b35f] transition" href="#depoimentos">Depoimentos</a>
             <a className="hover:text-[#d6b35f] transition" href="#contato">Contato</a>
