@@ -3,7 +3,7 @@ export const metadata = {
   description: 'Agende sua avaliação personalizada de Mega Hair no Romana Hair Studio, na Vila Romana, pelo WhatsApp.',
 }
 
-const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
+const whatsapp = 'https://wa.me/5511917935219?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
 
 const businessSchema = {
   '@context': 'https://schema.org',
@@ -12,7 +12,7 @@ const businessSchema = {
   url: 'https://www.romanahairstudio.com.br/mega-hair/agendar',
   logo: 'https://www.romanahairstudio.com.br/images/romana-hair-studio-logo.svg',
   image: 'https://www.romanahairstudio.com.br/images/h2.webp',
-  telephone: '+55 11 98120-1661',
+  telephone: '+55 11 91793-5219',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Rua Roma, 236',
