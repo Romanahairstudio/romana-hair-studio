@@ -20,6 +20,22 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              document.addEventListener('click', function (event) {
+                var link = event.target.closest && event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]');
+                if (!link || typeof window.gtag !== 'function') return;
+
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
+                  'value': 1.0,
+                  'currency': 'BRL'
+                });
+              });
+            `,
+          }}
+        />
       </head>
       <body>{children}</body>
     </html>
