@@ -31,6 +31,21 @@ const businessSchema = {
     addressCountry: 'BR',
   },
   areaServed: ['Vila Romana', 'Lapa', 'Perdizes', 'Pinheiros', 'Alto de Pinheiros'],
+  sameAs: ['https://www.instagram.com/romanahairstudio/'],
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '10:00',
+      closes: '19:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: 'Saturday',
+      opens: '09:00',
+      closes: '19:00',
+    },
+  ],
 }
 
 export default function RootLayout({ children }) {
