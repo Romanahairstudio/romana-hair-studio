@@ -1,41 +1,63 @@
 import './globals.css'
 
+const siteUrl = 'https://www.romanahairstudio.com.br'
+
 export const metadata = {
-  title: 'Romana Hair Studio',
-  description: 'Salão de beleza na Lapa, São Paulo. Cabelo, Mega Hair, estética, unhas, podologia e bronzeamento artificial.',
+  metadataBase: new URL(siteUrl),
+  title: 'Salão de Beleza na Vila Romana | Romana Hair Studio',
+  description: 'Salão de beleza na Vila Romana, São Paulo. Cabelo, Mega Hair, unhas, maquiagem, estética, podologia e bronzeamento. Conheça o Romana Hair Studio.',
+  alternates: { canonical: '/' },
+  openGraph: {
+    title: 'Salão de Beleza na Vila Romana | Romana Hair Studio',
+    description: 'Cabelo, Mega Hair, unhas, estética e mais na Vila Romana, São Paulo.',
+    url: siteUrl,
+    siteName: 'Romana Hair Studio',
+    locale: 'pt_BR',
+    type: 'website',
+  },
+}
+
+const businessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'HairSalon',
+  '@id': siteUrl + '/#business',
+  name: 'Romana Hair Studio',
+  url: siteUrl,
+  telephone: '+55 11 98120-1661',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Rua Roma, 236',
+    addressLocality: 'São Paulo',
+    addressRegion: 'SP',
+    postalCode: '05050-090',
+    addressCountry: 'BR',
+  },
+  areaServed: ['Vila Romana', 'Lapa', 'Perdizes', 'Pinheiros', 'Alto de Pinheiros'],
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
       <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }} />
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17233082756"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17233082756');
-            `,
-          }}
-        />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              document.addEventListener('click', function (event) {
-                var link = event.target.closest && event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]');
-                if (!link || typeof window.gtag !== 'function') return;
-
-                gtag('event', 'conversion', {
-                  'send_to': 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
-                  'value': 1.0,
-                  'currency': 'BRL'
-                });
-              });
-            `,
-          }}
-        />
+        <script dangerouslySetInnerHTML={{ __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-17233082756');
+        ` }} />
+        <script dangerouslySetInnerHTML={{ __html: `
+          document.addEventListener('click', function (event) {
+            var link = event.target.closest && event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]');
+            if (!link || typeof window.gtag !== 'function') return;
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
+              'value': 1.0,
+              'currency': 'BRL'
+            });
+          });
+        ` }} />
       </head>
       <body>{children}</body>
     </html>
