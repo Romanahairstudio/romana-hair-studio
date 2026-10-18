@@ -6,11 +6,9 @@ export const metadata = {
   metadataBase: new URL(siteUrl),
   title: 'Salão de Beleza na Vila Romana | Romana Hair Studio',
   description: 'Salão de beleza na Vila Romana, São Paulo. Cabelo, Mega Hair, unhas, maquiagem, estética, podologia e bronzeamento. Conheça o Romana Hair Studio.',
-  alternates: { canonical: '/' },
   openGraph: {
     title: 'Salão de Beleza na Vila Romana | Romana Hair Studio',
     description: 'Cabelo, Mega Hair, unhas, estética e mais na Vila Romana, São Paulo.',
-    url: siteUrl,
     siteName: 'Romana Hair Studio',
     locale: 'pt_BR',
     type: 'website',
