@@ -29,6 +29,16 @@ const resultados = [
   { src: '/images/unhas-resultado-04.webp', alt: 'Unhas nude quadradas com pontas delicadas' },
   { src: '/images/unhas-resultado-05.webp', alt: 'Unhas em azul intenso com acabamento brilhante' },
   { src: '/images/unhas-resultado-06.webp', alt: 'Unhas rosadas com brilho suave nas pontas' },
+  { src: '/images/unhas-resultado-08.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-09.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-10.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-11.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-12.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-13.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-14.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-15.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-16.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
+  { src: '/images/unhas-resultado-17.webp', alt: 'Resultado de manicure e unhas realizado pela equipe do Romana Hair Studio' },
 ]
 
 const perguntas = [
