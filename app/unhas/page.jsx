@@ -14,8 +14,8 @@ const servicos = [
 ]
 
 const precos = [
-  ['Alongamento fibra/gel', 'R$ 275,00'],
-  ['Manutenção fibra/gel', 'R$ 175,00'],
+  ['Alongamento em gel (Molde F1)', 'R$ 275,00'],
+  ['Manutenção de alongamento em gel', 'R$ 175,00'],
   ['Esmaltação em gel', 'R$ 130,00'],
   ['Banho de gel', 'R$ 150,00'],
   ['Blindagem', 'R$ 130,00'],
