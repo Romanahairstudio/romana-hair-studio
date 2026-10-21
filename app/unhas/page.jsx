@@ -7,10 +7,10 @@ export const metadata = {
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20Unhas%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
 
 const servicos = [
-  { imagem: '/images/unhas-resultado-03.webp', nome: 'Alongamento com Molde F1', descricao: 'Técnica de construção em gel que permite definir comprimento e formato conforme o resultado desejado e as condições das unhas naturais.' },
-  { imagem: '/images/unhas-resultado-04.webp', nome: 'Banho de gel', descricao: 'Aplicação de gel sobre as unhas naturais para reforçar a estrutura e proporcionar acabamento uniforme, sem necessariamente aumentar o comprimento.' },
-  { imagem: '/images/unhas-resultado-06.webp', nome: 'Blindagem', descricao: 'Proteção e reforço das unhas naturais, sem alongamento, para quem prefere manter o comprimento atual.' },
-  { imagem: '/images/unhas-resultado-01.webp', nome: 'Esmaltação em gel', descricao: 'Esmaltação com produtos específicos e cura em cabine, com brilho e maior durabilidade que a esmaltação convencional.' },
+  { imagem: '/images/unhas-servico-01.webp', nome: 'Alongamento com Molde F1', descricao: 'Técnica de construção em gel que permite definir comprimento e formato conforme o resultado desejado e as condições das unhas naturais.' },
+  { imagem: '/images/unhas-servico-02.webp', nome: 'Banho de gel', descricao: 'Aplicação de gel sobre as unhas naturais para reforçar a estrutura e proporcionar acabamento uniforme, sem necessariamente aumentar o comprimento.' },
+  { imagem: '/images/unhas-servico-03.webp', nome: 'Blindagem', descricao: 'Proteção e reforço das unhas naturais, sem alongamento, para quem prefere manter o comprimento atual.' },
+  { imagem: '/images/unhas-servico-04.webp', nome: 'Esmaltação em gel', descricao: 'Esmaltação com produtos específicos e cura em cabine, com brilho e maior durabilidade que a esmaltação convencional.' },
 ]
 
 const precos = [
@@ -82,7 +82,7 @@ export default function UnhasPage() {
           <div className="divide-y divide-white/10 border-y border-white/10">
             {servicos.map((servico, index) => <article key={servico.nome} className="flex items-start gap-4 sm:gap-6 py-7 sm:py-8">
               <div className="w-24 h-24 sm:w-40 sm:h-40 flex-none rounded-2xl overflow-hidden bg-[#171717] border border-white/10">
-                <img src={servico.imagem} alt={`Exemplo de resultado real de unhas do Romana Hair Studio, ilustrando a seção ${servico.nome}`} loading="lazy" className="w-full h-full object-cover" />
+                <img src={servico.imagem} alt={`Imagem ilustrativa do serviço ${servico.nome}`} loading="lazy" className="w-full h-full object-cover" />
               </div>
               <div className="min-w-0 pt-1">
                 <h3 className="font-serif text-xl sm:text-2xl text-[#e6c977] mb-2 sm:mb-3">{index + 1}. {servico.nome}</h3>
@@ -90,7 +90,7 @@ export default function UnhasPage() {
               </div>
             </article>)}
           </div>
-          <p className="mt-4 text-sm text-white/50">Fotos ilustrativas de trabalhos reais da equipe; a técnica utilizada em cada imagem pode variar.</p>
+          <p className="mt-4 text-sm text-white/50">Imagens ilustrativas das técnicas. Veja os trabalhos reais da equipe na galeria abaixo.</p>
           <div className="mt-9"><BotaoWhatsapp secundario>Consultar horários disponíveis</BotaoWhatsapp></div>
         </div>
       </section>
