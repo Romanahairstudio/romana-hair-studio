@@ -69,12 +69,13 @@ export default function RootLayout({ children }) {
             if (!link) return;
             // A fila dataLayer recebe o evento mesmo enquanto a biblioteca gtag.js carrega.
             window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push({
-              event: 'conversion',
+            window.dataLayer.push((function () {
+              return arguments;
+            })('event', 'conversion', {
               send_to: 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
               value: 1.0,
               currency: 'BRL'
-            });
+            }));
           }, true);
         ` }} />
       </head>
