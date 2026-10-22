@@ -61,15 +61,21 @@ export default function RootLayout({ children }) {
           gtag('config', 'AW-17233082756');
         ` }} />
         <script dangerouslySetInnerHTML={{ __html: `
+          // Registra cliques em links de WhatsApp, inclusive quando o clique ocorre em elementos internos do botão.
           document.addEventListener('click', function (event) {
-            var link = event.target.closest && event.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"], a[href*="whatsapp.com/send"]');
-            if (!link || typeof window.gtag !== 'function') return;
-            gtag('event', 'conversion', {
-              'send_to': 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
-              'value': 1.0,
-              'currency': 'BRL'
+            var target = event.target;
+            if (!(target instanceof Element)) return;
+            var link = target.closest('a[href*="wa.me/"], a[href*="api.whatsapp.com/"], a[href*="whatsapp.com/send"]');
+            if (!link) return;
+            // A fila dataLayer recebe o evento mesmo enquanto a biblioteca gtag.js carrega.
+            window.dataLayer = window.dataLayer || [];
+            window.dataLayer.push({
+              event: 'conversion',
+              send_to: 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
+              value: 1.0,
+              currency: 'BRL'
             });
-          });
+          }, true);
         ` }} />
       </head>
       <body>{children}</body>
