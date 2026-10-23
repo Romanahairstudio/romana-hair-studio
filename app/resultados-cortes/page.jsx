@@ -66,25 +66,24 @@ export default function ResultadosCortesPage() {
   const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20resultados%20de%20cortes%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
 
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-[#c9a34d] selection:text-black">
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(201,163,77,0.12),transparent_38%),linear-gradient(180deg,#050505_0%,#000_60%)] pointer-events-none" />
-      <header className="relative z-20 border-b border-white/10 bg-black/80">
+    <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
+      <header className="relative z-20 border-b border-[#352e2a]/15 bg-[#faf7f2]">
         <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início">
             <span className="block font-serif italic text-3xl tracking-wide">Romana</span>
-            <span className="block font-serif italic text-base text-white/90 ml-12 -mt-1">Hair Studio</span>
+            <span className="block font-serif italic text-base text-[#62594f] ml-12 -mt-1">Hair Studio</span>
           </a>
-          <a href="/" className="text-[#d6b35f] text-sm font-bold hover:text-white transition">← Página inicial</a>
+          <a href="/" className="text-[#465947] text-sm font-bold hover:text-[#352e2a] transition">← Página inicial</a>
         </div>
       </header>
 
       <section className="relative z-10 px-5 lg:px-10 pt-16 pb-10 lg:pt-24">
         <div className="max-w-[1260px] mx-auto">
-          <p className="text-[#d6b35f] uppercase tracking-[0.28em] text-sm font-bold mb-4">Romana Hair Studio · Vila Romana</p>
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight max-w-4xl">Resultados da <span className="italic text-[#d6b35f]">nossa equipe</span></h1>
-          <p className="mt-5 max-w-2xl text-white/70 text-lg leading-relaxed">Conheça trabalhos da nossa equipe e escolha o profissional com quem você quer conversar sobre seu próximo visual.</p>
+          <p className="text-[#465947] uppercase tracking-[0.28em] text-sm font-bold mb-4">Romana Hair Studio · Vila Romana</p>
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight max-w-4xl">Resultados da <span className="italic text-[#465947]">nossa equipe</span></h1>
+          <p className="mt-5 max-w-2xl text-[#62594f] text-lg leading-relaxed">Conheça trabalhos da nossa equipe e escolha o profissional com quem você quer conversar sobre seu próximo visual.</p>
           <nav aria-label="Ver resultados por profissional" className="flex flex-wrap gap-3 mt-9">
-            {professionals.map(({ name, id }) => <a key={id} href={`#${id}`} className="rounded-full border border-[#d6b35f]/70 px-6 py-3 text-[#d6b35f] font-bold hover:bg-[#d6b35f] hover:text-black transition">{name}</a>)}
+            {professionals.map(({ name, id }) => <a key={id} href={`#${id}`} className="rounded-full border border-[#465947]/70 px-6 py-3 text-[#465947] font-bold hover:bg-[#465947] hover:text-white transition">{name}</a>)}
           </nav>
         </div>
       </section>
@@ -92,17 +91,17 @@ export default function ResultadosCortesPage() {
       <div className="relative z-10 px-5 lg:px-10 pb-24">
         <div className="max-w-[1260px] mx-auto space-y-20">
           {professionals.map(({ name, id, specialty, portrait, works }) => (
-            <section id={id} key={id} className="scroll-mt-8 border-t border-white/10 pt-12">
+            <section id={id} key={id} className="scroll-mt-8 border-t border-[#352e2a]/15 pt-12">
               <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-8">
-                <img src={portrait} alt={`Profissional ${name}`} loading="lazy" className="h-24 w-24 rounded-full object-cover object-top border border-[#d6b35f]/50" />
+                <img src={portrait} alt={`Profissional ${name}`} loading="lazy" className="h-24 w-24 rounded-full object-cover object-top border border-[#465947]/50" />
                 <div>
                   <h2 className="font-serif text-4xl lg:text-5xl">{name}</h2>
-                  <p className="text-white/65 mt-1">{specialty}</p>
+                  <p className="text-[#62594f] mt-1">{specialty}</p>
                 </div>
               </div>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {works.map(({ src, alt }) => (
-                  <figure key={src} className="aspect-[4/5] rounded-[24px] overflow-hidden bg-[#101010] border border-white/10">
+                  <figure key={src} className="aspect-[4/5] rounded-[24px] overflow-hidden bg-[#fffdf9] border border-[#352e2a]/15">
                     <img src={src} alt={`${alt}, trabalho de ${name} no Romana Hair Studio`} loading="lazy" className="w-full h-full object-cover object-top" />
                   </figure>
                 ))}
@@ -113,13 +112,13 @@ export default function ResultadosCortesPage() {
       </div>
 
       <section className="relative z-10 px-5 lg:px-10 pb-24">
-        <div className="max-w-[1100px] mx-auto rounded-[30px] border border-[#d6b35f]/30 bg-[#101010] p-8 lg:p-12 text-center">
+        <div className="max-w-[1100px] mx-auto rounded-[30px] border border-[#465947]/30 bg-[#fffdf9] p-8 lg:p-12 text-center">
           <h2 className="font-serif text-3xl lg:text-5xl mb-5">Vamos conversar sobre seu próximo visual?</h2>
-          <p className="text-white/70 text-lg mb-8">Fale com a equipe pelo WhatsApp e conte qual resultado chamou sua atenção.</p>
-          <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl bg-gradient-to-r from-[#b98b32] via-[#e6c977] to-[#b98b32] px-8 py-4 text-black font-extrabold uppercase tracking-wide hover:scale-105 transition">Agendar pelo WhatsApp</a>
+          <p className="text-[#62594f] text-lg mb-8">Fale com a equipe pelo WhatsApp e conte qual resultado chamou sua atenção.</p>
+          <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl bg-[#465947] px-8 py-4 text-white font-extrabold uppercase tracking-wide hover:scale-105 transition">Agendar pelo WhatsApp</a>
         </div>
       </section>
-      <footer className="relative z-10 border-t border-white/10 px-5 py-8 text-center text-sm text-white/55">Romana Hair Studio · Rua Roma, 236 · Vila Romana, São Paulo</footer>
+      <footer className="relative z-10 border-t border-[#352e2a]/15 px-5 py-8 text-center text-sm text-[#62594f]">Romana Hair Studio · Rua Roma, 236 · Vila Romana, São Paulo</footer>
     </main>
   )
 }
