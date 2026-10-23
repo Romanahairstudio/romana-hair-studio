@@ -12,6 +12,7 @@ const resultados = [
   ['05', 'Resultado de bronzeamento com biquíni preto'],
   ['07', 'Detalhe de marcação de bronzeamento no colo'],
   ['08', 'Detalhe de marcação de bronzeamento na cintura'],
+  ['09', 'Detalhe de resultado e marcação de bronzeamento'],
 ]
 const botao = 'inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-4 text-white font-bold hover:bg-[#354436] transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#465947]'
 
