@@ -1,3 +1,5 @@
+import styles from './home.module.css'
+
 export default function RomanaHairLandingPage() {
   const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Salão.'
 
@@ -9,7 +11,7 @@ export default function RomanaHairLandingPage() {
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Resultados de Unhas, Veja!' },
     { title: 'Maquiagem', text: 'Produções para valorizar sua beleza em cada ocasião.', icon: '✧', img: '/images/maquiagem-card.webp', alt: 'Maquiagem com olhos iluminados e acabamento delicado', fit: 'contain', href: '/maquiagem', linkText: 'Veja nossos trabalhos!' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
-    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronze.jpg' },
+    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronzeamento-artificial.jpg', alt: 'Máquina de bronzeamento horizontal aberta — imagem ilustrativa', fit: 'contain', href: '/bronzeamento' },
     { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/cbm.webp'}
   ]
 
@@ -23,220 +25,77 @@ export default function RomanaHairLandingPage() {
   const haircutPreview = [
     { name: 'John', image: '/images/j3.webp', alt: 'Cabelo em camadas com movimento, trabalho de John' },
     { name: 'Selma', image: '/images/s1.webp', alt: 'Corte em camadas e finalização ruiva, trabalho de Selma' },
-    { name: 'Vytor', image: '/images/v2.webp', alt: 'Corte masculino com degradê, trabalho de Vytor' }
+    { name: 'Vytor', image: '/images/v2.webp', alt: 'Corte masculino com degradê, trabalho de Vytor' },
+    { name: 'Rafaela', image: '/images/rafaela-penteado-0486.webp', alt: 'Penteado semipreso com trança e ondas castanhas, trabalho de Rafaela' }
   ]
 
   return (
-    <main className="min-h-screen bg-black text-white selection:bg-[#c9a34d] selection:text-black">
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(201,163,77,0.12),transparent_38%),linear-gradient(180deg,#050505_0%,#000_55%)] pointer-events-none" />
-
-      <header className="fixed top-0 left-0 right-0 z-50 bg-black/35 backdrop-blur-xl border-b border-white/5">
-        <div className="max-w-[1360px] mx-auto px-5 lg:px-10 h-24 flex items-center justify-between">
-          <a href="#inicio" className="leading-none">
-            <div className="font-serif italic text-4xl lg:text-5xl tracking-wide">Romana</div>
-            <div className="font-serif italic text-xl text-white/90 ml-16 -mt-2">Hair Studio</div>
-          </a>
-
-          <nav className="hidden lg:flex items-center gap-9 text-[13px] uppercase tracking-[0.12em] font-semibold text-white/85">
-            <a className="text-[#d6b35f] border-b border-[#d6b35f] pb-2" href="#inicio">Início</a>
-            <a className="hover:text-[#d6b35f] transition" href="#servicos">Serviços</a>
-            <a className="hover:text-[#d6b35f] transition" href="#sobre">Sobre</a>
-            <a className="hover:text-[#d6b35f] transition" href="#depoimentos">Depoimentos</a>
-            <a className="hover:text-[#d6b35f] transition" href="#contato">Contato</a>
-          </nav>
-
-          <a href={whatsapp} target="_blank" rel="noreferrer" className="hidden sm:inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-[#b98b32] via-[#e6c977] to-[#b98b32] px-7 py-3.5 text-black font-bold shadow-[0_10px_40px_rgba(201,163,77,0.28)] hover:scale-105 transition">
-            <span>☏</span> Agendar Agora
-          </a>
-        </div>
+    <main className={styles.home}>
+      <a className={styles.skip} href="#conteudo">Ir para o conteúdo</a>
+      <header className={styles.header}>
+        <a href="#inicio" className={styles.logo} aria-label="Romana Hair Studio — início">Romana<span>Hair Studio</span></a>
+        <nav aria-label="Navegação principal" className={styles.nav}>
+          <a href="#servicos">Serviços</a><a href="#sobre">O Romana</a><a href="#transformacoes">Resultados</a><a href="#contato">Contato</a>
+        </nav>
+        <a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar <span aria-hidden="true">↗</span></a>
       </header>
 
-      <section id="inicio" className="relative min-h-[980px] lg:min-h-screen overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center scale-105" style={{ backgroundImage: "url('/images/fundo.jpg')" }} />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(0,0,0,0.92)_0%,rgba(0,0,0,0.66)_42%,rgba(0,0,0,0.18)_100%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.25)_0%,rgba(0,0,0,0.04)_46%,#000_94%)]" />
-
-        <div className="relative z-10 max-w-[1360px] mx-auto px-5 lg:px-10 pt-36 lg:pt-44">
-          <div className="grid lg:grid-cols-[1.02fr_0.98fr] items-end gap-8">
-            <div className="pb-8 lg:pb-28">
-              <p className="text-[#d6b35f] uppercase tracking-[0.32em] text-sm lg:text-base font-semibold mb-6">
-                Beleza que transforma
-              </p>
-
-              <h1 className="font-serif text-5xl sm:text-6xl lg:text-[86px] leading-[0.95] tracking-[-0.04em] mb-7">
-                Realce sua beleza,
-                <span className="block italic text-[#d6b35f]">revele sua melhor versão!</span>
-              </h1>
-
-              <p className="max-w-xl text-white/80 text-lg lg:text-xl leading-relaxed mb-9">
-                No Romana Hair Studio, cuidamos de você de dentro para fora com excelência, técnicas modernas e atendimento exclusivo.
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-5 mb-12">
-                <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex justify-center items-center gap-3 rounded-2xl bg-gradient-to-r from-[#b98b32] via-[#e5c574] to-[#b98b32] px-8 py-5 text-black font-extrabold uppercase tracking-wide shadow-[0_18px_50px_rgba(201,163,77,0.28)] hover:-translate-y-1 transition">
-                  ☏ Agendar via WhatsApp
-                </a>
-                <a href="#contato" className="inline-flex justify-center items-center gap-3 rounded-2xl border border-[#d6b35f] px-8 py-5 text-white font-extrabold uppercase tracking-wide hover:bg-[#d6b35f] hover:text-black transition">
-                  ⌖ Como Chegar
-                </a>
-              </div>
-            </div>
-
-          <div className="relative hidden lg:block min-h-[650px]">
-              <img
-                src="/images/l5.webp"
-                alt="Cliente com cabelo produzido"
-                className="absolute right-0 bottom-16 w-[560px] h-[680px] object-cover object-top rounded-t-[48px] opacity-95 shadow-[0_0_80px_rgba(0,0,0,0.65)]"
-              />
-              <div className="absolute right-0 bottom-16 w-[560px] h-[680px] rounded-t-[48px] bg-gradient-to-t from-black via-transparent to-transparent" />
-            </div>
+      <section id="inicio" className={styles.hero}>
+        <div id="conteudo" className={styles.heroText}>
+          <p className={styles.eyebrow}>SEU MOMENTO, NA VILA ROMANA</p>
+          <h1>Sua beleza.<br />Seu estilo.<br /><em>Seu momento.</em></h1>
+          <p className={styles.intro}>Um espaço para se sentir bem, renovar o visual e cuidar de você. Conheça o Romana Hair Studio.</p>
+          <div className={styles.actions}>
+            <a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agende seu momento <span aria-hidden="true">↗</span></a>
+            <a className={styles.textLink} href="#servicos">Explore nossos serviços ↓</a>
           </div>
-
-          <div className="relative z-20 -mt-4 lg:-mt-28 rounded-[28px] border border-white/10 bg-[#0b0b0b]/88 backdrop-blur-xl shadow-[0_30px_90px_rgba(0,0,0,0.55)] overflow-hidden">
-            <div className="grid md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-white/10">
-              {benefits.map((b) => (
-                <div key={b.title} className="p-8 lg:p-10 text-center">
-                  <div className="text-[#d6b35f] text-4xl mb-4">{b.icon}</div>
-                  <h3 className="uppercase font-extrabold text-sm lg:text-base tracking-wide mb-2">{b.title}</h3>
-                  <p className="text-white/65 text-sm">{b.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
+          <p className={styles.heroNote}>Cabelo, unhas e bem-estar. Tudo pertinho de você.</p>
+        </div>
+        <div className={styles.heroVisual}>
+          <img className={styles.heroImage} src="/images/hero-modelo-loira.webp" alt="Modelo com cabelos loiros longos e ondulados — imagem ilustrativa criada com IA" fetchPriority="high" />
+          <span className={styles.photoLabel}>Beleza com a sua essência.</span>
+          <span className={styles.photoCaption}>CUIDADO EM CADA DETALHE</span>
         </div>
       </section>
 
-      <section id="servicos" className="relative z-10 px-5 lg:px-10 py-24 lg:py-32 bg-black">
-        <div className="max-w-[1360px] mx-auto">
-          <div className="text-center mb-16">
-            <p className="text-[#d6b35f] uppercase tracking-[0.32em] text-sm font-bold mb-4">Nossos Serviços</p>
-            <h2 className="font-serif text-4xl lg:text-6xl leading-tight">
-              Tudo o que você precisa,
-              <span className="block italic text-[#d6b35f]">em um só lugar.</span>
-            </h2>
-            <div className="w-20 h-[2px] bg-[#d6b35f] mx-auto mt-6" />
-          </div>
+      <section aria-label="Nosso cuidado" className={styles.benefits}>
+        {benefits.map((b) => <div key={b.title}><span aria-hidden="true">{b.icon}</span><div><h2>{b.title}</h2><p>{b.text}</p></div></div>)}
+      </section>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {services.map((service) => (
-              <article key={service.title} className="group rounded-2xl overflow-hidden bg-[#101010] border border-white/8 hover:border-[#d6b35f]/70 transition shadow-2xl">
-                <div className="aspect-[4/5] overflow-hidden bg-[#090909]">
-                  <img src={service.img} alt={service.alt || service.title} className={`h-full w-full ${service.fit === 'contain' ? 'object-contain' : 'object-cover'} group-hover:scale-105 transition duration-700`} />
-                </div>
-                <div className="relative px-4 pb-7 pt-10 text-center">
-                  <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 rounded-full bg-gradient-to-br from-[#e2c572] to-[#a77b2d] text-black flex items-center justify-center text-2xl shadow-xl">
-                    {service.icon}
-                  </div>
-                  <h3 className="uppercase font-black text-sm mb-3 min-h-[38px] flex items-center justify-center">{service.title}</h3>
-                  <p className="text-white/65 text-xs leading-relaxed">{service.text}</p>
-                  {service.href && (
-                    <a href={service.href} className="inline-flex mt-5 text-[#d6b35f] text-xs font-extrabold uppercase tracking-wide hover:text-white transition">
-                      {service.linkText || 'Confira os resultados'} →
-                    </a>
-                  )}
-                </div>
-              </article>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-xl border border-[#d6b35f] px-9 py-4 uppercase text-[#d6b35f] font-extrabold hover:bg-[#d6b35f] hover:text-black transition">
-              Ver todos os serviços
-            </a>
-          </div>
+      <section id="servicos" className={styles.section}>
+        <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>BELEZA E BEM-ESTAR</p><h2>Um cuidado para<br /><em>cada parte de você.</em></h2></div><p>Do novo corte ao seu momento de pausa, encontre o cuidado que combina com você.</p></div>
+        <div className={styles.services}>
+          {services.map((service) => <article className={styles.card} key={service.title}>
+            <div className={styles.cardImage}><img src={service.img} alt={service.alt || service.title} loading="lazy" className={service.fit === 'contain' ? styles.contain : undefined} /></div>
+            <div className={styles.cardBody}><h3>{service.title}</h3><p>{service.text}</p><a className={styles.textLink} href={service.href || whatsapp} target={service.href ? undefined : '_blank'} rel={service.href ? undefined : 'noreferrer'}>{service.href ? 'Conheça os resultados' : 'Saiba mais pelo WhatsApp'} <span aria-hidden="true">↗</span></a></div>
+          </article>)}
         </div>
       </section>
 
-      <section id="transformacoes" className="relative z-10 px-5 lg:px-10 py-24 bg-[#050505]">
-        <div className="max-w-[1260px] mx-auto">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-7 mb-10">
-            <div>
-              <p className="text-[#d6b35f] uppercase tracking-[0.32em] text-sm font-bold mb-4">Resultados reais</p>
-              <h2 className="font-serif text-4xl lg:text-6xl leading-tight">Cortes com a assinatura <span className="italic text-[#d6b35f]">da nossa equipe.</span></h2>
-            </div>
-            <a href="/resultados-cortes" className="inline-flex self-start lg:self-auto rounded-xl border border-[#d6b35f] px-7 py-4 text-[#d6b35f] font-extrabold hover:bg-[#d6b35f] hover:text-black transition">Ver resultados por profissional →</a>
-          </div>
-          <div className="grid sm:grid-cols-3 gap-5">
-            {haircutPreview.map((item) => (
-              <a key={item.name} href={`/resultados-cortes#${item.name.toLowerCase()}`} className="group relative aspect-[4/5] sm:aspect-[3/4] rounded-[26px] overflow-hidden border border-white/10 bg-zinc-900">
-                <img src={item.image} alt={item.alt} loading="lazy" className="absolute inset-0 h-full w-full object-cover object-top group-hover:scale-105 transition duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
-                <span className="absolute bottom-6 left-6 font-serif text-3xl">{item.name}</span>
-              </a>
-            ))}
-          </div>
+      <section id="sobre" className={styles.about}>
+        <img src="/images/fundo.jpg" alt="Ambiente do Romana Hair Studio" loading="lazy" />
+        <div><p className={styles.eyebrow}>PRAZER, ROMANA</p><h2>Entre, sinta-se bem.<br /><em>O momento é seu.</em></h2><p>Mais que um salão, somos um espaço de autoestima, cuidado e transformação. Aqui, você encontra atendimento humanizado, profissionais apaixonados e resultados que fazem a diferença.</p>
+          <ul>{['Ambiente moderno e aconchegante', 'Técnicas atualizadas', 'Atendimento personalizado', 'Foco na sua satisfação'].map(item => <li key={item}><span aria-hidden="true">✓</span>{item}</li>)}</ul>
+          <a className={styles.textLink} href={whatsapp} target="_blank" rel="noreferrer">Venha conhecer o Romana ↗</a>
         </div>
       </section>
 
-      <section id="sobre" className="relative z-10 px-5 lg:px-10 pb-24 bg-black">
-        <div className="max-w-[1260px] mx-auto rounded-[28px] border border-white/10 bg-[#0b0b0b] p-6 lg:p-10 grid lg:grid-cols-2 gap-10 items-center shadow-[0_25px_80px_rgba(0,0,0,0.5)]">
-          <div className="lg:pl-4">
-            <p className="text-[#d6b35f] uppercase tracking-[0.26em] text-sm font-bold mb-3">Por que escolher o</p>
-            <h2 className="font-serif text-4xl lg:text-5xl mb-6">Romana Hair Studio?</h2>
-            <p className="text-white/72 leading-relaxed mb-8 max-w-xl">
-              Mais que um salão, somos um espaço de autoestima, cuidado e transformação. Aqui, você encontra atendimento humanizado, profissionais apaixonados e resultados que fazem a diferença.
-            </p>
-            <div className="space-y-4 text-white/80">
-              {['Ambiente moderno e aconchegante', 'Técnicas atualizadas', 'Atendimento personalizado', 'Foco na sua satisfação'].map((item) => (
-                <div key={item} className="flex items-center gap-3"><span className="text-[#d6b35f]">✓</span>{item}</div>
-              ))}
-            </div>
-          </div>
-          <div className="rounded-[24px] overflow-hidden border border-white/10 min-h-[360px] bg-cover bg-center" style={{ backgroundImage: "url('/images/fundo.jpg')" }}>
-            <div className="min-h-[360px] bg-black/35 flex items-center justify-center">
-              
-            </div>
-          </div>
-        </div>
+      <section id="transformacoes" className={styles.section}>
+        <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>FEITO NO ROMANA</p><h2>Resultados reais.<br /><em>Beleza do seu jeito.</em></h2></div><a className={styles.textLink} href="/resultados-cortes">Veja os trabalhos da equipe ↗</a></div>
+        <div className={styles.results}>{haircutPreview.map(item => <a key={item.name} href={`/resultados-cortes#${item.name.toLowerCase()}`}><img src={item.image} alt={item.alt} loading="lazy" /><span><span>Por {item.name}</span><span aria-hidden="true">↗</span></span></a>)}</div>
       </section>
 
-      <section id="depoimentos" className="relative z-10 px-5 lg:px-10 py-20 bg-black">
-        <div className="max-w-[1120px] mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#d6b35f] uppercase tracking-[0.32em] text-sm font-bold mb-3">Depoimentos</p>
-            <h2 className="font-serif text-4xl lg:text-5xl">O que nossas clientes dizem</h2>
-            <div className="w-16 h-[2px] bg-[#d6b35f] mx-auto mt-5" />
-          </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              ['Melhor salão da Lapa! Profissionais incríveis e ambiente maravilhoso. Saio sempre realizada!', 'Juliana M.'],
-              ['Atendimento impecável do começo ao fim. Super recomendo!', 'Carla S.']
-            ].map(([text, name]) => (
-              <div key={name} className="rounded-2xl bg-[#101010] border border-white/8 p-8 shadow-2xl">
-                <div className="text-[#d6b35f] text-5xl leading-none mb-4">&quot;</div>
-                <p className="text-white/75 leading-relaxed mb-6">{text}</p>
-                <div className="text-[#d6b35f] mb-3">★★★★★</div>
-                <strong>{name}</strong>
-              </div>
-            ))}
-          </div>
-        </div>
+      <section id="depoimentos" className={styles.testimonials}>
+        <p className={styles.eyebrow}>QUEM VEM, CONTA</p><h2>Carinho que <em>volta.</em></h2><p>Trechos de avaliações de clientes no Google.</p>
+        <div>{[["Desde a recepção,todos os funcionários,higiene e quem cortou meu cabelo. Com certeza ganhou uma cliente.","Giorgya Queiroz Lara"],["Todas as atendentes são muito simpáticas e educadas 😊 O ambiente é leve e tranquilo, gostei muito da minha primeira experiência e pretendo voltar sempre! Recomendo!","Ana Tomasevicius"],["Simplesmente amei!!! Fui atendida pelo profissional Vitor mãos de anjo! Com certeza irei voltar 🥰","Isabel Vieira"],["Ótimo atendimento. Local agradável, limpo e funcionários gentis. Preços super justos!","Tatyane Larrubia"]].map(([text,name]) => <figure key={name}><span aria-label="5 estrelas">★★★★★</span><blockquote>“{text}”</blockquote><figcaption>{name}</figcaption></figure>)}</div>
       </section>
 
-      <section id="contato" className="relative z-10 px-5 lg:px-10 py-16 bg-[#080808] border-t border-white/8">
-        <div className="max-w-[1260px] mx-auto grid lg:grid-cols-[1fr_1.3fr_1fr] gap-8 items-center">
-          <div>
-            <p className="text-[#d6b35f] uppercase tracking-[0.24em] text-sm font-bold mb-5">Onde Estamos</p>
-            <p className="text-white/80 leading-relaxed mb-6">📍 Rua Roma, 236 - Lapa<br />São Paulo - SP<br />CEP 05050-090</p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Roma+236+Lapa+São+Paulo" target="_blank" rel="noreferrer" className="inline-flex rounded-xl border border-[#d6b35f] px-6 py-3 text-[#d6b35f] font-bold hover:bg-[#d6b35f] hover:text-black transition">Ver no mapa</a>
-          </div>
-
-          <iframe title="Mapa Romana Hair Studio" src="https://www.google.com/maps?q=Rua+Roma,+236+-+Lapa,+São+Paulo&output=embed" className="w-full h-[230px] rounded-2xl border border-white/10" />
-
-          <div className="lg:pl-8">
-            <p className="text-[#d6b35f] uppercase tracking-[0.24em] text-sm font-bold mb-5">Fale Conosco</p>
-            <p className="text-white/90 text-xl mb-4">☏ (11) 98120-1661</p>
-            <p className="text-white/90 text-xl">◎ @romanahairstudio</p>
-          </div>
-        </div>  
-        </section>
-
-      <div className="sticky bottom-0 z-50 bg-gradient-to-r from-[#a77b2d] via-[#e0c06a] to-[#a77b2d] px-5 py-4 shadow-[0_-12px_40px_rgba(0,0,0,0.45)]">
-        <div className="max-w-[1260px] mx-auto flex flex-col sm:flex-row gap-4 items-center justify-between text-black">
-          <div className="font-bold uppercase">☏ Agendar agora pelo WhatsApp <span className="block sm:inline normal-case font-medium">Atendimento rápido e exclusivo!</span></div>
-          <a href={whatsapp} target="_blank" rel="noreferrer" className="rounded-xl bg-black px-8 py-3 text-[#e0c06a] uppercase font-extrabold hover:scale-105 transition">Clique aqui e fale conosco</a>
-        </div>
-      </div>
+      <section id="contato" className={styles.contact}>
+        <div><p className={styles.eyebrow}>PERTINHO DE VOCÊ</p><h2>Seu próximo momento<br /><em>de cuidado começa aqui.</em></h2><p>Rua Roma, 236 · Vila Romana · São Paulo – SP<br />CEP 05050-090</p><p>Terça a sexta, 10h às 19h<br />Sábado, 9h às 19h</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Fale com a gente ↗</a><a className={styles.textLink} href="https://www.google.com/maps/search/?api=1&query=Rua+Roma+236+Lapa+São+Paulo" target="_blank" rel="noreferrer">Como chegar ↗</a></div></div>
+        <iframe title="Mapa Romana Hair Studio" loading="lazy" src="https://www.google.com/maps?q=Rua+Roma,+236+-+Lapa,+São+Paulo&output=embed" />
+      </section>
+      <footer className={styles.footer}><a href="#inicio" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Beleza, cuidado e bem-estar na Vila Romana.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 98120-1661</a><a href="https://www.instagram.com/romanahairstudio/" target="_blank" rel="noreferrer">@romanahairstudio ↗</a></div></footer>
+      <a className={styles.mobileBooking} href={whatsapp} target="_blank" rel="noreferrer">Agende seu momento pelo WhatsApp ↗</a>
     </main>
   )
 }
