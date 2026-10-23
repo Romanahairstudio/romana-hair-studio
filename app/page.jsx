@@ -51,7 +51,7 @@ export default function RomanaHairLandingPage() {
           <p className={styles.heroNote}>Cabelo, unhas e bem-estar. Tudo pertinho de você.</p>
         </div>
         <div className={styles.heroVisual}>
-          <img className={styles.heroImage} src="/images/l5.webp" alt="Resultado de cabelo castanho longo produzido no Romana Hair Studio" fetchPriority="high" />
+          <img className={styles.heroImage} src="/images/hero-modelo-loira.webp" alt="Modelo com cabelos loiros longos e ondulados — imagem ilustrativa criada com IA" fetchPriority="high" />
           <span className={styles.photoLabel}>Beleza com a sua essência.</span>
           <span className={styles.photoCaption}>CUIDADO EM CADA DETALHE</span>
         </div>
