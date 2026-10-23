@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Resultados de cortes | Romana Hair Studio',
-  description: 'Conheça resultados de cabelo e cortes realizados por John, Selma e Vytor no Romana Hair Studio, na Vila Romana, São Paulo.',
+  title: 'Resultados da equipe | Romana Hair Studio',
+  description: 'Conheça resultados de cortes, coloração e penteados realizados por John, Selma, Vytor e Rafaela no Romana Hair Studio, na Vila Romana, São Paulo.',
 }
 
 const professionals = [
@@ -49,6 +49,17 @@ const professionals = [
       { src: '/images/v3.webp', alt: 'Corte masculino curto com textura' },
     ],
   },
+  {
+    name: 'Rafaela',
+    id: 'rafaela',
+    specialty: 'Penteados para ocasiões especiais',
+    portrait: '/images/rafaela-penteados.webp',
+    works: [
+  { src: '/images/rafaela-penteado-0486.webp', alt: 'Penteado semipreso com trança e ondas castanhas' },
+  { src: '/images/rafaela-penteado-0487.webp', alt: 'Coque elaborado em cabelo castanho' },
+  { src: '/images/rafaela-penteado-0488.webp', alt: 'Coque baixo com mechas soltas' },
+    ],
+  },
 ]
 
 export default function ResultadosCortesPage() {
@@ -70,7 +81,7 @@ export default function ResultadosCortesPage() {
       <section className="relative z-10 px-5 lg:px-10 pt-16 pb-10 lg:pt-24">
         <div className="max-w-[1260px] mx-auto">
           <p className="text-[#d6b35f] uppercase tracking-[0.28em] text-sm font-bold mb-4">Romana Hair Studio · Vila Romana</p>
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight max-w-4xl">Resultados de <span className="italic text-[#d6b35f]">cortes</span></h1>
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight max-w-4xl">Resultados da <span className="italic text-[#d6b35f]">nossa equipe</span></h1>
           <p className="mt-5 max-w-2xl text-white/70 text-lg leading-relaxed">Conheça trabalhos da nossa equipe e escolha o profissional com quem você quer conversar sobre seu próximo visual.</p>
           <nav aria-label="Ver resultados por profissional" className="flex flex-wrap gap-3 mt-9">
             {professionals.map(({ name, id }) => <a key={id} href={`#${id}`} className="rounded-full border border-[#d6b35f]/70 px-6 py-3 text-[#d6b35f] font-bold hover:bg-[#d6b35f] hover:text-black transition">{name}</a>)}
@@ -103,7 +114,7 @@ export default function ResultadosCortesPage() {
 
       <section className="relative z-10 px-5 lg:px-10 pb-24">
         <div className="max-w-[1100px] mx-auto rounded-[30px] border border-[#d6b35f]/30 bg-[#101010] p-8 lg:p-12 text-center">
-          <h2 className="font-serif text-3xl lg:text-5xl mb-5">Vamos conversar sobre o seu corte?</h2>
+          <h2 className="font-serif text-3xl lg:text-5xl mb-5">Vamos conversar sobre seu próximo visual?</h2>
           <p className="text-white/70 text-lg mb-8">Fale com a equipe pelo WhatsApp e conte qual resultado chamou sua atenção.</p>
           <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl bg-gradient-to-r from-[#b98b32] via-[#e6c977] to-[#b98b32] px-8 py-4 text-black font-extrabold uppercase tracking-wide hover:scale-105 transition">Agendar pelo WhatsApp</a>
         </div>

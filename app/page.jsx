@@ -25,7 +25,8 @@ export default function RomanaHairLandingPage() {
   const haircutPreview = [
     { name: 'John', image: '/images/j3.webp', alt: 'Cabelo em camadas com movimento, trabalho de John' },
     { name: 'Selma', image: '/images/s1.webp', alt: 'Corte em camadas e finalização ruiva, trabalho de Selma' },
-    { name: 'Vytor', image: '/images/v2.webp', alt: 'Corte masculino com degradê, trabalho de Vytor' }
+    { name: 'Vytor', image: '/images/v2.webp', alt: 'Corte masculino com degradê, trabalho de Vytor' },
+    { name: 'Rafaela', image: '/images/rafaela-penteado-0486.webp', alt: 'Penteado semipreso com trança e ondas castanhas, trabalho de Rafaela' }
   ]
 
   return (
