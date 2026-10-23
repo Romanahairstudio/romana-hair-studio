@@ -86,8 +86,8 @@ export default function RomanaHairLandingPage() {
       </section>
 
       <section id="depoimentos" className={styles.testimonials}>
-        <p className={styles.eyebrow}>QUEM VEM, CONTA</p><h2>Carinho que <em>volta.</em></h2>
-        <div>{[['Melhor salão da Lapa! Profissionais incríveis e ambiente maravilhoso. Saio sempre realizada!', 'Juliana M.'], ['Atendimento impecável do começo ao fim. Super recomendo!', 'Carla S.']].map(([text,name]) => <figure key={name}><span aria-label="5 estrelas">★★★★★</span><blockquote>“{text}”</blockquote><figcaption>{name}</figcaption></figure>)}</div>
+        <p className={styles.eyebrow}>QUEM VEM, CONTA</p><h2>Carinho que <em>volta.</em></h2><p>Trechos de avaliações de clientes no Google.</p>
+        <div>{[["Desde a recepção,todos os funcionários,higiene e quem cortou meu cabelo. Com certeza ganhou uma cliente.","Giorgya Queiroz Lara"],["Todas as atendentes são muito simpáticas e educadas 😊 O ambiente é leve e tranquilo, gostei muito da minha primeira experiência e pretendo voltar sempre! Recomendo!","Ana Tomasevicius"],["Simplesmente amei!!! Fui atendida pelo profissional Vitor mãos de anjo! Com certeza irei voltar 🥰","Isabel Vieira"],["Ótimo atendimento. Local agradável, limpo e funcionários gentis. Preços super justos!","Tatyane Larrubia"]].map(([text,name]) => <figure key={name}><span aria-label="5 estrelas">★★★★★</span><blockquote>“{text}”</blockquote><figcaption>{name}</figcaption></figure>)}</div>
       </section>
 
       <section id="contato" className={styles.contact}>
