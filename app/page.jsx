@@ -11,7 +11,7 @@ export default function RomanaHairLandingPage() {
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Resultados de Unhas, Veja!' },
     { title: 'Maquiagem', text: 'Produções para valorizar sua beleza em cada ocasião.', icon: '✧', img: '/images/maquiagem-card.webp', alt: 'Maquiagem com olhos iluminados e acabamento delicado', fit: 'contain', href: '/maquiagem', linkText: 'Veja nossos trabalhos!' },
     { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
-    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronzeamento-artificial.webp', alt: 'Máquina de bronzeamento horizontal aberta — imagem ilustrativa', fit: 'contain' },
+    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronzeamento-artificial.jpg', alt: 'Máquina de bronzeamento horizontal aberta — imagem ilustrativa', fit: 'contain' },
     { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/cbm.webp'}
   ]
 
