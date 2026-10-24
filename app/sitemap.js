@@ -1,6 +1,6 @@
 export default function sitemap() {
   const base = 'https://www.romanahairstudio.com.br'
-  const paths = ['/', '/mega-hair', '/unhas', '/maquiagem', '/penteados', '/resultados-cortes', '/bronzeamento']
+  const paths = ['/', '/mega-hair', '/unhas', '/maquiagem', '/penteados', '/resultados-cortes', '/bronzeamento', '/podologia']
   return paths.map((path) => ({
     url: base + path,
     changeFrequency: 'monthly',
