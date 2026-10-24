@@ -10,7 +10,7 @@ export default function RomanaHairLandingPage() {
     { title: 'Estética Facial e Corporal', text: 'Protocolos personalizados para cuidar da sua pele e do seu corpo.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Resultados de Unhas, Veja!' },
     { title: 'Maquiagem', text: 'Produções para valorizar sua beleza em cada ocasião.', icon: '✧', img: '/images/maquiagem-card.webp', alt: 'Maquiagem com olhos iluminados e acabamento delicado', fit: 'contain', href: '/maquiagem', linkText: 'Veja nossos trabalhos!' },
-    { title: 'Podologia', text: 'Saúde, cuidado e bem-estar para seus pés com profissionais qualificados.', icon: '♧', img: '/images/podologia-1.jpg' },
+    { title: 'Podologia', text: 'Profilaxia simples com a Jose. Sessão de 1h30 por R$ 160.', icon: '♧', img: '/images/podologia-jose.svg', alt: 'Jose, técnica em Podologia no Romana', href: '/podologia', linkText: 'Conheça o atendimento' },
     { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronzeamento-artificial.jpg', alt: 'Máquina de bronzeamento horizontal aberta — imagem ilustrativa', fit: 'contain', href: '/bronzeamento' },
     { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/cbm.webp'}
   ]
@@ -67,7 +67,7 @@ export default function RomanaHairLandingPage() {
         <div className={styles.services}>
           {services.map((service) => <article className={styles.card} key={service.title}>
             <div className={styles.cardImage}><img src={service.img} alt={service.alt || service.title} loading="lazy" className={service.fit === 'contain' ? styles.contain : undefined} /></div>
-            <div className={styles.cardBody}><h3>{service.title}</h3><p>{service.text}</p><a className={styles.textLink} href={service.href || whatsapp} target={service.href ? undefined : '_blank'} rel={service.href ? undefined : 'noreferrer'}>{service.href ? 'Conheça os resultados' : 'Saiba mais pelo WhatsApp'} <span aria-hidden="true">↗</span></a></div>
+            <div className={styles.cardBody}><h3>{service.title}</h3><p>{service.text}</p><a className={styles.textLink} href={service.href || whatsapp} target={service.href ? undefined : '_blank'} rel={service.href ? undefined : 'noreferrer'}>{service.title === 'Podologia' ? 'Conheça o atendimento' : (service.href ? 'Conheça os resultados' : 'Saiba mais pelo WhatsApp')} <span aria-hidden="true">↗</span></a></div>
           </article>)}
         </div>
       </section>
