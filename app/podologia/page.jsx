@@ -41,7 +41,7 @@ export default function PodologiaPage() {
         <div id="conteudo" className={styles.heroText}>
           <p className={styles.eyebrow}>PODOLOGIA NA VILA ROMANA</p>
           <h1>Cuidado para<br /><em>os seus pés.</em></h1>
-          <p className={styles.intro}>Um momento de atenção aos seus pés com Jose, nossa podóloga, técnica em Podologia formada em 2017.</p>
+          <p className={styles.intro}>Um momento de atenção aos seus pés com a Jose, nossa podóloga. Formada em Podologia em 2017, conta com quase 10 anos de experiência no cuidado com os pés.</p>
           <div className="mt-7 rounded-xl border border-[#465947]/20 bg-[#dce5da] p-6 max-w-md"><p className="text-sm text-[#465947] font-semibold">Sessão de profilaxia simples</p><p className="font-serif text-4xl my-2">R$ 160<span className="font-sans text-sm text-[#62594f]"> / sessão</span></p><p className="text-sm text-[#62594f]">Duração aproximada de 1h30 · Com agendamento</p></div>
           <div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar com a Jose ↗</a><a className={styles.textLink} href="#cuidados">O que está incluído ↓</a></div>
           <p className={styles.heroNote}>Rua Roma, 236 · Vila Romana · São Paulo</p>
