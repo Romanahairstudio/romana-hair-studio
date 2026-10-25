@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Mega Hair na Vila Romana | Romana Hair Studio',
   description: 'Mega Hair na Vila Romana com queratina, fita adesiva, ponto americano, microlink e nanocápsulas. Avaliação personalizada no Romana Hair Studio.',
+  alternates: { canonical: '/mega-hair' },
 }
 
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
