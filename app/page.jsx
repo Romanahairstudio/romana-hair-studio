@@ -1,3 +1,7 @@
+export const metadata = {
+  alternates: { canonical: '/' },
+}
+
 import styles from './home.module.css'
 
 export default function RomanaHairLandingPage() {
