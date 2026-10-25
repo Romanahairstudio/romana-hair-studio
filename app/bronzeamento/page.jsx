@@ -4,6 +4,23 @@ export const metadata = {
   alternates: { canonical: '/bronzeamento' },
 }
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.romanahairstudio.com.br/bronzeamento#service",
+  "name": "Bronzeamento no Romana Bronze",
+  "description": "Serviço de bronzeamento na Vila Romana, São Paulo, com consulta de opções e horários pelo WhatsApp.",
+  "url": "https://www.romanahairstudio.com.br/bronzeamento",
+  "provider": {
+    "@id": "https://www.romanahairstudio.com.br/#business"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Vila Romana, São Paulo - SP"
+  },
+  "serviceType": "Bronzeamento no Romana Bronze"
+}
+
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20bronzeamento%20do%20Romana%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20e%20hor%C3%A1rios.'
 const resultados = [
   ['01', 'Resultado de bronzeamento na região dos ombros e colo'],
@@ -20,6 +37,7 @@ const botao = 'inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-4 tex
 export default function BronzeamentoPage() {
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <header className="border-b border-[#352e2a]/15">
         <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início"><span className="block font-serif italic text-3xl">Romana</span><span className="block font-serif italic text-base ml-12 -mt-1">Hair Studio</span></a>
