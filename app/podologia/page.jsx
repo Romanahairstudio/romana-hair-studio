@@ -7,6 +7,38 @@ export const metadata = {
   alternates: { canonical: '/podologia' },
   openGraph: { title, description, url: '/podologia', images: [{ url: '/images/podologia-jose.svg', alt: 'Joseane Pires das Neves, técnica em Podologia no Romana' }] },
 }
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.romanahairstudio.com.br/podologia#service",
+  "name": "Podologia",
+  "description": "Serviços de podologia com Joseane Pires das Neves, técnica em Podologia formada em 2017, na Vila Romana.",
+  "url": "https://www.romanahairstudio.com.br/podologia",
+  "provider": {
+    "@id": "https://www.romanahairstudio.com.br/#business"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Vila Romana, São Paulo - SP"
+  },
+  "serviceType": [
+    "Profilaxia simples",
+    "Cuidados com unhas encravadas",
+    "Cuidados com calosidades",
+    "Órtese ungueal"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Podologia simples",
+      "price": 160,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/podologia"
+    }
+  ],
+  "serviceOutput": "Cuidados podológicos conforme avaliação profissional"
+}
+
 const whatsapp = 'https://wa.me/5511981201661?text=' + encodeURIComponent('Olá! Vim pela página de podologia do Romana e gostaria de agendar uma sessão com a Jose. Podem me informar os horários disponíveis?')
 const cuidados = [
   ['Calosidades', 'Remoção de calosidades durante a profilaxia simples.'],
@@ -31,6 +63,7 @@ const perguntas = [
 export default function PodologiaPage() {
   return (
     <main className={styles.home}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <a className={styles.skip} href="#conteudo">Ir para o conteúdo</a>
       <header className={styles.header}>
         <a href="/" className={styles.logo} aria-label="Romana Hair Studio — página inicial">Romana<span>Hair Studio</span></a>
