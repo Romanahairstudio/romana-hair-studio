@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Maquiagem na Vila Romana | Romana Hair Studio',
   description: 'Conheça resultados de maquiagem do Romana Hair Studio, na Vila Romana, São Paulo, e agende sua produção.',
+  alternates: { canonical: '/maquiagem' },
 }
 
 const resultados = [
