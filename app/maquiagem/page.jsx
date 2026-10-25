@@ -1,7 +1,23 @@
 export const metadata = {
   title: 'Maquiagem na Vila Romana | Romana Hair Studio',
-  description: 'Conheça resultados de maquiagem do Romana Hair Studio, na Vila Romana, São Paulo, e agende sua produção.',
+  description: 'Maquiagem profissional na Vila Romana, São Paulo, para festas e ocasiões especiais. Veja trabalhos reais do Romana Hair Studio e consulte horários.',
   alternates: { canonical: '/maquiagem' },
+}
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.romanahairstudio.com.br/maquiagem#service",
+  "name": "Maquiagem profissional",
+  "description": "Serviço de maquiagem profissional para festas e ocasiões especiais no Romana Hair Studio, Vila Romana, São Paulo.",
+  "url": "https://www.romanahairstudio.com.br/maquiagem",
+  "provider": {
+    "@id": "https://www.romanahairstudio.com.br/#business"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Vila Romana, São Paulo - SP"
+  }
 }
 
 const resultados = [
@@ -23,6 +39,7 @@ export default function MaquiagemPage() {
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <header className="relative z-20 border-b border-[#352e2a]/15 bg-[#faf7f2]">
         <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início">
