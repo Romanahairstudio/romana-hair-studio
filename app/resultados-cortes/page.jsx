@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Resultados da equipe | Romana Hair Studio',
   description: 'Conheça resultados de cortes, coloração e penteados realizados por John, Selma, Vytor e Rafaela no Romana Hair Studio, na Vila Romana, São Paulo.',
+  alternates: { canonical: '/resultados-cortes' },
 }
 
 const professionals = [
