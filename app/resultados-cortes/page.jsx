@@ -1,7 +1,19 @@
 export const metadata = {
-  title: 'Resultados da equipe | Romana Hair Studio',
-  description: 'Conheça resultados de cortes, coloração e penteados realizados por John, Selma, Vytor e Rafaela no Romana Hair Studio, na Vila Romana, São Paulo.',
+  title: 'Cortes Femininos e Masculinos na Vila Romana | Romana',
+  description: 'Veja fotos reais de cortes femininos, masculinos, coloração e penteados da equipe do Romana Hair Studio na Vila Romana, São Paulo. Agende pelo WhatsApp.',
   alternates: { canonical: '/resultados-cortes' },
+}
+
+const gallerySchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "https://www.romanahairstudio.com.br/resultados-cortes#page",
+  "name": "Resultados de cortes e penteados | Romana Hair Studio",
+  "description": "Galeria de resultados reais de cortes femininos, masculinos, coloração e penteados na Vila Romana, São Paulo.",
+  "url": "https://www.romanahairstudio.com.br/resultados-cortes",
+  "about": {
+    "@id": "https://www.romanahairstudio.com.br/#business"
+  }
 }
 
 const professionals = [
@@ -68,6 +80,7 @@ export default function ResultadosCortesPage() {
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(gallerySchema) }} />
       <header className="relative z-20 border-b border-[#352e2a]/15 bg-[#faf7f2]">
         <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início">
@@ -82,7 +95,7 @@ export default function ResultadosCortesPage() {
         <div className="max-w-[1260px] mx-auto">
           <p className="text-[#465947] uppercase tracking-[0.28em] text-sm font-bold mb-4">Romana Hair Studio · Vila Romana</p>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight max-w-4xl">Resultados da <span className="italic text-[#465947]">nossa equipe</span></h1>
-          <p className="mt-5 max-w-2xl text-[#62594f] text-lg leading-relaxed">Conheça trabalhos da nossa equipe e escolha o profissional com quem você quer conversar sobre seu próximo visual.</p>
+          <p className="mt-5 max-w-2xl text-[#62594f] text-lg leading-relaxed">Veja fotos reais de cortes femininos e masculinos, coloração e penteados realizados no Romana Hair Studio, na Vila Romana, São Paulo. Conheça os trabalhos da equipe e escolha o profissional para seu próximo visual.</p>
           <nav aria-label="Ver resultados por profissional" className="flex flex-wrap gap-3 mt-9">
             {professionals.map(({ name, id }) => <a key={id} href={`#${id}`} className="rounded-full border border-[#465947]/70 px-6 py-3 text-[#465947] font-bold hover:bg-[#465947] hover:text-white transition">{name}</a>)}
           </nav>
@@ -103,7 +116,7 @@ export default function ResultadosCortesPage() {
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
                 {works.map(({ src, alt }) => (
                   <figure key={src} className="aspect-[4/5] rounded-[24px] overflow-hidden bg-[#fffdf9] border border-[#352e2a]/15">
-                    <img src={src} alt={`${alt}, trabalho de ${name} no Romana Hair Studio`} loading="lazy" className="w-full h-full object-cover object-top" />
+                    <img src={src} alt={`${alt}, realizado por ${name} no Romana Hair Studio, Vila Romana, São Paulo`} loading="lazy" className="w-full h-full object-cover object-top" />
                   </figure>
                 ))}
               </div>
