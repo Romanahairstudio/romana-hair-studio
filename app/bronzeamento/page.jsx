@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Bronzeamento na Vila Romana | Romana Bronze',
   description: 'Conheça os resultados de bronzeamento do Romana Bronze, na Vila Romana, São Paulo. Veja a galeria e converse com a equipe para agendar.',
+  alternates: { canonical: '/bronzeamento' },
 }
 
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20bronzeamento%20do%20Romana%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20e%20hor%C3%A1rios.'
