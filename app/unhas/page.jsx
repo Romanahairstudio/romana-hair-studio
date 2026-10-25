@@ -4,6 +4,66 @@ export const metadata = {
   alternates: { canonical: 'https://www.romanahairstudio.com.br/unhas' },
 }
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.romanahairstudio.com.br/unhas#service",
+  "name": "Alongamento e cuidados com unhas",
+  "description": "Alongamento em gel, manutenção, esmaltação em gel, banho de gel e blindagem de unhas na Vila Romana.",
+  "url": "https://www.romanahairstudio.com.br/unhas",
+  "provider": {
+    "@id": "https://www.romanahairstudio.com.br/#business"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Vila Romana, São Paulo - SP"
+  },
+  "serviceType": [
+    "Alongamento em gel (Molde F1)",
+    "Manutenção de alongamento em gel",
+    "Esmaltação em gel",
+    "Banho de gel",
+    "Blindagem"
+  ],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Alongamento em gel (Molde F1)",
+      "price": 200,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Manutenção de alongamento em gel",
+      "price": 175,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Esmaltação em gel",
+      "price": 130,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Banho de gel",
+      "price": 150,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Blindagem",
+      "price": 130,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    }
+  ]
+}
+
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20Unhas%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
 
 const servicos = [
@@ -56,6 +116,7 @@ function BotaoWhatsapp({ children, secundario = false }) {
 export default function UnhasPage() {
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <header className="relative z-20 border-b border-[#352e2a]/15 bg-[#faf7f2]">
         <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início">
