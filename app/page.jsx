@@ -2,6 +2,7 @@ export const metadata = {
   alternates: { canonical: '/' },
 }
 
+import Image from 'next/image'
 import styles from './home.module.css'
 
 export default function RomanaHairLandingPage() {
@@ -57,7 +58,7 @@ export default function RomanaHairLandingPage() {
           <p className={styles.heroNote}>Cabelo, unhas e bem-estar. Tudo pertinho de você.</p>
         </div>
         <div className={styles.heroVisual}>
-          <img className={styles.heroImage} src="/images/hero-modelo-loira.webp" alt="Modelo com cabelos loiros longos e ondulados — imagem ilustrativa criada com IA" fetchPriority="high" />
+          <Image className={styles.heroImage} src="/images/hero-modelo-loira.webp" alt="Modelo com cabelos loiros longos e ondulados — imagem ilustrativa criada com IA" width={1120} height={1358} sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 620px" priority />
           <span className={styles.photoLabel}>Beleza com a sua essência.</span>
           <span className={styles.photoCaption}>CUIDADO EM CADA DETALHE</span>
         </div>
@@ -71,14 +72,18 @@ export default function RomanaHairLandingPage() {
         <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>BELEZA E BEM-ESTAR</p><h2>Um cuidado para<br /><em>cada parte de você.</em></h2></div><p>Do novo corte ao seu momento de pausa, encontre o cuidado que combina com você.</p></div>
         <div className={styles.services}>
           {services.map((service) => <article className={styles.card} key={service.title}>
-            <div className={styles.cardImage}><img src={service.img} alt={service.alt || service.title} loading="lazy" className={service.fit === 'contain' ? styles.contain : undefined} /></div>
+            <div className={styles.cardImage}>{service.img.startsWith('https://') ? (
+              <img src={service.img} alt={service.alt || service.title} loading="lazy" className={service.fit === 'contain' ? styles.contain : undefined} />
+            ) : (
+              <Image src={service.img} alt={service.alt || service.title} width={800} height={900} sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw" className={service.fit === 'contain' ? styles.contain : undefined} />
+            )}</div>
             <div className={styles.cardBody}><h3>{service.title}</h3><p>{service.text}</p><a className={styles.textLink} href={service.href || whatsapp} target={service.href ? undefined : '_blank'} rel={service.href ? undefined : 'noreferrer'}>{service.title === 'Podologia' ? 'Conheça o atendimento' : (service.linkText || (service.href ? 'Conheça os resultados' : 'Saiba mais pelo WhatsApp'))} <span aria-hidden="true">↗</span></a></div>
           </article>)}
         </div>
       </section>
 
       <section id="sobre" className={styles.about}>
-        <img src="/images/fundo.jpg" alt="Ambiente do Romana Hair Studio" loading="lazy" />
+        <Image src="/images/fundo.jpg" alt="Ambiente do Romana Hair Studio" width={1200} height={900} sizes="(max-width: 768px) 90vw, 45vw" />
         <div><p className={styles.eyebrow}>PRAZER, ROMANA</p><h2>Entre, sinta-se bem.<br /><em>O momento é seu.</em></h2><p>Mais que um salão, somos um espaço de autoestima, cuidado e transformação. Aqui, você encontra atendimento humanizado, profissionais apaixonados e resultados que fazem a diferença.</p>
           <ul>{['Ambiente moderno e aconchegante', 'Técnicas atualizadas', 'Atendimento personalizado', 'Foco na sua satisfação'].map(item => <li key={item}><span aria-hidden="true">✓</span>{item}</li>)}</ul>
           <a className={styles.textLink} href={whatsapp} target="_blank" rel="noreferrer">Venha conhecer o Romana ↗</a>
@@ -87,7 +92,7 @@ export default function RomanaHairLandingPage() {
 
       <section id="transformacoes" className={styles.section}>
         <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>FEITO NO ROMANA</p><h2>Resultados reais.<br /><em>Beleza do seu jeito.</em></h2></div><a className={styles.textLink} href="/resultados-cortes">Veja os trabalhos da equipe ↗</a></div>
-        <div className={styles.results}>{haircutPreview.map(item => <a key={item.name} href={`/resultados-cortes#${item.name.toLowerCase()}`}><img src={item.image} alt={item.alt} loading="lazy" /><span><span>Por {item.name}</span><span aria-hidden="true">↗</span></span></a>)}</div>
+        <div className={styles.results}>{haircutPreview.map(item => <a key={item.name} href={`/resultados-cortes#${item.name.toLowerCase()}`}><Image src={item.image} alt={item.alt} width={600} height={800} sizes="(max-width: 640px) 45vw, 23vw" /><span><span>Por {item.name}</span><span aria-hidden="true">↗</span></span></a>)}</div>
       </section>
 
       <section id="depoimentos" className={styles.testimonials}>
