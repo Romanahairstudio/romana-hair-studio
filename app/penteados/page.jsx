@@ -1,7 +1,23 @@
 export const metadata = {
   title: 'Penteados com Rafaela | Romana Hair Studio',
-  description: 'Conheça os penteados realizados por Rafaela no Romana Hair Studio, na Vila Romana, São Paulo. Veja resultados reais e agende seu atendimento.',
+  description: 'Penteados para festas e ocasiões especiais na Vila Romana, São Paulo. Conheça os trabalhos da Rafaela no Romana Hair Studio e agende.',
   alternates: { canonical: '/penteados' },
+}
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.romanahairstudio.com.br/penteados#service",
+  "name": "Penteados para ocasiões especiais",
+  "description": "Serviço de penteados para festas e ocasiões especiais realizados pela Rafaela no Romana Hair Studio, Vila Romana, São Paulo.",
+  "url": "https://www.romanahairstudio.com.br/penteados",
+  "provider": {
+    "@id": "https://www.romanahairstudio.com.br/#business"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Vila Romana, São Paulo - SP"
+  }
 }
 
 const penteados = [
@@ -19,6 +35,7 @@ export default function PenteadosPage() {
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <header className="relative z-20 border-b border-[#352e2a]/15 bg-[#faf7f2]">
         <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início">
