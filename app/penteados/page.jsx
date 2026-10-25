@@ -1,6 +1,7 @@
 export const metadata = {
   title: 'Penteados com Rafaela | Romana Hair Studio',
   description: 'Conheça os penteados realizados por Rafaela no Romana Hair Studio, na Vila Romana, São Paulo. Veja resultados reais e agende seu atendimento.',
+  alternates: { canonical: '/penteados' },
 }
 
 const penteados = [
