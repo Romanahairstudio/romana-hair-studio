@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'Mega Hair na Vila Romana | Romana Hair Studio',
-  description: 'Mega Hair na Vila Romana com queratina, fita adesiva, ponto americano, microlink e nanocápsulas. Avaliação personalizada no Romana Hair Studio.',
+  title: 'Mega Hair na Vila Romana e Lapa | Aplicação e Manutenção',
+  description: 'Aplicação e manutenção de Mega Hair na Vila Romana, Lapa, São Paulo. Queratina, fita adesiva, ponto americano, microlink e nanocápsulas. Agende sua avaliação.',
   alternates: { canonical: '/mega-hair' },
 }
 
@@ -9,15 +9,15 @@ const serviceSchema = {
   "@type": "Service",
   "@id": "https://www.romanahairstudio.com.br/mega-hair#service",
   "name": "Mega Hair e alongamento capilar",
-  "description": "Aplicação e manutenção de Mega Hair com avaliação presencial, técnicas de queratina, fita adesiva, ponto americano, microlink e nanocápsulas.",
+  "description": "Aplicação e manutenção de Mega Hair na Vila Romana e Lapa, São Paulo, com avaliação presencial e técnicas de queratina, fita adesiva, ponto americano, microlink e nanocápsulas.",
   "url": "https://www.romanahairstudio.com.br/mega-hair",
   "provider": {
     "@id": "https://www.romanahairstudio.com.br/#business"
   },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Vila Romana, São Paulo - SP"
-  },
+  "areaServed": [
+    { "@type": "Place", "name": "Vila Romana, São Paulo - SP" },
+    { "@type": "Place", "name": "Lapa, São Paulo - SP" }
+  ],
   "serviceType": [
     "Mega Hair com queratina",
     "Mega Hair com fita adesiva",
@@ -55,7 +55,7 @@ const techniques = [
 
 const care = [
   ['Higienização cuidadosa', 'Orientamos a lavagem e a secagem adequadas para preservar os fios e os pontos de aplicação.'],
-  ['Manutenção programada', 'Em geral, a manutenção acontece entre 60 e 90 dias, variando conforme o crescimento do cabelo, a técnica e os cuidados de cada cliente.'],
+  ['Manutenção programada', 'Fazemos manutenção de Mega Hair na Vila Romana, próximo à Lapa. Em geral, o intervalo é de 60 a 90 dias, variando conforme o crescimento do cabelo, a técnica e os cuidados de cada cliente.'],
   ['Rotina personalizada', 'Cada cabelo recebe recomendações próprias de escovação, produtos e cuidados em casa.'],
 ]
 
@@ -96,13 +96,13 @@ export default function MegaHairPage() {
       <section className="relative z-10 pt-32 pb-20 lg:pt-40 lg:pb-28 px-5 lg:px-10 overflow-hidden">
         <div className="max-w-[1260px] mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-12 items-center">
           <div>
-            <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana</p>
+            <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana e Lapa</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[78px] leading-[0.96] tracking-[-0.035em] mb-7">
               Comprimento e volume com
               <span className="block italic text-[#465947]">acabamento natural.</span>
             </h1>
             <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-9">
-              Cada aplicação começa com uma avaliação personalizada para entender seu cabelo, sua rotina e o resultado que você deseja.
+              Realizamos aplicação e manutenção de Mega Hair na Vila Romana, próximo à Lapa. Cada atendimento começa com uma avaliação personalizada para entender seu cabelo, sua rotina e o resultado que você deseja.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-5 text-white font-extrabold uppercase tracking-wide shadow-sm hover:-translate-y-1 transition">
