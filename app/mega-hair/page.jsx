@@ -4,6 +4,30 @@ export const metadata = {
   alternates: { canonical: '/mega-hair' },
 }
 
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://www.romanahairstudio.com.br/mega-hair#service",
+  "name": "Mega Hair e alongamento capilar",
+  "description": "Aplicação e manutenção de Mega Hair com avaliação presencial, técnicas de queratina, fita adesiva, ponto americano, microlink e nanocápsulas.",
+  "url": "https://www.romanahairstudio.com.br/mega-hair",
+  "provider": {
+    "@id": "https://www.romanahairstudio.com.br/#business"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Vila Romana, São Paulo - SP"
+  },
+  "serviceType": [
+    "Mega Hair com queratina",
+    "Mega Hair com fita adesiva",
+    "Mega Hair com ponto americano",
+    "Mega Hair com microlink",
+    "Mega Hair com nanocápsulas",
+    "Manutenção de Mega Hair"
+  ]
+}
+
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
 
 const results = [
@@ -48,6 +72,7 @@ const faqs = [
 export default function MegaHairPage() {
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
 
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#faf7f2] backdrop-blur-xl border-b border-[#352e2a]/15">
         <div className="max-w-[1260px] mx-auto px-5 lg:px-10 h-20 flex items-center justify-between">
