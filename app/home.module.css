@@ -5,3 +5,9 @@
 @media(prefers-reduced-motion:reduce){.home *{scroll-behavior:auto;transition:none}}
 
 .card .textLink::after{content:"";position:absolute;inset:0;z-index:1;border-radius:12px}.card .textLink:focus-visible{outline:none}.card .textLink:focus-visible::after{outline:3px solid var(--olive);outline-offset:-3px}
+
+/* Adia o layout e a pintura de seções distantes da primeira dobra.
+   Mantém o título principal e o hero no caminho de renderização inicial. */
+@supports (content-visibility: auto) {
+  .testimonials, .contact { content-visibility: auto; contain-intrinsic-size: auto 650px; }
+}
