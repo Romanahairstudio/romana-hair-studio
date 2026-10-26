@@ -75,7 +75,7 @@ export default function RomanaHairLandingPage() {
             <div className={styles.cardImage}>{service.img.startsWith('https://') ? (
               <img src={service.img} alt={service.alt || service.title} loading="lazy" className={service.fit === 'contain' ? styles.contain : undefined} />
             ) : (
-              <Image src={service.img} alt={service.alt || service.title} width={800} height={900} sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 30vw" className={service.fit === 'contain' ? styles.contain : undefined} />
+              <Image src={service.img} alt={service.alt || service.title} width={800} height={900} sizes="(max-width: 700px) calc((100vw - 56px) / 2), (max-width: 1440px) calc((90vw - 52px) / 3), 410px" className={service.fit === 'contain' ? styles.contain : undefined} />
             )}</div>
             <div className={styles.cardBody}><h3>{service.title}</h3><p>{service.text}</p><a className={styles.textLink} href={service.href || whatsapp} target={service.href ? undefined : '_blank'} rel={service.href ? undefined : 'noreferrer'}>{service.title === 'Podologia' ? 'Conheça o atendimento' : (service.linkText || (service.href ? 'Conheça os resultados' : 'Saiba mais pelo WhatsApp'))} <span aria-hidden="true">↗</span></a></div>
           </article>)}
