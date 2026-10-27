@@ -49,13 +49,35 @@ export default function BronzeamentoPage() {
           <div>
             <p className="text-[#465947] uppercase tracking-[0.25em] text-sm font-bold mb-5">Romana Bronze · Vila Romana</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight mb-7">Seu momento de <span className="block italic text-[#465947]">bronze.</span></h1>
-            <p className="text-[#62594f] text-lg leading-relaxed mb-8 max-w-xl">Conheça os resultados do Romana Bronze e converse com nossa equipe sobre o atendimento, as opções disponíveis e os horários.</p>
-            <div className="flex flex-col sm:flex-row gap-4"><a href="#resultados" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-4 text-[#465947] font-bold hover:bg-[#dce5da] transition">Ver resultados</a><a href={whatsapp} target="_blank" rel="noreferrer" className={botao}>Conversar pelo WhatsApp</a></div>
+            <p className="text-[#62594f] text-lg leading-relaxed mb-8 max-w-xl">Conheça nossos protocolos de bronzeamento, veja resultados e converse com nossa equipe sobre os horários disponíveis.</p>
+            <div className="flex flex-col sm:flex-row gap-4"><a href="#protocolos" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-4 text-[#465947] font-bold hover:bg-[#dce5da] transition">Ver protocolos</a><a href={whatsapp} target="_blank" rel="noreferrer" className={botao}>Conversar pelo WhatsApp</a></div>
           </div>
           <figure className="rounded-[30px] overflow-hidden border border-[#352e2a]/15 bg-[#eadfd2]">
             <img src="/images/bronzeamento-artificial.jpg" alt="Máquina horizontal de bronzeamento aberta — imagem ilustrativa" fetchPriority="high" className="w-full aspect-[4/5] object-contain" />
             <figcaption className="px-5 py-3 text-xs text-[#62594f] bg-[#faf7f2]">Imagem ilustrativa do equipamento.</figcaption>
           </figure>
+        </div>
+      </section>
+      <section id="protocolos" className="px-5 lg:px-10 py-16 lg:py-24 bg-[#fffdf9]">
+        <div className="max-w-[1260px] mx-auto">
+          <p className="text-[#465947] uppercase tracking-[0.25em] text-sm font-bold mb-4">Romana Bronze</p>
+          <h2 className="font-serif text-4xl lg:text-6xl mb-5">Conheça nossos <span className="italic text-[#465947]">protocolos.</span></h2>
+          <p className="text-[#62594f] text-lg max-w-2xl mb-10">Escolha a opção que melhor combina com sua preferência. Todos os protocolos têm duração aproximada de 30 a 40 minutos.</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              { nome: 'Clássico', preco: 'R$ 69,00', itens: ['Bronzeamento na máquina', 'Sem biquíni de fita', 'Aplicação de parafina', 'Protetor facial'] },
+              { nome: 'Exclusivo', preco: 'R$ 129,00', itens: ['Bronzeamento na máquina', 'Com ou sem biquíni de fita', 'Protetor facial', 'Ativador de marquinha'] },
+              { nome: 'Premium', preco: 'R$ 159,00', itens: ['Bronzeamento na máquina', 'Com ou sem biquíni de fita', 'Protetor facial', 'Ativador de marquinha', 'Esfoliação corporal'] },
+            ].map((protocolo) => (
+              <article key={protocolo.nome} className="rounded-[28px] border border-[#352e2a]/15 bg-[#faf7f2] p-7 sm:p-8 flex flex-col">
+                <h3 className="font-serif text-3xl mb-3">{protocolo.nome}</h3>
+                <p className="text-[#465947] text-3xl font-bold mb-2">{protocolo.preco}</p>
+                <p className="text-[#62594f] text-sm mb-6">Duração: 30 a 40 minutos</p>
+                <ul className="space-y-3 mb-8 flex-1">{protocolo.itens.map((item) => <li key={item} className="flex gap-2 text-[#62594f]"><span aria-hidden="true" className="text-[#465947]">✓</span><span>{item}</span></li>)}</ul>
+                <a href={`https://wa.me/5511981201661?text=${encodeURIComponent(`Olá, vim pela página de bronzeamento do Romana e gostaria de agendar o protocolo ${protocolo.nome} (${protocolo.preco}).`)}`} target="_blank" rel="noreferrer" className={botao}>Consultar horários</a>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
       <section id="resultados" className="bg-[#eadfd2]/45 px-5 lg:px-10 py-16 lg:py-24 scroll-mt-6">
