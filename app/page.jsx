@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Salão de Beleza na Vila Romana e Lapa | Romana Hair Studio',
-  description: 'Cabeleireiro, manicure, Mega Hair e estética na Vila Romana, região da Lapa. Conheça os serviços do Romana na Rua Roma, 236. Agende pelo WhatsApp.',
-  openGraph: { title: 'Salão de Beleza na Vila Romana e Lapa | Romana Hair Studio', description: 'Cabeleireiro, manicure, Mega Hair e estética na Vila Romana, região da Lapa. Conheça os serviços do Romana na Rua Roma, 236. Agende pelo WhatsApp.' },
+  title: 'Salão de Beleza na Vila Romana, Lapa | Romana Hair Studio',
+  description: 'Cabeleireiro, manicure, Mega Hair e estética na Vila Romana, Lapa. Conheça os serviços do Romana na Rua Roma, 236. Agende pelo WhatsApp.',
+  openGraph: { title: 'Salão de Beleza na Vila Romana, Lapa | Romana Hair Studio', description: 'Cabeleireiro, manicure, Mega Hair e estética na Vila Romana, Lapa. Conheça os serviços do Romana na Rua Roma, 236. Agende pelo WhatsApp.' },
   alternates: { canonical: '/' },
 }
 
@@ -53,7 +53,7 @@ export default function RomanaHairLandingPage() {
         <div id="conteudo" className={styles.heroText}>
           <p className={styles.eyebrow}>SEU MOMENTO, NA VILA ROMANA</p>
           <h1>Sua beleza.<br />Seu estilo.<br /><em>Seu momento.</em></h1>
-          <p className={styles.intro}>Um espaço para cuidar de você na Vila Romana. Conheça nossos serviços de cabelo, unhas e estética e encontre seu próximo momento de beleza.</p>
+          <p className={styles.intro}>Um espaço para cuidar de você na Vila Romana, Lapa. Conheça nossos serviços de cabelo, unhas e estética e encontre seu próximo momento de beleza.</p>
           <div className={styles.actions}>
             <a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agende seu momento <span aria-hidden="true">↗</span></a>
             <a className={styles.textLink} href="#servicos">Explore nossos serviços ↓</a>
@@ -104,10 +104,10 @@ export default function RomanaHairLandingPage() {
       </section>
 
       <section id="contato" className={styles.contact}>
-        <div><p className={styles.eyebrow}>PERTINHO DE VOCÊ</p><h2>Seu próximo momento<br /><em>de cuidado começa aqui.</em></h2><p>Rua Roma, 236 · Vila Romana · São Paulo – SP<br />CEP 05050-090</p><p>Terça a sexta, 10h às 19h<br />Sábado, 9h às 19h</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Fale com a gente ↗</a><a className={styles.textLink} href="https://www.google.com/maps/search/?api=1&query=Rua+Roma+236+Lapa+São+Paulo" target="_blank" rel="noreferrer">Como chegar ↗</a></div></div>
+        <div><p className={styles.eyebrow}>PERTINHO DE VOCÊ</p><h2>Seu próximo momento<br /><em>de cuidado começa aqui.</em></h2><p>Rua Roma, 236 — Lapa, São Paulo/SP<br />CEP 05050-090</p><p>Terça a sexta, 10h às 19h<br />Sábado, 9h às 19h</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Fale com a gente ↗</a><a className={styles.textLink} href="https://www.google.com/maps/search/?api=1&query=Rua+Roma+236+Lapa+São+Paulo" target="_blank" rel="noreferrer">Como chegar ↗</a></div></div>
         <iframe title="Mapa Romana Hair Studio" loading="lazy" src="https://www.google.com/maps?q=Rua+Roma,+236+-+Lapa,+São+Paulo&output=embed" />
       </section>
-      <footer className={styles.footer}><a href="#inicio" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Beleza, cuidado e bem-estar na Vila Romana.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 98120-1661</a><a href="https://www.instagram.com/romanahairstudio/" target="_blank" rel="noreferrer">@romanahairstudio ↗</a></div></footer>
+      <footer className={styles.footer}><a href="#inicio" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Beleza, cuidado e bem-estar na Vila Romana, Lapa.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 98120-1661</a><a href="https://www.instagram.com/romanahairstudio/" target="_blank" rel="noreferrer">@romanahairstudio ↗</a></div></footer>
       <a className={styles.mobileBooking} href={whatsapp} target="_blank" rel="noreferrer">Agende seu momento pelo WhatsApp ↗</a>
     </main>
   )
