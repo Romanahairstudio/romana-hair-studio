@@ -53,7 +53,7 @@ export default function RomanaHairLandingPage() {
         <div id="conteudo" className={styles.heroText}>
           <p className={styles.eyebrow}>SEU MOMENTO, NA VILA ROMANA</p>
           <h1>Sua beleza.<br />Seu estilo.<br /><em>Seu momento.</em></h1>
-          <p className={styles.intro}>Seu salão de beleza na Vila Romana, região da Lapa, em São Paulo. Cabeleireiro, manicure, Mega Hair e estética na Rua Roma, 236, com atendimento para cuidar de você.</p>
+          <p className={styles.intro}>Um espaço para cuidar de você na Vila Romana. Conheça nossos serviços de cabelo, unhas e estética e encontre seu próximo momento de beleza.</p>
           <div className={styles.actions}>
             <a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agende seu momento <span aria-hidden="true">↗</span></a>
             <a className={styles.textLink} href="#servicos">Explore nossos serviços ↓</a>
