@@ -12,7 +12,7 @@ const services = [
 ]
 const team = [
   { name: 'John', id: 'john', specialty: 'Coloração, cortes, curtos e mechas', portrait: '/images/Johnf.webp', image: '/images/john-img_8190.webp', alt: 'Corte bob acobreado realizado por John' },
-  { name: 'Selma', id: 'selma', specialty: 'Hairstylist, visagismo, cortes e coloração', portrait: '/images/Selmaf.webp', image: '/images/selma-img_7673.webp', alt: 'Corte médio loiro em camadas realizado por Selma' },
+  { name: 'Selma', id: 'selma', specialty: 'Hairstylist, visagismo, cortes e coloração', portrait: '/images/Selmaf.webp', image: '/images/selma-img_6541.webp', alt: 'Corte longo castanho em camadas e pontas modeladas realizado por Selma' },
   { name: 'Vytor', id: 'vytor', specialty: 'Corte masculino, feminino e barba', portrait: '/images/Vytor2.webp', image: '/images/v2.webp', alt: 'Corte masculino com degradê realizado por Vytor' },
   { name: 'Rafaela', id: 'rafaela', specialty: 'Penteados para ocasiões especiais', portrait: '/images/rafaela-penteados.webp', image: '/images/rafaela-penteado-0486.webp', alt: 'Penteado semipreso com trança e ondas realizado por Rafaela' },
 ]
