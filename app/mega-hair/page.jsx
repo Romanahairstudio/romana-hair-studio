@@ -176,8 +176,8 @@ export default function MegaHairPage() {
             </article>
             <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
               <p className="text-[#465947] uppercase tracking-[0.22em] text-xs font-bold mb-3">Orçamento e pagamento</p>
-              <h3 className="font-serif text-3xl mb-4">Avaliação para um valor assertivo</h3>
-              <p className="text-[#62594f] leading-relaxed">Podemos informar uma estimativa inicial. O orçamento final é definido após a avaliação presencial e pode ser parcelado em até 12x sem juros.</p>
+              <h3 className="font-serif text-3xl mb-4">Quanto custa o Mega Hair?</h3>
+              <p className="text-[#62594f] leading-relaxed">O valor depende do cabelo escolhido, da quantidade de fios e do serviço: compra, aplicação ou manutenção. Fale com a equipe para uma estimativa. Após a avaliação presencial, confirmamos o orçamento. Pagamento em até 12x sem juros.</p>
             </article>
           </div>
         </div>
