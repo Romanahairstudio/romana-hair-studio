@@ -12,7 +12,7 @@ export default function RomanaHairLandingPage() {
   const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Salão.'
 
   const services = [
-    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/card-cabelo-novo.webp', alt: 'Cabelo loiro com camadas e finalização', fit: 'contain', href: '/resultados-cortes', linkText: 'Resultados de cortes e coloração, confira!' },
+    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/card-cabelo-novo.webp', alt: 'Cabelo loiro com camadas e finalização', fit: 'contain', href: '/cabeleireiro', linkText: 'Conheça os serviços de cabelo' },
     { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/card-penteados-novo.webp', alt: 'Coque baixo com acessório floral e mechas soltas', fit: 'contain', href: '/penteados', linkText: 'Resultados de Penteados, confira!' },
     { title: 'Mega Hair', text: 'Venda de cabelo, aplicação e manutenção de Mega Hair, com avaliação personalizada.', icon: '◖', img: '/images/card-mega-novo.webp', alt: 'Mega Hair longo em cabelo castanho iluminado', fit: 'contain', href: '/mega-hair' },
     { title: 'Estética Facial', text: 'Limpeza de pele, peeling, microagulhamento, hidratação, revitalização e dermaplaning.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop', href: '/estetica-facial', linkText: 'Conheça os procedimentos' },
