@@ -103,7 +103,8 @@ export default function MegaHairPage() {
           <div>
             <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana e Lapa</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[78px] leading-[0.96] tracking-[-0.035em] mb-7">
-              Mega Hair |\n              <span className="block italic text-[#465947]">Venda de cabelos, aplicação e manutenção.</span>
+              Mega Hair |
+              <span className="block italic text-[#465947]">Venda de cabelos, aplicação e manutenção.</span>
             </h1>
             <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-9">
               Encontre o cabelo ideal para o resultado que você deseja. Trabalhamos com cabelos brasileiros e vietnamitas para venda, aplicação e manutenção. Também cuidamos de alongamentos feitos em outros salões, após avaliação.
