@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Mega Hair na Vila Romana e Lapa | Aplicação e Manutenção',
-  description: 'Aplicação e manutenção de Mega Hair na Vila Romana, Lapa, São Paulo. Queratina, fita adesiva, ponto americano, microlink e nanocápsulas. Agende sua avaliação.',
+  title: 'Venda de Cabelo e Mega Hair na Vila Romana e Lapa',
+  description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, região da Lapa. Consulte opções e agende sua avaliação.',
+  openGraph: { title: 'Venda de Cabelo e Mega Hair na Vila Romana e Lapa', description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, região da Lapa. Consulte opções e agende sua avaliação.' },
   alternates: { canonical: '/mega-hair' },
 }
 
@@ -8,8 +9,8 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://www.romanahairstudio.com.br/mega-hair#service",
-  "name": "Mega Hair e alongamento capilar",
-  "description": "Aplicação e manutenção de Mega Hair na Vila Romana e Lapa, São Paulo, com avaliação presencial e técnicas de queratina, fita adesiva, ponto americano, microlink e nanocápsulas.",
+  "name": "Venda de cabelo, aplicação e manutenção de Mega Hair",
+  "description": "Venda de cabelos brasileiros e vietnamitas, aplicação e manutenção de Mega Hair na Vila Romana e Lapa, São Paulo, com avaliação personalizada.",
   "url": "https://www.romanahairstudio.com.br/mega-hair",
   "provider": {
     "@id": "https://www.romanahairstudio.com.br/#business"
@@ -29,6 +30,8 @@ const serviceSchema = {
 }
 
 const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
+
+const whatsappCompra = 'https://wa.me/5511981201661?text=' + encodeURIComponent('Olá! Vim pela página de Mega Hair do Romana e gostaria de consultar cabelos brasileiros e vietnamitas, opções e valores para compra.')
 
 const results = [
   { src: '/images/Cintia2-1.webp', alt: 'Resultado de Mega Hair com acabamento natural' },
@@ -60,6 +63,8 @@ const care = [
 ]
 
 const faqs = [
+  ['Vocês vendem cabelo para Mega Hair?', 'Sim. Trabalhamos com cabelos brasileiros e vietnamitas. Entre em contato para consultar disponibilidade, comprimento, textura, quantidade e valores. Nossa equipe orienta a escolha conforme o resultado desejado.'],
+  ['Fazem manutenção de Mega Hair colocado em outro salão?', 'Sim, atendemos clientes que fizeram o alongamento em outros salões, mediante avaliação do cabelo, da técnica e das condições dos pontos de aplicação. O orçamento é definido após essa avaliação.'],
   ['Quais técnicas vocês oferecem?', 'Trabalhamos com queratina, fita adesiva, ponto americano, microlink e nanocápsulas. A indicação é definida após avaliarmos o cabelo, o objetivo e a rotina da cliente.'],
   ['Quais opções de cabelo estão disponíveis?', 'Trabalhamos com cabelos brasileiros e vietnamitas. A cliente participa da escolha da opção mais adequada ao resultado desejado.'],
   ['O resultado pode ficar natural?', 'Sim. Cor, textura, quantidade de cabelo e distribuição dos fios são planejadas para buscar integração e movimento natural.'],
@@ -98,11 +103,11 @@ export default function MegaHairPage() {
           <div>
             <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana e Lapa</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[78px] leading-[0.96] tracking-[-0.035em] mb-7">
-              Comprimento e volume com
-              <span className="block italic text-[#465947]">acabamento natural.</span>
+              Cabelos para Mega Hair.
+              <span className="block italic text-[#465947]">Venda, aplicação e manutenção.</span>
             </h1>
             <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-9">
-              Realizamos aplicação e manutenção de Mega Hair na Vila Romana, próximo à Lapa. Cada atendimento começa com uma avaliação personalizada para entender seu cabelo, sua rotina e o resultado que você deseja.
+              Venda de cabelos brasileiros e vietnamitas, aplicação e manutenção de Mega Hair na Vila Romana, região da Lapa. Consulte opções de comprimento, textura e quantidade. Também atendemos clientes com alongamentos feitos em outros salões, mediante avaliação.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-5 text-white font-extrabold uppercase tracking-wide shadow-sm hover:-translate-y-1 transition">
@@ -164,9 +169,10 @@ export default function MegaHairPage() {
 
           <div className="grid md:grid-cols-2 gap-5">
             <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
-              <p className="text-[#465947] uppercase tracking-[0.22em] text-xs font-bold mb-3">Escolha dos cabelos</p>
+              <p className="text-[#465947] uppercase tracking-[0.22em] text-xs font-bold mb-3">Venda de cabelo para Mega Hair</p>
               <h3 className="font-serif text-3xl mb-4">Opções brasileiras e vietnamitas</h3>
-              <p className="text-[#62594f] leading-relaxed">A cliente participa da escolha da opção, cor, comprimento e volume mais adequados ao resultado que deseja alcançar.</p>
+              <p className="text-[#62594f] leading-relaxed">Consulte cabelos brasileiros e vietnamitas, com opções de cor, textura, comprimento e quantidade conforme a disponibilidade. Nossa equipe ajuda a escolher os fios para o resultado que você deseja alcançar.</p>
+              <a href={whatsappCompra} target="_blank" rel="noreferrer" className="inline-flex mt-6 rounded-2xl bg-[#465947] px-6 py-4 text-white font-bold">Consultar cabelos e valores</a>
             </article>
             <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
               <p className="text-[#465947] uppercase tracking-[0.22em] text-xs font-bold mb-3">Orçamento e pagamento</p>

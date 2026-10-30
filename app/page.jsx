@@ -1,4 +1,7 @@
 export const metadata = {
+  title: 'Salão de Beleza na Vila Romana e Lapa | Romana Hair Studio',
+  description: 'Cabeleireiro, manicure, Mega Hair e estética na Vila Romana, região da Lapa. Conheça os serviços do Romana na Rua Roma, 236. Agende pelo WhatsApp.',
+  openGraph: { title: 'Salão de Beleza na Vila Romana e Lapa | Romana Hair Studio', description: 'Cabeleireiro, manicure, Mega Hair e estética na Vila Romana, região da Lapa. Conheça os serviços do Romana na Rua Roma, 236. Agende pelo WhatsApp.' },
   alternates: { canonical: '/' },
 }
 
@@ -11,7 +14,7 @@ export default function RomanaHairLandingPage() {
   const services = [
     { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/card-cabelo-novo.webp', alt: 'Cabelo loiro com camadas e finalização', fit: 'contain', href: '/resultados-cortes', linkText: 'Resultados de cortes e coloração, confira!' },
     { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/card-penteados-novo.webp', alt: 'Coque baixo com acessório floral e mechas soltas', fit: 'contain', href: '/penteados', linkText: 'Resultados de Penteados, confira!' },
-    { title: 'Mega Hair', text: 'Técnicas seguras para comprimento, volume e transformação natural.', icon: '◖', img: '/images/card-mega-novo.webp', alt: 'Mega Hair longo em cabelo castanho iluminado', fit: 'contain', href: '/mega-hair' },
+    { title: 'Mega Hair', text: 'Venda de cabelo, aplicação e manutenção de Mega Hair, com avaliação personalizada.', icon: '◖', img: '/images/card-mega-novo.webp', alt: 'Mega Hair longo em cabelo castanho iluminado', fit: 'contain', href: '/mega-hair' },
     { title: 'Estética Facial', text: 'Limpeza de pele, peeling, microagulhamento, hidratação, revitalização e dermaplaning.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop', href: '/estetica-facial', linkText: 'Conheça os procedimentos' },
     { title: 'Estética Corporal', text: 'Drenagem linfática, massagens, criolipólise de placa e outros cuidados corporais.', icon: '♕', img: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=700&auto=format&fit=crop', alt: 'Massagem corporal relaxante em ambiente de spa', href: '/estetica-corporal', linkText: 'Conheça os procedimentos' },
     { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Resultados de Unhas, Veja!' },
@@ -50,7 +53,7 @@ export default function RomanaHairLandingPage() {
         <div id="conteudo" className={styles.heroText}>
           <p className={styles.eyebrow}>SEU MOMENTO, NA VILA ROMANA</p>
           <h1>Sua beleza.<br />Seu estilo.<br /><em>Seu momento.</em></h1>
-          <p className={styles.intro}>Um espaço para se sentir bem, renovar o visual e cuidar de você. Conheça o Romana Hair Studio.</p>
+          <p className={styles.intro}>Seu salão de beleza na Vila Romana, região da Lapa, em São Paulo. Cabeleireiro, manicure, Mega Hair e estética na Rua Roma, 236, com atendimento para cuidar de você.</p>
           <div className={styles.actions}>
             <a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agende seu momento <span aria-hidden="true">↗</span></a>
             <a className={styles.textLink} href="#servicos">Explore nossos serviços ↓</a>

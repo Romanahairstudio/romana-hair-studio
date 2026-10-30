@@ -1,6 +1,7 @@
 export const metadata = {
-  title: 'Alongamento e Unhas de Gel na Vila Romana | Romana Hair Studio',
-  description: 'Alongamento de unhas em gel, Molde F1, banho de gel, blindagem e esmaltação em gel na Vila Romana. Veja resultados reais e agende no Romana Hair Studio.',
+  title: 'Manicure e Unhas de Gel na Vila Romana | Romana',
+  description: 'Manicure, pedicure e unhas de gel na Vila Romana. Alongamento por R$ 200 e manutenção por R$ 175. Veja resultados e agende no Romana.',
+  openGraph: { title: 'Manicure e Unhas de Gel na Vila Romana | Romana', description: 'Manicure, pedicure e unhas de gel na Vila Romana. Alongamento por R$ 200 e manutenção por R$ 175. Veja resultados e agende no Romana.' },
   alternates: { canonical: 'https://www.romanahairstudio.com.br/unhas' },
 }
 
@@ -132,7 +133,7 @@ export default function UnhasPage() {
           <div>
             <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Romana Hair Studio · Vila Romana</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[72px] leading-[1.04] tracking-[-0.035em] mb-7">Alongamento e <span className="italic text-[#465947]">unhas de gel</span> na Vila Romana</h1>
-            <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-8">Conheça os trabalhos reais da nossa equipe e descubra opções de alongamento com Molde F1, banho de gel, blindagem e esmaltação em gel.</p>
+            <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-8">Manicure, pedicure e unhas de gel na Vila Romana, região da Lapa. Conheça os trabalhos reais da equipe e as opções de alongamento com Molde F1, banho de gel, blindagem e esmaltação em gel.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#resultados" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-4 text-[#465947] font-extrabold hover:bg-[#465947] hover:text-white transition">Ver resultados reais</a>
               <BotaoWhatsapp>Agendar pelo WhatsApp</BotaoWhatsapp>
