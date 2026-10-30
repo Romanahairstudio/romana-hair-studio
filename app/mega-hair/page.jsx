@@ -1,7 +1,7 @@
 export const metadata = {
-  title: 'Venda de Cabelo e Mega Hair na Vila Romana e Lapa',
-  description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, região da Lapa. Consulte opções e agende sua avaliação.',
-  openGraph: { title: 'Venda de Cabelo e Mega Hair na Vila Romana e Lapa', description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, região da Lapa. Consulte opções e agende sua avaliação.' },
+  title: 'Venda de Cabelo e Mega Hair na Vila Romana, Lapa',
+  description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.',
+  openGraph: { title: 'Venda de Cabelo e Mega Hair na Vila Romana, Lapa', description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.' },
   alternates: { canonical: '/mega-hair' },
 }
 
@@ -10,7 +10,7 @@ const serviceSchema = {
   "@type": "Service",
   "@id": "https://www.romanahairstudio.com.br/mega-hair#service",
   "name": "Venda de cabelo, aplicação e manutenção de Mega Hair",
-  "description": "Venda de cabelos brasileiros e vietnamitas, aplicação e manutenção de Mega Hair na Vila Romana e Lapa, São Paulo, com avaliação personalizada.",
+  "description": "Venda de cabelos brasileiros e vietnamitas, aplicação e manutenção de Mega Hair na Vila Romana, Lapa, São Paulo, com avaliação personalizada.",
   "url": "https://www.romanahairstudio.com.br/mega-hair",
   "provider": {
     "@id": "https://www.romanahairstudio.com.br/#business"
@@ -58,7 +58,7 @@ const techniques = [
 
 const care = [
   ['Higienização cuidadosa', 'Orientamos a lavagem e a secagem adequadas para preservar os fios e os pontos de aplicação.'],
-  ['Manutenção programada', 'Fazemos manutenção de Mega Hair na Vila Romana, próximo à Lapa. Em geral, o intervalo é de 60 a 90 dias, variando conforme o crescimento do cabelo, a técnica e os cuidados de cada cliente.'],
+  ['Manutenção programada', 'Fazemos manutenção de Mega Hair na Vila Romana, Lapa. Em geral, o intervalo é de 60 a 90 dias, variando conforme o crescimento do cabelo, a técnica e os cuidados de cada cliente.'],
   ['Rotina personalizada', 'Cada cabelo recebe recomendações próprias de escovação, produtos e cuidados em casa.'],
 ]
 
@@ -101,7 +101,7 @@ export default function MegaHairPage() {
       <section className="relative z-10 pt-32 pb-20 lg:pt-40 lg:pb-28 px-5 lg:px-10 overflow-hidden">
         <div className="max-w-[1260px] mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-12 items-center">
           <div>
-            <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana e Lapa</p>
+            <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana, Lapa</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[78px] leading-[0.96] tracking-[-0.035em] mb-7">
               Mega Hair |
               <span className="block italic text-[#465947]">Venda de cabelos, aplicação e manutenção.</span>
@@ -267,9 +267,9 @@ export default function MegaHairPage() {
         <div className="max-w-[1100px] mx-auto rounded-[34px] border border-[#465947]/35 bg-[#dce5da] p-8 lg:p-14 text-center">
           <p className="text-[#465947] uppercase tracking-[0.28em] text-sm font-bold mb-4">Romana Hair Studio</p>
           <h2 className="font-serif text-4xl lg:text-6xl mb-6">Vamos planejar sua transformação?</h2>
-          <p className="text-[#62594f] text-lg max-w-2xl mx-auto mb-9">Fale conosco pelo WhatsApp para agendar uma avaliação personalizada na Vila Romana.</p>
+          <p className="text-[#62594f] text-lg max-w-2xl mx-auto mb-9">Fale conosco pelo WhatsApp para agendar uma avaliação personalizada na Vila Romana, Lapa.</p>
           <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl bg-[#465947] px-9 py-5 text-white font-extrabold uppercase tracking-wide hover:scale-105 transition">Agendar minha avaliação</a>
-          <p className="text-[#62594f] text-sm mt-7">Rua Roma, 236 — Lapa, São Paulo, SP — Tel. (11) 3805-3149 — (11) 2609-3149 — (11) 98120-1661 — Estacionamento no local para clientes.</p>
+          <p className="text-[#62594f] text-sm mt-7">Rua Roma, 236 — Lapa, São Paulo/SP — Tel. (11) 3805-3149 — (11) 2609-3149 — (11) 98120-1661 — Estacionamento no local para clientes.</p>
         </div>
       </section>
 
