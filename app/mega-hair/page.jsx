@@ -1,3 +1,5 @@
+import HeaderBooking from '../HeaderBooking'
+
 export const metadata = {
   title: 'Venda de Cabelo e Mega Hair na Vila Romana, Lapa',
   description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.',
@@ -79,26 +81,24 @@ export default function MegaHairPage() {
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
 
-      <header className="fixed top-0 left-0 right-0 z-50 bg-[#faf7f2] backdrop-blur-xl border-b border-[#352e2a]/15">
-        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 h-20 flex items-center justify-between">
+      <header className="sticky top-0 z-50 bg-[#faf7f2] backdrop-blur-xl border-b border-[#352e2a]/15">
+        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 min-h-20 py-4 flex flex-wrap gap-4 items-center justify-between">
           <a href="/" className="leading-none" aria-label="Voltar para a página inicial">
             <div className="font-serif italic text-3xl tracking-wide">Romana</div>
             <div className="font-serif italic text-base text-[#62594f] ml-12 -mt-1">Hair Studio</div>
           </a>
-          <nav className="hidden lg:flex items-center gap-8 text-xs uppercase tracking-[0.12em] font-semibold text-[#62594f]">
+          <nav className="hidden xl:flex items-center gap-5 text-xs uppercase tracking-[0.12em] font-semibold text-[#62594f]">
             <a className="hover:text-[#465947] transition" href="#tecnicas">Técnicas</a>
             <a className="hover:text-[#465947] transition" href="#resultados">Resultados</a>
             <a className="hover:text-[#465947] transition" href="#avaliacao">Avaliação</a>
             <a className="hover:text-[#465947] transition" href="#cuidados">Cuidados</a>
             <a className="hover:text-[#465947] transition" href="#duvidas">Dúvidas</a>
           </nav>
-          <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-full bg-[#465947] px-5 sm:px-7 py-3 text-white text-sm font-extrabold hover:scale-105 transition">
-            Agendar avaliação
-          </a>
+          <HeaderBooking whatsapp={whatsapp} />
         </div>
       </header>
 
-      <section className="relative z-10 pt-32 pb-20 lg:pt-40 lg:pb-28 px-5 lg:px-10 overflow-hidden">
+      <section className="relative z-10 pt-12 pb-20 lg:pt-20 lg:pb-28 px-5 lg:px-10 overflow-hidden">
         <div className="max-w-[1260px] mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-12 items-center">
           <div>
             <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana, Lapa</p>

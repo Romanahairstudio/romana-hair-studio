@@ -1,3 +1,5 @@
+import HeaderBooking from '../HeaderBooking'
+
 import OnlineBooking from '../OnlineBooking'
 
 export const metadata = {
@@ -121,12 +123,12 @@ export default function UnhasPage() {
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <header className="relative z-20 border-b border-[#352e2a]/15 bg-[#faf7f2]">
-        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
+        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex flex-wrap items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início">
             <span className="block font-serif italic text-3xl tracking-wide">Romana</span>
             <span className="block font-serif italic text-base text-[#62594f] ml-12 -mt-1">Hair Studio</span>
           </a>
-          <a href="/" className="text-[#465947] text-sm font-bold hover:text-[#352e2a] transition">← Página inicial</a>
+          <div className="internal-header-actions"><a href="/" className="text-[#465947] text-sm font-bold hover:text-[#352e2a] transition">← Página inicial</a><HeaderBooking whatsapp={whatsapp} /></div>
         </div>
       </header>
 

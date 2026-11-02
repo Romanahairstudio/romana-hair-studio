@@ -1,3 +1,5 @@
+import HeaderBooking from '../HeaderBooking'
+
 export const metadata = {
   title: 'Cabeleireiro na Vila Romana, Lapa | Romana Hair Studio',
   description: 'Cortes femininos e masculinos, coloração, mechas, escova e tratamentos no Romana Hair Studio. Conheça a equipe na Vila Romana, Lapa e agende pelo WhatsApp.',
@@ -32,9 +34,9 @@ export default function CabeleireiroPage() {
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <header className="border-b border-[#352e2a]/15">
-        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
+        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex flex-wrap items-center justify-between gap-5">
           <a href="/" aria-label="Romana Hair Studio, página inicial" className="font-serif italic text-3xl">Romana <span className="block text-base ml-10">Hair Studio</span></a>
-          <a href="/" className="text-sm font-bold text-[#465947]">← Página inicial</a>
+          <div className="internal-header-actions"><a href="/" className="text-sm font-bold text-[#465947]">← Página inicial</a><HeaderBooking whatsapp={whatsapp} /></div>
         </div>
       </header>
       <section className="max-w-[1260px] mx-auto px-5 lg:px-10 py-16 lg:py-24 grid lg:grid-cols-2 gap-10 items-center">

@@ -1,3 +1,4 @@
+import HeaderBooking from './HeaderBooking'
 import OnlineBooking from './OnlineBooking'
 
 export const metadata = {
@@ -49,7 +50,7 @@ export default function RomanaHairLandingPage() {
         <nav aria-label="Navegação principal" className={styles.nav}>
           <a href="#servicos">Serviços</a><a href="#sobre">O Romana</a><a href="#transformacoes">Resultados</a><a href="#contato">Contato</a>
         </nav>
-        <div className="header-booking-actions"><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">WhatsApp <span aria-hidden="true">↗</span></a><OnlineBooking compact /></div>
+        <HeaderBooking whatsapp={whatsapp} />
       </header>
 
       <section id="inicio" className={styles.hero}>
