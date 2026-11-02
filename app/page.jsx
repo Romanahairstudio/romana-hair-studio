@@ -21,7 +21,7 @@ export default function RomanaHairLandingPage() {
     { title: 'Maquiagem', text: 'Produções para valorizar sua beleza em cada ocasião.', icon: '✧', img: '/images/maquiagem-card.webp', alt: 'Maquiagem com olhos iluminados e acabamento delicado', fit: 'contain', href: '/maquiagem', linkText: 'Veja nossos trabalhos!' },
     { title: 'Podologia', text: 'Cuidados especializados para seus pés, com remoção de calosidades, cuidado com as unhas e atendimento personalizado.', icon: '♧', img: '/images/podologia-1.jpg', alt: 'Procedimento de podologia com cuidado da planta do pé', href: '/podologia', linkText: 'Conheça o atendimento' },
     { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/bronzeamento-artificial.jpg', alt: 'Máquina de bronzeamento horizontal aberta — imagem ilustrativa', fit: 'contain', href: '/bronzeamento' },
-    { title: 'Depilação a Laser', text: 'Conheça a tecnologia Ácrus Triple Wave e consulte avaliação, áreas atendidas e valores.', icon: '◇', img: '/images/laser-triple-wave.svg', alt: 'Ilustração da tecnologia Triple Wave: 755, 808 e 1064 nanômetros', href: '/depilacao-a-laser', linkText: 'Conheça o laser Ácrus' },
+    { title: 'Depilação a Laser', text: 'Conheça a tecnologia Ácrus Triple Wave e consulte avaliação, áreas atendidas e valores.', icon: '◇', img: '/images/laser-acrus-atendimento.webp', alt: 'Imagem ilustrativa de depilação a laser nas axilas, com óculos de proteção', fit: 'contain', href: '/depilacao-a-laser', linkText: 'Conheça o laser Ácrus' },
     { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/cbm.webp'}
   ]
 
