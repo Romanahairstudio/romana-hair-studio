@@ -1,3 +1,5 @@
+import OnlineBooking from '../OnlineBooking'
+
 import styles from '../home.module.css'
 
 const title = 'Podologia na Vila Romana | Romana Hair Studio'
@@ -76,7 +78,7 @@ export default function PodologiaPage() {
           <h1>Cuidado para<br /><em>os seus pés.</em></h1>
           <p className={styles.intro}>Um momento de atenção aos seus pés com a Jose, nossa podóloga. Formada em Podologia em 2017, conta com quase 10 anos de experiência no cuidado com os pés.</p>
           <div className="mt-7 rounded-xl border border-[#465947]/20 bg-[#dce5da] p-6 max-w-md"><p className="text-sm text-[#465947] font-semibold">Sessão de profilaxia simples</p><p className="font-serif text-4xl my-2">R$ 160<span className="font-sans text-sm text-[#62594f]"> / sessão</span></p><p className="text-sm text-[#62594f]">Duração aproximada de 1h30 · Com agendamento</p></div>
-          <div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar com a Jose ↗</a><a className={styles.textLink} href="#cuidados">O que está incluído ↓</a></div>
+          <div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar com a Jose ↗</a><OnlineBooking /><a className={styles.textLink} href="#cuidados">O que está incluído ↓</a></div>
           <p className={styles.heroNote}>Rua Roma, 236 · Vila Romana · São Paulo</p>
         </div>
         <div className={styles.heroVisual}><img className={styles.heroImage} src="/images/podologia-jose.svg" alt="Jose, técnica em Podologia, ao lado da cadeira de atendimento no Romana" fetchPriority="high" style={{ objectPosition: 'center 30%' }} /><span className={styles.photoLabel}>Seu momento de cuidado.</span><span className={styles.photoCaption}>JOSE · PODOLOGIA NO ROMANA</span></div>
@@ -109,7 +111,7 @@ export default function PodologiaPage() {
       </section>
       <section className="bg-[#dce5da]/50 px-6 py-16"><div className="max-w-3xl mx-auto"><p className={styles.eyebrow}>ANTES DE AGENDAR</p><h2 className="font-serif text-4xl mb-8">Suas dúvidas, <em>respondidas.</em></h2>{perguntas.map(([question,answer]) => <details key={question} className="border-b border-[#465947]/20 py-5"><summary className="cursor-pointer font-semibold text-[#465947] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">{question}</summary><p className="text-[#62594f] text-sm mt-4 leading-relaxed">{answer}</p></details>)}</div></section>
       <section id="contato" className={styles.contact}>
-        <div><p className={styles.eyebrow}>SEU PRÓXIMO MOMENTO DE CUIDADO</p><h2>Agende sua sessão<br /><em>de podologia.</em></h2><p>Profilaxia simples · R$ 160 · Aproximadamente 1h30</p><p>Rua Roma, 236 · Vila Romana · São Paulo – SP<br />CEP 05050-090</p><p>Horário de funcionamento do salão:<br />Terça a sexta, 10h às 19h · Sábado, 9h às 19h<br />Consulte a disponibilidade da Jose pelo WhatsApp.</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar pelo WhatsApp ↗</a></div></div>
+        <div><p className={styles.eyebrow}>SEU PRÓXIMO MOMENTO DE CUIDADO</p><h2>Agende sua sessão<br /><em>de podologia.</em></h2><p>Profilaxia simples · R$ 160 · Aproximadamente 1h30</p><p>Rua Roma, 236 · Vila Romana · São Paulo – SP<br />CEP 05050-090</p><p>Horário de funcionamento do salão:<br />Terça a sexta, 10h às 19h · Sábado, 9h às 19h<br />Consulte a disponibilidade da Jose pelo WhatsApp.</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar pelo WhatsApp ↗</a><OnlineBooking /></div></div>
         <iframe title="Localização do Romana Hair Studio" loading="lazy" src="https://www.google.com/maps?q=Rua+Roma,+236+-+São+Paulo&output=embed" />
       </section>
       <footer className={styles.footer}><a href="/" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Podologia e bem-estar na Vila Romana.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 98120-1661</a><a href="/">Voltar à página inicial</a></div></footer>
