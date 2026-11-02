@@ -23,7 +23,7 @@ const serviceSchema = {
   "serviceType": "Bronzeamento no Romana Bronze"
 }
 
-const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20bronzeamento%20do%20Romana%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20e%20hor%C3%A1rios.'
+const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20bronzeamento%20do%20Romana%20e%20gostaria%20de%20informa%C3%A7%C3%B5es%20e%20hor%C3%A1rios.'
 const resultados = [
   ['01', 'Resultado de bronzeamento na região dos ombros e colo'],
   ['02', 'Resultado de bronzeamento nas costas'],
@@ -76,7 +76,7 @@ export default function BronzeamentoPage() {
                 <p className="text-[#465947] text-3xl font-bold mb-2">{protocolo.preco}</p>
                 <p className="text-[#62594f] text-sm mb-6">Duração: 30 a 40 minutos</p>
                 <ul className="space-y-3 mb-8 flex-1">{protocolo.itens.map((item) => <li key={item} className="flex gap-2 text-[#62594f]"><span aria-hidden="true" className="text-[#465947]">✓</span><span>{item}</span></li>)}</ul>
-                <a href={`https://wa.me/5511981201661?text=${encodeURIComponent(`Olá, vim pela página de bronzeamento do Romana e gostaria de agendar o protocolo ${protocolo.nome} (${protocolo.preco}).`)}`} target="_blank" rel="noreferrer" className={botao}>Consultar horários</a>
+                <a href={`https://wa.me/5511961990862?text=${encodeURIComponent(`Olá, vim pela página de bronzeamento do Romana e gostaria de agendar o protocolo ${protocolo.nome} (${protocolo.preco}).`)}`} target="_blank" rel="noreferrer" className={botao}>Consultar horários</a>
               </article>
             ))}
           </div>

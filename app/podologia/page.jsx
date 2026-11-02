@@ -43,7 +43,7 @@ const serviceSchema = {
   "serviceOutput": "Cuidados podológicos conforme avaliação profissional"
 }
 
-const whatsapp = 'https://wa.me/5511981201661?text=' + encodeURIComponent('Olá! Vim pela página de podologia do Romana e gostaria de agendar uma sessão com a Jose. Podem me informar os horários disponíveis?')
+const whatsapp = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Vim pela página de podologia do Romana e gostaria de agendar uma sessão com a Jose. Podem me informar os horários disponíveis?')
 const cuidados = [
   ['Calosidades', 'Remoção de calosidades durante a profilaxia simples.'],
   ['Excesso de pele', 'Cuidados com o excesso de pele dos pés.'],
@@ -116,7 +116,7 @@ export default function PodologiaPage() {
         <div><p className={styles.eyebrow}>SEU PRÓXIMO MOMENTO DE CUIDADO</p><h2>Agende sua sessão<br /><em>de podologia.</em></h2><p>Profilaxia simples · R$ 160 · Aproximadamente 1h30</p><p>Rua Roma, 236 · Vila Romana · São Paulo – SP<br />CEP 05050-090</p><p>Horário de funcionamento do salão:<br />Terça a sexta, 10h às 19h · Sábado, 9h às 19h<br />Consulte a disponibilidade da Jose pelo WhatsApp.</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar pelo WhatsApp ↗</a><OnlineBooking /></div></div>
         <iframe title="Localização do Romana Hair Studio" loading="lazy" src="https://www.google.com/maps?q=Rua+Roma,+236+-+São+Paulo&output=embed" />
       </section>
-      <footer className={styles.footer}><a href="/" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Podologia e bem-estar na Vila Romana.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 98120-1661</a><a href="/">Voltar à página inicial</a></div></footer>
+      <footer className={styles.footer}><a href="/" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Podologia e bem-estar na Vila Romana.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 96199-0862</a><a href="/">Voltar à página inicial</a></div></footer>
       <a className={styles.mobileBooking} href={whatsapp} target="_blank" rel="noreferrer">Agendar podologia pelo WhatsApp ↗</a>
     </main>
   )

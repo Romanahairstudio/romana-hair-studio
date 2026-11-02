@@ -21,7 +21,7 @@ const businessSchema = {
   '@id': siteUrl + '/#business',
   name: 'Romana Hair Studio',
   url: siteUrl,
-  telephone: '+55 11 98120-1661',
+  telephone: '+55 11 96199-0862',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Rua Roma, 236',

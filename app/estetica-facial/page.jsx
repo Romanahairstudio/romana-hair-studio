@@ -64,7 +64,7 @@ const serviceSchema = {
     "Dermaplaning"
   ]
 }
-const whatsapp = 'https://wa.me/5511981201661?text=' + encodeURIComponent('Olá! Vim pela página de Estética Facial do Romana e gostaria de consultar os procedimentos e horários.')
+const whatsapp = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Vim pela página de Estética Facial do Romana e gostaria de consultar os procedimentos e horários.')
 export default function Page() {
   return <main className="min-h-screen bg-[#faf7f2] text-[#352e2a]">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />

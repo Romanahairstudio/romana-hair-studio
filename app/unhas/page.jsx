@@ -69,7 +69,7 @@ const serviceSchema = {
   ]
 }
 
-const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20Unhas%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
+const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20Unhas%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
 
 const servicos = [
   { imagem: '/images/unhas-servico-01.webp', nome: 'Alongamento com Molde F1', descricao: 'Técnica de construção em gel que permite definir comprimento e formato conforme o resultado desejado e as condições das unhas naturais.' },
