@@ -16,3 +16,13 @@ a.online-booking-link:focus-visible{outline:3px solid #465947;outline-offset:4px
 @media(max-width:1000px){.header-booking-actions{gap:8px}.header-booking-actions>a,.header-booking-actions .online-booking-link{padding:12px 14px;gap:8px}}
 @media(max-width:700px){.header-booking-actions{margin-left:auto}.header-booking-actions>a,.header-booking-actions .online-booking-link{padding:10px 12px;min-height:44px;font-size:12px}}
 @media(max-width:480px){.header-booking-actions{width:100%;margin-left:0}.header-booking-actions>a,.header-booking-actions>.online-booking{flex:1}.header-booking-actions .online-booking-link{width:100%}}
+
+a.header-whatsapp-link{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:48px;padding:13px 24px;border:1px solid #465947;border-radius:6px;color:#fff;background:#465947;font:600 14px/1.5 Arial,Helvetica,sans-serif;text-decoration:none}
+a.header-whatsapp-link:hover{background:#354436}
+a.header-whatsapp-link:focus-visible{outline:3px solid #465947;outline-offset:4px}
+.internal-header-actions{display:flex;align-items:center;flex-wrap:wrap;justify-content:flex-end;gap:18px}
+@media(max-width:700px){.internal-header-actions{width:100%;justify-content:flex-start}.internal-header-actions .header-booking-actions{margin-left:0}}
+
+header:has(> .header-booking-actions){flex-wrap:wrap}
+@media(max-width:1000px){.header-booking-actions>a.header-whatsapp-link{padding:12px 14px;gap:8px}}
+@media(max-width:700px){.header-booking-actions>a.header-whatsapp-link{padding:10px 12px;min-height:44px;font-size:12px}}

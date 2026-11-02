@@ -1,3 +1,5 @@
+import HeaderBooking from '../HeaderBooking'
+
 export const metadata = {
   title: 'Bronzeamento na Vila Romana | Romana Bronze',
   description: 'Conheça os resultados de bronzeamento do Romana Bronze, na Vila Romana, São Paulo. Veja a galeria e converse com a equipe para agendar.',
@@ -39,9 +41,9 @@ export default function BronzeamentoPage() {
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <header className="border-b border-[#352e2a]/15">
-        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex items-center justify-between gap-5">
+        <div className="max-w-[1260px] mx-auto px-5 lg:px-10 py-5 flex flex-wrap items-center justify-between gap-5">
           <a href="/" className="leading-none" aria-label="Romana Hair Studio, voltar ao início"><span className="block font-serif italic text-3xl">Romana</span><span className="block font-serif italic text-base ml-12 -mt-1">Hair Studio</span></a>
-          <a href="/" className="text-[#465947] text-sm font-bold hover:underline">← Página inicial</a>
+          <div className="internal-header-actions"><a href="/" className="text-[#465947] text-sm font-bold hover:underline">← Página inicial</a><HeaderBooking whatsapp={whatsapp} /></div>
         </div>
       </header>
       <section className="px-5 lg:px-10 py-16 lg:py-24">

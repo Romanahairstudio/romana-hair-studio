@@ -1,3 +1,5 @@
+import HeaderBooking from '../../HeaderBooking'
+
 export const metadata = {
   title: 'Agendar Avaliação de Mega Hair | Romana Hair Studio',
   description: 'Agende sua avaliação personalizada de Mega Hair no Romana Hair Studio, na Vila Romana, pelo WhatsApp.',
@@ -31,7 +33,7 @@ export default function AgendarMegaHairPage() {
       />
 
       <header className="relative z-10 border-b border-[#352e2a]/15 bg-[#faf7f2] backdrop-blur-xl">
-        <div className="max-w-[1100px] mx-auto px-5 lg:px-10 h-24 flex items-center justify-between">
+        <div className="max-w-[1100px] mx-auto px-5 lg:px-10 min-h-24 py-4 flex flex-wrap gap-4 items-center justify-between">
           <a href="/" className="flex items-center gap-3" aria-label="Romana Hair Studio — voltar para a página inicial">
             <img
               src="/images/romana-hair-studio-logo.svg"
@@ -45,9 +47,9 @@ export default function AgendarMegaHairPage() {
               <div className="font-serif italic text-base text-[#465947] ml-12 -mt-1">Hair Studio</div>
             </div>
           </a>
-          <a href="/mega-hair" className="text-sm font-bold text-[#465947] hover:text-[#352e2a] transition">
+          <div className="internal-header-actions"><a href="/mega-hair" className="text-sm font-bold text-[#465947] hover:text-[#352e2a] transition">
             Voltar para Mega Hair
-          </a>
+          </a><HeaderBooking whatsapp={whatsapp} /></div>
         </div>
       </header>
 

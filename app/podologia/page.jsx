@@ -1,3 +1,5 @@
+import HeaderBooking from '../HeaderBooking'
+
 import OnlineBooking from '../OnlineBooking'
 
 import styles from '../home.module.css'
@@ -70,7 +72,7 @@ export default function PodologiaPage() {
       <header className={styles.header}>
         <a href="/" className={styles.logo} aria-label="Romana Hair Studio — página inicial">Romana<span>Hair Studio</span></a>
         <nav aria-label="Navegação de podologia" className={styles.nav}><a href="#tratamentos">Serviços e valores</a><a href="#profissional">Conheça a Jose</a><a href="/">← Início</a></nav>
-        <a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar ↗</a>
+        <HeaderBooking whatsapp={whatsapp} />
       </header>
       <section className={styles.hero}>
         <div id="conteudo" className={styles.heroText}>

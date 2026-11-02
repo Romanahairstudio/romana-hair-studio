@@ -1,3 +1,5 @@
+import HeaderBooking from '../HeaderBooking'
+
 import styles from '../home.module.css'
 
 const title = 'Depilação a Laser na Vila Romana, Lapa | Romana'
@@ -25,7 +27,7 @@ export default function LaserPage() {
   return <main className={styles.home}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
     <a className={styles.skip} href="#conteudo">Ir para o conteúdo</a>
-    <header className={styles.header}><a href="/" className={styles.logo}>Romana<span>Hair Studio</span></a><nav className={styles.nav} aria-label="Navegação de depilação a laser"><a href="#tecnologia">Laser Ácrus</a><a href="#valores">Valores</a><a href="#duvidas">Dúvidas</a><a href="/">Início</a></nav><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Consultar horários ↗</a></header>
+    <header className={styles.header}><a href="/" className={styles.logo}>Romana<span>Hair Studio</span></a><nav className={styles.nav} aria-label="Navegação de depilação a laser"><a href="#tecnologia">Laser Ácrus</a><a href="#valores">Valores</a><a href="#duvidas">Dúvidas</a><a href="/">Início</a></nav><HeaderBooking whatsapp={whatsapp} /></header>
     <section id="conteudo" className={styles.section}>
       <nav aria-label="Caminho da página" className="text-sm text-[#62594f] mb-10"><a href="/" className="underline">Início</a> / Depilação a laser</nav>
       <div className="grid lg:grid-cols-2 gap-12 items-center"><div><p className={styles.eyebrow}>TECNOLOGIA ÁCRUS · ROMANA HAIR STUDIO</p><h1 className="font-serif text-5xl sm:text-6xl leading-tight">Depilação a laser<br /><em>na Vila Romana.</em></h1><p className="text-lg leading-relaxed text-[#62594f] mt-7">Você está cansado de métodos tradicionais de depilação que causam desconforto e não oferecem resultados duradouros? Conheça o Laser Acrus da HTM, a revolução em depilação a laser!</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Consultar avaliação pelo WhatsApp ↗</a></div><p className={styles.heroNote}>Rua Roma, 236 · Vila Romana · Região da Lapa · São Paulo</p></div>
