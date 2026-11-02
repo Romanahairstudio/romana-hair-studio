@@ -31,9 +31,9 @@ const serviceSchema = {
   ]
 }
 
-const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
+const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
 
-const whatsappCompra = 'https://wa.me/5511981201661?text=' + encodeURIComponent('Olá! Vim pela página de Mega Hair do Romana e gostaria de consultar cabelos brasileiros e vietnamitas, opções e valores para compra.')
+const whatsappCompra = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Vim pela página de Mega Hair do Romana e gostaria de consultar cabelos brasileiros e vietnamitas, opções e valores para compra.')
 
 const results = [
   { src: '/images/Cintia2-1.webp', alt: 'Resultado de Mega Hair com acabamento natural' },
@@ -269,7 +269,7 @@ export default function MegaHairPage() {
           <h2 className="font-serif text-4xl lg:text-6xl mb-6">Vamos planejar sua transformação?</h2>
           <p className="text-[#62594f] text-lg max-w-2xl mx-auto mb-9">Fale conosco pelo WhatsApp para agendar uma avaliação personalizada na Vila Romana, Lapa.</p>
           <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl bg-[#465947] px-9 py-5 text-white font-extrabold uppercase tracking-wide hover:scale-105 transition">Agendar minha avaliação</a>
-          <p className="text-[#62594f] text-sm mt-7">Rua Roma, 236 — Lapa, São Paulo/SP — Tel. (11) 3805-3149 — (11) 2609-3149 — (11) 98120-1661 — Estacionamento no local para clientes.</p>
+          <p className="text-[#62594f] text-sm mt-7">Rua Roma, 236 — Lapa, São Paulo/SP — Tel. (11) 3805-3149 — (11) 2609-3149 — (11) 96199-0862 — Estacionamento no local para clientes.</p>
         </div>
       </section>
 

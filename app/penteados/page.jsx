@@ -33,7 +33,7 @@ const penteados = [
 ]
 
 export default function PenteadosPage() {
-  const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20penteados%20e%20gostaria%20de%20conversar%20sobre%20um%20agendamento%20com%20a%20Rafaela.'
+  const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20penteados%20e%20gostaria%20de%20conversar%20sobre%20um%20agendamento%20com%20a%20Rafaela.'
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">

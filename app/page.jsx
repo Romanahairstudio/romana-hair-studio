@@ -12,7 +12,7 @@ import Image from 'next/image'
 import styles from './home.module.css'
 
 export default function RomanaHairLandingPage() {
-  const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Salão.'
+  const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Salão.'
 
   const services = [
     { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/card-cabelo-novo.webp', alt: 'Cabelo loiro com camadas e finalização', fit: 'contain', href: '/cabeleireiro', linkText: 'Conheça os serviços de cabelo' },
@@ -112,7 +112,7 @@ export default function RomanaHairLandingPage() {
         <div><p className={styles.eyebrow}>PERTINHO DE VOCÊ</p><h2>Seu próximo momento<br /><em>de cuidado começa aqui.</em></h2><p>Rua Roma, 236 — Lapa, São Paulo/SP<br />CEP 05050-090</p><p>Terça a sexta, 10h às 19h<br />Sábado, 9h às 19h</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar pelo WhatsApp ↗</a><OnlineBooking /><a className={styles.textLink} href="https://maps.app.goo.gl/PTYUY4BER2vXNS6g9" target="_blank" rel="noreferrer">Como chegar ↗</a></div></div>
         <iframe title="Mapa Romana Hair Studio" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2736842771437!2d-46.70158538835646!3d-23.52265687873811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef86ffd3a9b3d%3A0xa83cce0dd5e05669!2sRomana%20Hair%20Studio!5e0!3m2!1spt-BR!2sus!4v1793401486434!5m2!1spt-BR!2sus" />
       </section>
-      <footer className={styles.footer}><a href="#inicio" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Beleza, cuidado e bem-estar na Vila Romana, Lapa.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 98120-1661</a><a href="https://www.instagram.com/romanahairstudio/" target="_blank" rel="noreferrer">@romanahairstudio ↗</a></div></footer>
+      <footer className={styles.footer}><a href="#inicio" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Beleza, cuidado e bem-estar na Vila Romana, Lapa.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 96199-0862</a><a href="https://www.instagram.com/romanahairstudio/" target="_blank" rel="noreferrer">@romanahairstudio ↗</a></div></footer>
       <a className={styles.mobileBooking} href={whatsapp} target="_blank" rel="noreferrer">Agende seu momento pelo WhatsApp ↗</a>
     </main>
   )

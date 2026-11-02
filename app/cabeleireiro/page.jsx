@@ -18,7 +18,7 @@ const team = [
   { name: 'Vytor', id: 'vytor', specialty: 'Corte masculino, feminino e barba', portrait: '/images/Vytor2.webp', image: '/images/v2.webp', alt: 'Corte masculino com degradê realizado por Vytor' },
   { name: 'Rafaela', id: 'rafaela', specialty: 'Penteados para ocasiões especiais', portrait: '/images/rafaela-penteados.webp', image: '/images/rafaela-penteado-0486.webp', alt: 'Penteado semipreso com trança e ondas realizado por Rafaela' },
 ]
-const whatsapp = 'https://wa.me/5511981201661?text=' + encodeURIComponent('Olá! Vim pela página de cabeleireiro e gostaria de consultar valores e horários.')
+const whatsapp = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Vim pela página de cabeleireiro e gostaria de consultar valores e horários.')
 const schema = {
   '@context': 'https://schema.org', '@type': 'Service',
   '@id': 'https://www.romanahairstudio.com.br/cabeleireiro#service',

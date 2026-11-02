@@ -37,7 +37,7 @@ const resultados = [
 ]
 
 export default function MaquiagemPage() {
-  const whatsapp = 'https://wa.me/5511981201661?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20Maquiagem%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
+  const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20Maquiagem%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio.'
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
