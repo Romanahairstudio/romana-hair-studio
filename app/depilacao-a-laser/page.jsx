@@ -14,7 +14,7 @@ const perguntas = [
   ['E se a pele estiver bronzeada?', 'Informe qualquer exposição solar ou bronzeamento recente, inclusive artificial. A equipe deve avaliar a pele e orientar se é necessário adiar a sessão. Não faça bronzeamento para preparar a pele para o laser.'],
   ['O Ácrus é indicado para áreas sensíveis?', 'Áreas como axilas, virilha e determinadas regiões do rosto podem ser avaliadas para depilação a laser. A indicação depende da região exata, das características da pele e dos pelos e das orientações do fabricante. A aplicação exige proteção ocular adequada; consulte a equipe sobre as áreas atendidas no Romana.'],
   ['Quais são os cuidados após a sessão?', 'Evite exposição solar direta e bronzeamento e use proteção solar nas áreas expostas, conforme orientação profissional. Hidrate a pele com produto indicado e evite produtos irritantes até a liberação da profissional. Os cuidados e o tempo de restrição são individualizados. Avise a equipe se houver reação intensa ou persistente.'],
-  ['Quais áreas posso tratar e quanto custa?', 'Atendemos o público feminino e masculino para depilação a laser em diferentes áreas do corpo, como rosto, axilas, braços, pernas, tronco, costas, virilha e glúteos, sempre mediante avaliação. A profissional define a indicação e os limites de aplicação em cada região. Consulte a recepção sobre valores por área, condições e agenda.'],
+  ['Quais áreas posso tratar e quanto custa?', 'Atendemos o público feminino e masculino para depilação a laser em diferentes áreas do corpo, como rosto, axilas, braços, pernas, tronco, costas, virilha, partes íntimas e glúteos, sempre mediante avaliação. A profissional define a indicação e os limites de aplicação em cada região. Consulte a recepção sobre valores por área, condições e agenda.'],
 ]
 const schema = { '@context': 'https://schema.org', '@graph': [
   { '@type': 'Service', '@id': url + '#service', name: 'Depilação a laser Ácrus', description, url, serviceType: 'Depilação a laser', provider: { '@id': 'https://www.romanahairstudio.com.br/#business' }, areaServed: ['Vila Romana', 'Lapa', 'São Paulo'] },
@@ -40,7 +40,7 @@ export default function LaserPage() {
         ['Pernas e pés', 'Coxas, pernas, joelhos, pés e dedos, com planejamento conforme as regiões desejadas.'],
         ['Tronco', 'Peito, abdômen e região da linha alba, mediante avaliação individual.'],
         ['Costas e ombros', 'Costas, ombros e nuca, conforme indicação e planejamento do atendimento.'],
-        ['Virilha e glúteos', 'Regiões externas da virilha e dos glúteos, com definição dos limites de aplicação na avaliação.'],
+        ['Virilha, partes íntimas e glúteos', 'Depilação íntima feminina e masculina, incluindo virilha, região pubiana, perianal e glúteos, mediante avaliação profissional. A aplicação é realizada na pele externa, respeitando os limites de cada região e as indicações do equipamento.'],
       ].map(([name,text]) => <article key={name} className={card}><h3 className="font-serif text-2xl mb-4">{name}</h3><p className="text-[#62594f] leading-relaxed">{text}</p></article>)}</div>
       <p className="text-sm text-[#62594f] mt-6">Você pode consultar o atendimento para as diferentes áreas do corpo. A aplicação em cada região depende da avaliação profissional e das indicações do equipamento.</p>
       <div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Consultar áreas e valores pelo WhatsApp ↗</a></div>
