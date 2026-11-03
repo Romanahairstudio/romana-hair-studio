@@ -66,8 +66,7 @@ export default function RomanaHairLandingPage() {
           <p className={styles.heroNote}>Cabelo, unhas e bem-estar. Tudo pertinho de você.</p>
         </div>
         <div className={styles.heroVisual}>
-          <Image className={styles.heroImage} src="/images/hero-modelo-loira.webp" alt="Modelo com cabelos loiros longos e ondulados — imagem ilustrativa criada com IA" width={1120} height={1358} sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 620px" priority />
-          <span className={styles.photoLabel}>Beleza com a sua essência.</span>
+          <Image className={styles.heroImage} src="/images/fachada-romana-inicio.webp" alt="Fachada e entrada do Romana Hair Studio na Rua Roma, 236, Vila Romana, São Paulo" width={762} height={1020} sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 620px" priority />
           <span className={styles.photoCaption}>CUIDADO EM CADA DETALHE</span>
         </div>
       </section>

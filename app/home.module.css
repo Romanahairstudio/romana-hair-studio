@@ -11,3 +11,7 @@
 @supports (content-visibility: auto) {
   .testimonials, .contact { content-visibility: auto; contain-intrinsic-size: auto 650px; }
 }
+
+/* Preserva a fachada e a entrada na foto de apresentação. */
+.heroImage{height:auto;aspect-ratio:762/1020;object-position:center;border-radius:16px}
+.heroVisual:before{border-radius:16px}
