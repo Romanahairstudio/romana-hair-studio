@@ -35,12 +35,6 @@ export default function RomanaHairLandingPage() {
     { title: 'Ambiente Acolhedor', text: 'Conforto e bem-estar em cada detalhe', icon: '♡' }
   ]
 
-  const haircutPreview = [
-    { image: '/images/j3.webp', alt: 'Cabelo em camadas com movimento' },
-    { image: '/images/s1.webp', alt: 'Corte em camadas e finalização ruiva' },
-    { image: '/images/v2.webp', alt: 'Corte masculino com degradê' },
-    { image: '/images/rafaela-penteado-0486.webp', alt: 'Penteado semipreso com trança e ondas castanhas' }
-  ]
 
   return (
     <main className={styles.home}>
@@ -99,7 +93,7 @@ export default function RomanaHairLandingPage() {
 
       <section id="transformacoes" className={styles.section}>
         <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>FEITO NO ROMANA</p><h2>Resultados reais.<br /><em>Beleza do seu jeito.</em></h2></div><a className={styles.textLink} href="/resultados-cortes">Veja todos os resultados ↗</a></div>
-        <div className={styles.results}>{haircutPreview.map(item => <a key={item.image} href="/resultados-cortes"><Image src={item.image} alt={item.alt} width={600} height={800} sizes="(max-width: 640px) 45vw, 23vw" /><span><span>Ver resultados</span><span aria-hidden="true">↗</span></span></a>)}</div>
+        <div className={styles.results} style={{ gridTemplateColumns: 'minmax(0, 420px)' }}><a href="/resultados-cortes"><Image src="/images/j3.webp" alt="Cabelo em camadas com movimento, resultado do Romana Hair Studio" width={600} height={800} sizes="(max-width: 480px) 90vw, 420px" /><span><span>Ver todos os resultados</span><span aria-hidden="true">↗</span></span></a></div>
       </section>
 
       <section id="depoimentos" className={styles.testimonials}>
