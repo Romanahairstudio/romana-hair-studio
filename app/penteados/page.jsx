@@ -1,8 +1,8 @@
 import HeaderBooking from '../HeaderBooking'
 
 export const metadata = {
-  title: 'Penteados com Rafaela | Romana Hair Studio',
-  description: 'Penteados para festas e ocasiões especiais na Vila Romana, São Paulo. Conheça os trabalhos da Rafaela no Romana Hair Studio e agende.',
+  title: 'Penteados na Vila Romana | Romana Hair Studio',
+  description: 'Penteados para festas e ocasiões especiais na Vila Romana, São Paulo. Conheça os trabalhos do Romana no Romana Hair Studio e agende.',
   alternates: { canonical: '/penteados' },
 }
 
@@ -11,7 +11,7 @@ const serviceSchema = {
   "@type": "Service",
   "@id": "https://www.romanahairstudio.com.br/penteados#service",
   "name": "Penteados para ocasiões especiais",
-  "description": "Serviço de penteados para festas e ocasiões especiais realizados pela Rafaela no Romana Hair Studio, Vila Romana, São Paulo.",
+  "description": "Serviço de penteados para festas e ocasiões especiais realizados no Romana Hair Studio, Vila Romana, São Paulo.",
   "url": "https://www.romanahairstudio.com.br/penteados",
   "provider": {
     "@id": "https://www.romanahairstudio.com.br/#business"
@@ -33,7 +33,7 @@ const penteados = [
 ]
 
 export default function PenteadosPage() {
-  const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20penteados%20e%20gostaria%20de%20conversar%20sobre%20um%20agendamento%20com%20a%20Rafaela.'
+  const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pela%20p%C3%A1gina%20de%20penteados%20e%20gostaria%20de%20conversar%20sobre%20um%20agendamento%20no%20Romana.'
 
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a] selection:bg-[#dce5da] selection:text-[#352e2a]">
@@ -53,31 +53,27 @@ export default function PenteadosPage() {
           <div>
             <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Romana Hair Studio · Vila Romana</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[78px] leading-[0.97] tracking-[-0.035em] mb-7">Penteados para o seu <span className="block italic text-[#465947]">momento especial.</span></h1>
-            <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-8">Rafaela cria penteados pensando no seu estilo, na ocasião e em como você quer se sentir. Converse com nossa equipe para planejar sua produção.</p>
+            <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-8">Criamos penteados pensando no seu estilo, na ocasião e em como você quer se sentir. Converse com nossa equipe para planejar sua produção.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#resultados" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-5 text-[#465947] font-extrabold uppercase tracking-wide hover:bg-[#465947] hover:text-white transition">Ver penteados</a>
               <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-5 text-white font-extrabold uppercase tracking-wide shadow-sm hover:-translate-y-1 transition">Conversar pelo WhatsApp</a>
             </div>
           </div>
           <div className="relative rounded-[34px] border border-[#352e2a]/15 bg-[#fffdf9] overflow-hidden shadow-sm">
-            <img src="/images/rafaela-penteados.webp" alt="Rafaela, profissional de penteados do Romana Hair Studio" className="w-full aspect-[4/5] object-cover object-top" />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#faf7f2]/95 via-[#faf7f2]/30 to-transparent px-7 pb-8 pt-24">
-              <h2 className="font-serif text-4xl">Rafaela</h2>
-              <p className="text-[#62594f] mt-1">Profissional de penteados</p>
-            </div>
+            <img src="/images/rafaela-penteado-0486.webp" alt="Penteado semipreso com trança e ondas realizado no Romana Hair Studio" className="w-full aspect-[4/5] object-cover object-top" />
           </div>
         </div>
       </section>
 
       <section id="resultados" className="relative z-10 bg-[#eadfd2]/45 px-5 lg:px-10 py-20 lg:py-24 scroll-mt-6">
         <div className="max-w-[1260px] mx-auto">
-          <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-4">Trabalhos da Rafaela</p>
+          <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-4">Resultados do Romana</p>
           <h2 className="font-serif text-4xl lg:text-6xl mb-5">Penteados <span className="italic text-[#465947]">realizados no Romana.</span></h2>
           <p className="text-[#62594f] text-lg leading-relaxed max-w-2xl mb-10">Diferentes formas de prender, trançar e valorizar o cabelo para cada ocasião.</p>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {penteados.map(({ src, alt }, index) => (
               <figure key={src} className={`aspect-[4/5] rounded-[26px] overflow-hidden bg-[#fffdf9] border border-[#352e2a]/15 ${index === 6 ? 'lg:col-start-2' : ''}`}>
-                <img src={src} alt={`${alt}, trabalho da Rafaela no Romana Hair Studio`} loading="lazy" className="h-full w-full object-cover object-center" />
+                <img src={src} alt={`${alt}, trabalho realizado no Romana Hair Studio`} loading="lazy" className="h-full w-full object-cover object-center" />
               </figure>
             ))}
           </div>
@@ -89,9 +85,9 @@ export default function PenteadosPage() {
           <div>
             <p className="text-[#465947] uppercase tracking-[0.25em] text-sm font-bold mb-3">Seu atendimento</p>
             <h2 className="font-serif text-3xl lg:text-4xl">Vamos planejar o penteado?</h2>
-            <p className="text-[#62594f] mt-3 max-w-xl">Conte a data, a ocasião e o estilo que você imagina. Nossa equipe ajuda você a agendar com a Rafaela.</p>
+            <p className="text-[#62594f] mt-3 max-w-xl">Conte a data, a ocasião e o estilo que você imagina. Nossa equipe ajuda você a agendar seu atendimento.</p>
           </div>
-          <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex self-start sm:self-auto rounded-xl border border-[#465947] px-7 py-4 text-[#465947] font-bold hover:bg-[#465947] hover:text-white transition">Agendar com a Rafaela</a>
+          <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex self-start sm:self-auto rounded-xl border border-[#465947] px-7 py-4 text-[#465947] font-bold hover:bg-[#465947] hover:text-white transition">Agendar pelo WhatsApp</a>
         </div>
       </section>
       <footer className="relative z-10 border-t border-[#352e2a]/15 px-5 py-8 text-center text-sm text-[#62594f]">Romana Hair Studio · Rua Roma, 236 · Vila Romana, São Paulo</footer>
