@@ -55,7 +55,7 @@ export default function BronzeamentoPage() {
             <div className="flex flex-col sm:flex-row gap-4"><a href="#protocolos" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-4 text-[#465947] font-bold hover:bg-[#dce5da] transition">Ver protocolos</a><a href={whatsapp} target="_blank" rel="noreferrer" className={botao}>Conversar pelo WhatsApp</a></div>
           </div>
           <figure className="rounded-[30px] overflow-hidden border border-[#352e2a]/15 bg-[#eadfd2]">
-            <img src="/images/bronzeamento-artificial.jpg" alt="Máquina horizontal de bronzeamento aberta — imagem ilustrativa" fetchPriority="high" className="w-full aspect-[4/5] object-contain" />
+            <img src="/images/card-bronze-romana.webp" alt="Imagem de ambiente de bronzeamento com máquina horizontal e letreiro Romana" fetchPriority="high" className="w-full aspect-[4/5] object-contain" />
             <figcaption className="px-5 py-3 text-xs text-[#62594f] bg-[#faf7f2]">Imagem ilustrativa do equipamento.</figcaption>
           </figure>
         </div>
