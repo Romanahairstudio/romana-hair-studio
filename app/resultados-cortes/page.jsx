@@ -18,63 +18,103 @@ const gallerySchema = {
   }
 }
 
-const professionals = [
+const works = [
   {
-    name: 'John',
-    id: 'john',
-    specialty: 'Coloração, Cortes & Curtos e Mechas',
-    portrait: '/images/Johnf.webp',
-    works: [
-      { src: '/images/john-img_5887.webp', alt: 'Corte chanel com franja e acabamento liso' },
-      { src: '/images/john-img_6240.webp', alt: 'Corte longo em camadas com contorno do rosto' },
-      { src: '/images/j2.webp', alt: 'Cabelo longo com camadas e contorno do rosto' },
-      { src: '/images/john-img_8135.webp', alt: 'Corte longo em camadas com pontas modeladas' },
-      { src: '/images/john-img_8190.webp', alt: 'Corte bob acobreado visto de perfil' },
-      { src: '/images/john-img_8513.webp', alt: 'Corte médio em camadas com mechas e movimento' },
-      { src: '/images/j3.webp', alt: 'Corte feminino em camadas com movimento' },
-      { src: '/images/john-img_7884.webp', alt: 'Corte curto loiro com textura e movimento' },
-      { src: '/images/j1-1.webp', alt: 'Cabelo longo com acabamento em camadas' },
-    ],
+    "src": "/images/john-img_5887.webp",
+    "alt": "Corte chanel com franja e acabamento liso"
   },
   {
-    name: 'Selma',
-    id: 'selma',
-    specialty: 'Hairstylist, Visagismo, Cortes e Coloração',
-    portrait: '/images/Selmaf.webp',
-    works: [
-      { src: '/images/selma-img_6959.webp', alt: 'Corte pixie grisalho com acabamento leve' },
-      { src: '/images/selma-img_5228.webp', alt: 'Corte chanel castanho com contorno arredondado' },
-      { src: '/images/s1.webp', alt: 'Corte em camadas com cabelo ruivo' },
-      { src: '/images/selma-img_5008.webp', alt: 'Corte bob acobreado com base reta' },
-      { src: '/images/selma-img_3980.webp', alt: 'Corte médio castanho em camadas com movimento' },
-      { src: '/images/selma-img_6541.webp', alt: 'Corte longo castanho em camadas e pontas modeladas' },
-      { src: '/images/selma-img_7673.webp', alt: 'Corte médio loiro em camadas visto de perfil' },
-      { src: '/images/s2.webp', alt: 'Corte longo com movimento e finalização ruiva' },
-      { src: '/images/s3.webp', alt: 'Cabelo loiro em camadas com acabamento ondulado' },
-    ],
+    "src": "/images/john-img_6240.webp",
+    "alt": "Corte longo em camadas com contorno do rosto"
   },
   {
-    name: 'Vytor',
-    id: 'vytor',
-    specialty: 'Corte masculino, feminino e barba',
-    portrait: '/images/Vytor2.webp',
-    works: [
-      { src: '/images/v2.webp', alt: 'Corte masculino com degradê e acabamento definido' },
-      { src: '/images/v1.webp', alt: 'Corte masculino com degradê e barba alinhada' },
-      { src: '/images/v3.webp', alt: 'Corte masculino curto com textura' },
-    ],
+    "src": "/images/j2.webp",
+    "alt": "Cabelo longo com camadas e contorno do rosto"
   },
   {
-    name: 'Rafaela',
-    id: 'rafaela',
-    specialty: 'Penteados para ocasiões especiais',
-    portrait: '/images/rafaela-penteados.webp',
-    works: [
-  { src: '/images/rafaela-penteado-0486.webp', alt: 'Penteado semipreso com trança e ondas castanhas' },
-  { src: '/images/rafaela-penteado-0487.webp', alt: 'Coque elaborado em cabelo castanho' },
-  { src: '/images/rafaela-penteado-0488.webp', alt: 'Coque baixo com mechas soltas' },
-    ],
+    "src": "/images/john-img_8135.webp",
+    "alt": "Corte longo em camadas com pontas modeladas"
   },
+  {
+    "src": "/images/john-img_8190.webp",
+    "alt": "Corte bob acobreado visto de perfil"
+  },
+  {
+    "src": "/images/john-img_8513.webp",
+    "alt": "Corte médio em camadas com mechas e movimento"
+  },
+  {
+    "src": "/images/j3.webp",
+    "alt": "Corte feminino em camadas com movimento"
+  },
+  {
+    "src": "/images/john-img_7884.webp",
+    "alt": "Corte curto loiro com textura e movimento"
+  },
+  {
+    "src": "/images/j1-1.webp",
+    "alt": "Cabelo longo com acabamento em camadas"
+  },
+  {
+    "src": "/images/selma-img_6959.webp",
+    "alt": "Corte pixie grisalho com acabamento leve"
+  },
+  {
+    "src": "/images/selma-img_5228.webp",
+    "alt": "Corte chanel castanho com contorno arredondado"
+  },
+  {
+    "src": "/images/s1.webp",
+    "alt": "Corte em camadas com cabelo ruivo"
+  },
+  {
+    "src": "/images/selma-img_5008.webp",
+    "alt": "Corte bob acobreado com base reta"
+  },
+  {
+    "src": "/images/selma-img_3980.webp",
+    "alt": "Corte médio castanho em camadas com movimento"
+  },
+  {
+    "src": "/images/selma-img_6541.webp",
+    "alt": "Corte longo castanho em camadas e pontas modeladas"
+  },
+  {
+    "src": "/images/selma-img_7673.webp",
+    "alt": "Corte médio loiro em camadas visto de perfil"
+  },
+  {
+    "src": "/images/s2.webp",
+    "alt": "Corte longo com movimento e finalização ruiva"
+  },
+  {
+    "src": "/images/s3.webp",
+    "alt": "Cabelo loiro em camadas com acabamento ondulado"
+  },
+  {
+    "src": "/images/v2.webp",
+    "alt": "Corte masculino com degradê e acabamento definido"
+  },
+  {
+    "src": "/images/v1.webp",
+    "alt": "Corte masculino com degradê e barba alinhada"
+  },
+  {
+    "src": "/images/v3.webp",
+    "alt": "Corte masculino curto com textura"
+  },
+  {
+    "src": "/images/rafaela-penteado-0486.webp",
+    "alt": "Penteado semipreso com trança e ondas castanhas"
+  },
+  {
+    "src": "/images/rafaela-penteado-0487.webp",
+    "alt": "Coque elaborado em cabelo castanho"
+  },
+  {
+    "src": "/images/rafaela-penteado-0488.webp",
+    "alt": "Coque baixo com mechas soltas"
+  }
 ]
 
 export default function ResultadosCortesPage() {
@@ -96,36 +136,20 @@ export default function ResultadosCortesPage() {
       <section className="relative z-10 px-5 lg:px-10 pt-16 pb-10 lg:pt-24">
         <div className="max-w-[1260px] mx-auto">
           <p className="text-[#465947] uppercase tracking-[0.28em] text-sm font-bold mb-4">Romana Hair Studio · Vila Romana</p>
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight max-w-4xl">Resultados da <span className="italic text-[#465947]">nossa equipe</span></h1>
-          <p className="mt-5 max-w-2xl text-[#62594f] text-lg leading-relaxed">Veja fotos reais de cortes femininos e masculinos, coloração e penteados realizados no Romana Hair Studio, na Vila Romana, São Paulo. Conheça os trabalhos da equipe e escolha o profissional para seu próximo visual.</p>
-          <nav aria-label="Ver resultados por profissional" className="flex flex-wrap gap-3 mt-9">
-            {professionals.map(({ name, id }) => <a key={id} href={`#${id}`} className="rounded-full border border-[#465947]/70 px-6 py-3 text-[#465947] font-bold hover:bg-[#465947] hover:text-white transition">{name}</a>)}
-          </nav>
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl leading-tight max-w-4xl">Resultados <span className="italic text-[#465947]">do Romana</span></h1>
+          <p className="mt-5 max-w-2xl text-[#62594f] text-lg leading-relaxed">Veja fotos reais de cortes femininos e masculinos, coloração e penteados realizados no Romana Hair Studio, na Vila Romana, São Paulo. Inspire-se para seu próximo visual.</p>
         </div>
       </section>
 
-      <div className="relative z-10 px-5 lg:px-10 pb-24">
-        <div className="max-w-[1260px] mx-auto space-y-20">
-          {professionals.map(({ name, id, specialty, portrait, works }) => (
-            <section id={id} key={id} className="scroll-mt-8 border-t border-[#352e2a]/15 pt-12">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-5 mb-8">
-                <img src={portrait} alt={`Profissional ${name}`} loading="lazy" className="h-24 w-24 rounded-full object-cover object-top border border-[#465947]/50" />
-                <div>
-                  <h2 className="font-serif text-4xl lg:text-5xl">{name}</h2>
-                  <p className="text-[#62594f] mt-1">{specialty}</p>
-                </div>
-              </div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {works.map(({ src, alt }) => (
-                  <figure key={src} className="aspect-[4/5] rounded-[24px] overflow-hidden bg-[#fffdf9] border border-[#352e2a]/15">
-                    <img src={src} alt={`${alt}, realizado por ${name} no Romana Hair Studio, Vila Romana, São Paulo`} loading="lazy" className="w-full h-full object-cover object-top" />
-                  </figure>
-                ))}
-              </div>
-            </section>
+      <section aria-label="Galeria de resultados" className="relative z-10 px-5 lg:px-10 pb-24">
+        <div className="max-w-[1260px] mx-auto grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5">
+          {works.map(({ src, alt }) => (
+            <figure key={src} className="aspect-[4/5] rounded-[24px] overflow-hidden bg-[#fffdf9] border border-[#352e2a]/15">
+              <img src={src} alt={`${alt}, Romana Hair Studio, Vila Romana, São Paulo`} loading="lazy" className="w-full h-full object-cover object-top" />
+            </figure>
           ))}
         </div>
-      </div>
+      </section>
 
       <section className="relative z-10 px-5 lg:px-10 pb-24">
         <div className="max-w-[1100px] mx-auto rounded-[30px] border border-[#465947]/30 bg-[#fffdf9] p-8 lg:p-12 text-center">
