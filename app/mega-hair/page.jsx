@@ -1,9 +1,9 @@
 import HeaderBooking from '../HeaderBooking'
 
 export const metadata = {
-  title: 'Venda de Cabelo e Mega Hair na Vila Romana, Lapa',
+  title: 'Mega Hair na Vila Romana | Manutenção e Venda de Cabelo',
   description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.',
-  openGraph: { title: 'Venda de Cabelo e Mega Hair na Vila Romana, Lapa', description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.' },
+  openGraph: { title: 'Mega Hair na Vila Romana | Manutenção e Venda de Cabelo', description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.' },
   alternates: { canonical: '/mega-hair' },
 }
 
@@ -33,7 +33,8 @@ const serviceSchema = {
 
 const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%21%20Vim%20pela%20p%C3%A1gina%20de%20Mega%20Hair%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o.'
 
-const whatsappCompra = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Vim pela página de Mega Hair do Romana e gostaria de consultar cabelos brasileiros e vietnamitas, opções e valores para compra.')
+const whatsappManutencao = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Gostaria de avaliar meu Mega Hair para manutenção.')
+const whatsappCompra = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Gostaria de consultar os cabelos disponíveis para Mega Hair e os valores.')
 
 const results = [
   { src: '/images/Cintia2-1.webp', alt: 'Resultado de Mega Hair com acabamento natural' },
@@ -101,20 +102,20 @@ export default function MegaHairPage() {
       <section className="relative z-10 pt-12 pb-20 lg:pt-20 lg:pb-28 px-5 lg:px-10 overflow-hidden">
         <div className="max-w-[1260px] mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-12 items-center">
           <div>
-            <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Mega Hair na Vila Romana, Lapa</p>
+            <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Romana Hair Studio · São Paulo</p>
             <h1 className="font-serif text-5xl sm:text-6xl lg:text-[78px] leading-[0.96] tracking-[-0.035em] mb-7">
-              Mega Hair |
-              <span className="block italic text-[#465947]">Venda de cabelos, aplicação e manutenção.</span>
+              Mega Hair na Vila Romana
+              <span className="block italic text-[#465947]">Manutenção e venda de cabelo</span>
             </h1>
             <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-9">
-              Encontre o cabelo ideal para o resultado que você deseja. Trabalhamos com cabelos brasileiros e vietnamitas para venda, aplicação e manutenção. Também cuidamos de alongamentos feitos em outros salões, após avaliação.
+              Já usa Mega Hair e precisa fazer a manutenção? Está procurando cabelo para colocar ou renovar o seu alongamento? No Romana Hair Studio, na Vila Romana, você pode agendar uma avaliação para manutenção ou consultar as opções de cabelo para compra.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-5 text-white font-extrabold uppercase tracking-wide shadow-sm hover:-translate-y-1 transition">
-                Agendar pelo WhatsApp
+            <div className="flex flex-wrap gap-4">
+              <a href={whatsappManutencao} target="_blank" rel="noreferrer" className="inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-5 text-white font-extrabold uppercase tracking-wide shadow-sm hover:-translate-y-1 transition">
+                Agendar avaliação de manutenção
               </a>
-              <a href="#resultados" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-5 font-extrabold uppercase tracking-wide hover:bg-[#465947] hover:text-white transition">
-                Ver resultados
+              <a href={whatsappCompra} target="_blank" rel="noreferrer" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-5 font-extrabold uppercase tracking-wide hover:bg-[#465947] hover:text-white transition">
+                Consultar cabelos disponíveis
               </a>
             </div>
           </div>
@@ -126,6 +127,23 @@ export default function MegaHairPage() {
               <p className="text-[#62594f]">Planejamento de cor, comprimento, volume e manutenção para o seu cabelo.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="relative z-10 px-5 lg:px-10 pb-16">
+        <div className="max-w-[1260px] mx-auto grid md:grid-cols-2 gap-5">
+          <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
+            <h2 className="font-serif text-3xl mb-4">Manutenção de Mega Hair</h2>
+            <p className="text-[#62594f] leading-relaxed">Fazemos manutenção de Mega Hair e atendemos também quem colocou o alongamento em outro salão. Na avaliação, verificamos a técnica, o estado do cabelo e a fixação para orientar o que precisa ser feito e passar o orçamento.</p>
+            <p className="text-[#62594f] leading-relaxed mt-4">Se você souber qual técnica usa, conte para a gente no WhatsApp. Se preferir, pode mandar fotos do seu Mega Hair para facilitar a conversa inicial.</p>
+            <a href={whatsappManutencao} target="_blank" rel="noreferrer" className="inline-flex mt-6 rounded-2xl bg-[#465947] px-6 py-4 text-white font-bold">Quero avaliar meu Mega Hair</a>
+          </article>
+          <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
+            <h2 className="font-serif text-3xl mb-4">Venda de cabelo para Mega Hair</h2>
+            <p className="text-[#62594f] leading-relaxed">Se você quer comprar cabelo para colocar um Mega Hair, aumentar o volume ou renovar seu alongamento, fale com a nossa equipe. Trabalhamos com cabelos brasileiros e vietnamitas. Conte qual cor, comprimento e textura você procura para consultarmos as opções disponíveis e os valores.</p>
+            <p className="text-[#62594f] leading-relaxed mt-4">Se ainda estiver em dúvida, mande uma foto do seu cabelo e uma referência do resultado que gostaria de alcançar.</p>
+            <a href={whatsappCompra} target="_blank" rel="noreferrer" className="inline-flex mt-6 rounded-2xl bg-[#465947] px-6 py-4 text-white font-bold">Quero consultar cabelos e valores</a>
+          </article>
         </div>
       </section>
 
@@ -168,12 +186,6 @@ export default function MegaHairPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-5">
-            <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
-              <p className="text-[#465947] uppercase tracking-[0.22em] text-xs font-bold mb-3">Venda de cabelo para Mega Hair</p>
-              <h3 className="font-serif text-3xl mb-4">Opções brasileiras e vietnamitas</h3>
-              <p className="text-[#62594f] leading-relaxed">Consulte cabelos brasileiros e vietnamitas, com opções de cor, textura, comprimento e quantidade conforme a disponibilidade. Nossa equipe ajuda a escolher os fios para o resultado que você deseja alcançar.</p>
-              <a href={whatsappCompra} target="_blank" rel="noreferrer" className="inline-flex mt-6 rounded-2xl bg-[#465947] px-6 py-4 text-white font-bold">Consultar cabelos e valores</a>
-            </article>
             <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
               <p className="text-[#465947] uppercase tracking-[0.22em] text-xs font-bold mb-3">Orçamento e pagamento</p>
               <h3 className="font-serif text-3xl mb-4">Quanto custa o Mega Hair?</h3>
@@ -266,10 +278,10 @@ export default function MegaHairPage() {
       <section className="relative z-10 px-5 lg:px-10 pb-24 bg-[#faf7f2]">
         <div className="max-w-[1100px] mx-auto rounded-[34px] border border-[#465947]/35 bg-[#dce5da] p-8 lg:p-14 text-center">
           <p className="text-[#465947] uppercase tracking-[0.28em] text-sm font-bold mb-4">Romana Hair Studio</p>
-          <h2 className="font-serif text-4xl lg:text-6xl mb-6">Vamos planejar sua transformação?</h2>
-          <p className="text-[#62594f] text-lg max-w-2xl mx-auto mb-9">Fale conosco pelo WhatsApp para agendar uma avaliação personalizada na Vila Romana, Lapa.</p>
+          <h2 className="font-serif text-4xl lg:text-6xl mb-6">Onde estamos</h2>
+          <p className="text-[#62594f] text-lg max-w-2xl mx-auto mb-9">O Romana Hair Studio fica na Rua Roma, 236, na Vila Romana, em São Paulo. Fale com a nossa equipe pelo WhatsApp para consultar valores, disponibilidade e horários.</p>
           <a href={whatsapp} target="_blank" rel="noreferrer" className="inline-flex rounded-2xl bg-[#465947] px-9 py-5 text-white font-extrabold uppercase tracking-wide hover:scale-105 transition">Agendar minha avaliação</a>
-          <p className="text-[#62594f] text-sm mt-7">Rua Roma, 236 — Lapa, São Paulo/SP — Tel. (11) 3805-3149 — (11) 2609-3149 — (11) 96199-0862 — Estacionamento no local para clientes.</p>
+          <p className="text-[#62594f] text-sm mt-7">Tel. (11) 3805-3149 — (11) 2609-3149 — (11) 96199-0862 — Estacionamento no local para clientes.</p>
         </div>
       </section>
 
