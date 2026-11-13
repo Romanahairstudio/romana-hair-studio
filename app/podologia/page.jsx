@@ -5,7 +5,7 @@ import OnlineBooking from '../OnlineBooking'
 import styles from '../home.module.css'
 
 const title = 'Podologia na Vila Romana | Romana Hair Studio'
-const description = 'Podologia com Jose Pires na Vila Romana. Profilaxia simples por R$ 160, com duração aproximada de 1h30. Conheça a profissional e agende pelo WhatsApp.'
+const description = 'Podologia com Jose Pires na Vila Romana. Podologia simples por R$ 160, com duração aproximada de 1h30. Conheça a profissional e agende pelo WhatsApp.'
 export const metadata = {
   title, description,
   alternates: { canonical: '/podologia' },
@@ -26,7 +26,7 @@ const serviceSchema = {
     "name": "Vila Romana, São Paulo - SP"
   },
   "serviceType": [
-    "Profilaxia simples",
+    "Podologia simples",
     "Cuidados com unhas encravadas",
     "Cuidados com calosidades",
     "Órtese ungueal"
@@ -45,7 +45,7 @@ const serviceSchema = {
 
 const whatsapp = 'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Vim pela página de podologia do Romana e gostaria de agendar uma sessão com a Jose. Podem me informar os horários disponíveis?')
 const cuidados = [
-  ['Calosidades', 'Remoção de calosidades durante a profilaxia simples.'],
+  ['Calosidades', 'Remoção de calosidades durante a podologia simples.'],
   ['Excesso de pele', 'Cuidados com o excesso de pele dos pés.'],
   ['Cutilagem', 'Cuidado com as cutículas das unhas dos pés.'],
 ]
@@ -59,9 +59,9 @@ const tratamentos = [
   ['Colocação de órtese', 'Valor conforme avaliação da profissional.', 'R$ 100 a R$ 150'],
 ]
 const perguntas = [
-  ['Quanto custa a sessão?', 'A profilaxia simples, sem encravamento ou infecção, custa R$ 160. Os demais atendimentos têm valores próprios, apresentados na tabela de serviços. A profissional avalia a necessidade de cada caso.'],
-  ['Quanto tempo dura o atendimento?', 'Reserve aproximadamente 1h30 para a profilaxia simples. Para os demais serviços, consulte a duração ao agendar.'],
-  ['O atendimento inclui unhas encravadas?', 'A profilaxia simples de R$ 160 não inclui encravamentos. O atendimento para encravamento leve custa R$ 200 e inclui 1 retorno; para encravamento médio ou infecção, R$ 320 com 2 retornos. A indicação depende da avaliação da Jose.'],
+  ['Quanto custa a sessão?', 'A podologia simples, sem encravamento ou infecção, custa R$ 160. Os demais atendimentos têm valores próprios, apresentados na tabela de serviços. A profissional avalia a necessidade de cada caso.'],
+  ['Quanto tempo dura o atendimento?', 'Reserve aproximadamente 1h30 para a podologia simples. Para os demais serviços, consulte a duração ao agendar.'],
+  ['O atendimento inclui unhas encravadas?', 'A podologia simples de R$ 160 não inclui encravamentos. O atendimento para encravamento leve custa R$ 200 e inclui 1 retorno; para encravamento médio ou infecção, R$ 320 com 2 retornos. A indicação depende da avaliação da Jose.'],
   ['Como faço para agendar?', 'Fale com a recepção pelo WhatsApp para consultar os dias e horários disponíveis para podologia. O atendimento é realizado no Romana Hair Studio, na Rua Roma, 236, Vila Romana, São Paulo.'],
 ]
 export default function PodologiaPage() {
@@ -77,18 +77,18 @@ export default function PodologiaPage() {
       <section className={styles.hero}>
         <div id="conteudo" className={styles.heroText}>
           <p className={styles.eyebrow}>PODOLOGIA NA VILA ROMANA</p>
-          <h1>Cuidado para<br /><em>os seus pés.</em></h1>
+          <h1>Podologia<br /><em>na Vila Romana.</em></h1>
           <p className={styles.intro}>Um momento de atenção aos seus pés com a Jose, nossa podóloga. Formada em Podologia em 2017, conta com quase 10 anos de experiência no cuidado com os pés.</p>
-          <div className="mt-7 rounded-xl border border-[#465947]/20 bg-[#dce5da] p-6 max-w-md"><p className="text-sm text-[#465947] font-semibold">Sessão de profilaxia simples</p><p className="font-serif text-4xl my-2">R$ 160<span className="font-sans text-sm text-[#62594f]"> / sessão</span></p><p className="text-sm text-[#62594f]">Duração aproximada de 1h30 · Com agendamento</p></div>
+          <div className="mt-7 rounded-xl border border-[#465947]/20 bg-[#dce5da] p-6 max-w-md"><p className="text-sm text-[#465947] font-semibold">Podologia simples</p><p className="font-serif text-4xl my-2">R$ 160<span className="font-sans text-sm text-[#62594f]"> / sessão</span></p><p className="text-sm text-[#62594f]">Duração aproximada de 1h30 · Com agendamento</p><p className="text-sm text-[#62594f] mt-3">Inclui cuidados com calosidades, excesso de pele e cutículas. Atendimento para unhas encravadas a partir de R$ 200, conforme avaliação.</p></div>
           <div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar com a Jose ↗</a><OnlineBooking /><a className={styles.textLink} href="#cuidados">O que está incluído ↓</a></div>
           <p className={styles.heroNote}>Rua Roma, 236 · Vila Romana · São Paulo</p>
         </div>
         <div className={styles.heroVisual}><img className={styles.heroImage} src="/images/podologia-jose.svg" alt="Jose, técnica em Podologia, ao lado da cadeira de atendimento no Romana" fetchPriority="high" style={{ objectPosition: 'center 30%' }} /><span className={styles.photoLabel}>Seu momento de cuidado.</span><span className={styles.photoCaption}>JOSE · PODOLOGIA NO ROMANA</span></div>
       </section>
       <section id="cuidados" className={styles.section}>
-        <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>O SEU ATENDIMENTO</p><h2>Profilaxia simples.<br /><em>Cuidado em cada detalhe.</em></h2></div><p>Conheça os procedimentos incluídos na sessão de R$ 160, sem encravamento ou infecção.</p></div>
+        <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>O SEU ATENDIMENTO</p><h2>Podologia simples.<br /><em>Cuidado em cada detalhe.</em></h2></div><p>Conheça os procedimentos incluídos na sessão de R$ 160, sem encravamento ou infecção.</p></div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">{cuidados.map(([name,text],i) => <article key={name} className="rounded-xl border border-[#352e2a]/10 bg-[#fffcf8] p-6"><span className="text-sm text-[#465947] font-semibold">0{i+1}</span><h3 className="font-serif text-2xl my-4">{name}</h3><p className="text-sm text-[#62594f]">{text}</p></article>)}</div>
-        <p className="text-sm text-[#62594f] mt-6 max-w-3xl">O atendimento considera a avaliação da profissional. Necessidades além da profilaxia simples devem ser consultadas previamente para confirmar os cuidados disponíveis e o valor.</p>
+        <p className="text-sm text-[#62594f] mt-6 max-w-3xl">O atendimento considera a avaliação da profissional. Necessidades além da podologia simples devem ser consultadas previamente para confirmar os cuidados disponíveis e o valor.</p>
       </section>
       <section id="tratamentos" className="bg-[#eadfd2]/45">
         <div className={styles.section}>
@@ -113,7 +113,7 @@ export default function PodologiaPage() {
       </section>
       <section className="bg-[#dce5da]/50 px-6 py-16"><div className="max-w-3xl mx-auto"><p className={styles.eyebrow}>ANTES DE AGENDAR</p><h2 className="font-serif text-4xl mb-8">Suas dúvidas, <em>respondidas.</em></h2>{perguntas.map(([question,answer]) => <details key={question} className="border-b border-[#465947]/20 py-5"><summary className="cursor-pointer font-semibold text-[#465947] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4">{question}</summary><p className="text-[#62594f] text-sm mt-4 leading-relaxed">{answer}</p></details>)}</div></section>
       <section id="contato" className={styles.contact}>
-        <div><p className={styles.eyebrow}>SEU PRÓXIMO MOMENTO DE CUIDADO</p><h2>Agende sua sessão<br /><em>de podologia.</em></h2><p>Profilaxia simples · R$ 160 · Aproximadamente 1h30</p><p>Rua Roma, 236 · Vila Romana · São Paulo – SP<br />CEP 05050-090</p><p>Horário de funcionamento do salão:<br />Terça a sexta, 10h às 19h · Sábado, 9h às 19h<br />Consulte a disponibilidade da Jose pelo WhatsApp.</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar pelo WhatsApp ↗</a><OnlineBooking /></div></div>
+        <div><p className={styles.eyebrow}>SEU PRÓXIMO MOMENTO DE CUIDADO</p><h2>Agende sua sessão<br /><em>de podologia.</em></h2><p>Podologia simples · R$ 160 · Aproximadamente 1h30</p><p>Rua Roma, 236 · Vila Romana · São Paulo – SP<br />CEP 05050-090</p><p>Horário de funcionamento do salão:<br />Terça a sexta, 10h às 19h · Sábado, 9h às 19h<br />Consulte a disponibilidade da Jose pelo WhatsApp.</p><div className={styles.actions}><a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar pelo WhatsApp ↗</a><OnlineBooking /></div></div>
         <iframe title="Localização do Romana Hair Studio" loading="lazy" src="https://www.google.com/maps?q=Rua+Roma,+236+-+São+Paulo&output=embed" />
       </section>
       <footer className={styles.footer}><a href="/" className={styles.logo}>Romana<span>Hair Studio</span></a><p>Podologia e bem-estar na Vila Romana.</p><div><a href={whatsapp} target="_blank" rel="noreferrer">(11) 96199-0862</a><a href="/">Voltar à página inicial</a></div></footer>
