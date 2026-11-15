@@ -59,6 +59,7 @@ export default function RootLayout({ children }) {
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-17233082756');
+          gtag('config', 'G-6JC8Y63VLR');
         ` }} />
         <script dangerouslySetInnerHTML={{ __html: `
           // Registra cliques em links de WhatsApp, inclusive quando o clique ocorre em elementos internos do botão.
