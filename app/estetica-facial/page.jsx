@@ -12,7 +12,7 @@ const services = [
   ["Peeling de diamante", "Esfoliação mecânica com ponteira de diamante para renovar a superfície da pele, conforme avaliação profissional.", "R$ 150"],
   ["Microagulhamento", "Procedimento estético que requer avaliação prévia de indicação e cuidados.", "R$ 250"],
   ["Hidratação facial", "Cuidados para melhorar a hidratação e o conforto da pele.", "R$ 100"],
-  ["Revitalização facial", "Protocolo de cuidados faciais definido conforme as necessidades da pele.", null],
+  ["Revitalização facial", "Protocolo de cuidados faciais definido conforme as necessidades da pele.", "R$ 100"],
   ["Dermaplaning", "Esfoliação superficial realizada com instrumento apropriado por profissional capacitado.", "R$ 180"]
 ]
 const serviceAnchors = {
