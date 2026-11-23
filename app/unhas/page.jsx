@@ -113,7 +113,7 @@ const servicos = [
 const precosMaosPes = [
   ['Manicure', 'R$ 45,00'],
   ['Pedicure', 'R$ 50,00'],
-  ['Spa dos pés', 'R$ 70,00'],
+  ['Spa dos pés (não inclui pedicure)', 'R$ 70,00'],
   ['Plástica dos pés (não inclui pedicure)', 'R$ 100,00'],
 ]
 
