@@ -50,8 +50,8 @@ export default function RomanaHairLandingPage() {
 
       <section id="inicio" className={styles.hero}>
         <div id="conteudo" className={styles.heroText}>
-          <p className={styles.eyebrow}>SEU MOMENTO, NA VILA ROMANA</p>
-          <h1>Sua beleza.<br />Seu estilo.<br /><em>Seu momento.</em></h1>
+          <h1 className={styles.eyebrow}>SALÃO DE BELEZA NA VILA ROMANA, LAPA</h1>
+          <p className={styles.heroTitle}>Sua beleza.<br />Seu estilo.<br /><em>Seu momento.</em></p>
           <p className={styles.intro}>Um espaço para cuidar de você na Vila Romana, Lapa. Conheça nossos serviços de cabelo, unhas e estética e encontre seu próximo momento de beleza.</p>
           <div className={styles.actions}>
             <a className={styles.button} href={whatsapp} target="_blank" rel="noreferrer">Agendar pelo WhatsApp <span aria-hidden="true">↗</span></a>

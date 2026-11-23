@@ -3,9 +3,9 @@ import HeaderBooking from '../HeaderBooking'
 import OnlineBooking from '../OnlineBooking'
 
 export const metadata = {
-  title: 'Manicure e Unhas de Gel na Vila Romana | Romana',
-  description: 'Manicure, pedicure e unhas de gel na Vila Romana, Lapa. Alongamento por R$ 200 e manutenção por R$ 175. Veja resultados e agende no Romana.',
-  openGraph: { title: 'Manicure e Unhas de Gel na Vila Romana | Romana', description: 'Manicure, pedicure e unhas de gel na Vila Romana, Lapa. Alongamento por R$ 200 e manutenção por R$ 175. Veja resultados e agende no Romana.' },
+  title: 'Manicure, Pedicure e Unhas de Gel na Vila Romana | Romana',
+  description: 'Manicure R$ 45, pedicure R$ 50, spa dos pés e unhas de gel na Vila Romana, Lapa. Alongamento por R$ 200. Veja valores e resultados e agende no Romana.',
+  openGraph: { title: 'Manicure, Pedicure e Unhas de Gel na Vila Romana | Romana', description: 'Manicure R$ 45, pedicure R$ 50, spa dos pés e unhas de gel na Vila Romana, Lapa. Alongamento por R$ 200. Veja valores e resultados e agende no Romana.' },
   alternates: { canonical: 'https://www.romanahairstudio.com.br/unhas' },
 }
 
@@ -13,8 +13,8 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "@id": "https://www.romanahairstudio.com.br/unhas#service",
-  "name": "Alongamento e cuidados com unhas",
-  "description": "Alongamento em gel, manutenção, esmaltação em gel, banho de gel e blindagem de unhas na Vila Romana, Lapa.",
+  "name": "Manicure, pedicure e unhas de gel",
+  "description": "Manicure, pedicure, spa dos pés, plástica dos pés, alongamento em gel, manutenção, esmaltação em gel, banho de gel e blindagem de unhas na Vila Romana, Lapa.",
   "url": "https://www.romanahairstudio.com.br/unhas",
   "provider": {
     "@id": "https://www.romanahairstudio.com.br/#business"
@@ -24,6 +24,10 @@ const serviceSchema = {
     "name": "Vila Romana, São Paulo - SP"
   },
   "serviceType": [
+    "Manicure",
+    "Pedicure",
+    "Spa dos pés",
+    "Plástica dos pés",
     "Alongamento em gel (Molde F1)",
     "Manutenção de alongamento em gel",
     "Esmaltação em gel",
@@ -31,6 +35,34 @@ const serviceSchema = {
     "Blindagem"
   ],
   "offers": [
+    {
+      "@type": "Offer",
+      "name": "Manicure",
+      "price": 45,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pedicure",
+      "price": 50,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Spa dos pés",
+      "price": 70,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
+    {
+      "@type": "Offer",
+      "name": "Plástica dos pés",
+      "price": 100,
+      "priceCurrency": "BRL",
+      "url": "https://www.romanahairstudio.com.br/unhas"
+    },
     {
       "@type": "Offer",
       "name": "Alongamento em gel (Molde F1)",
@@ -76,6 +108,13 @@ const servicos = [
   { imagem: '/images/unhas-servico-02.webp', nome: 'Banho de gel', descricao: 'Aplicação de gel sobre as unhas naturais para reforçar a estrutura e proporcionar acabamento uniforme, sem necessariamente aumentar o comprimento.' },
   { imagem: '/images/unhas-servico-03.webp', nome: 'Blindagem', descricao: 'Proteção e reforço das unhas naturais, sem alongamento, para quem prefere manter o comprimento atual.' },
   { imagem: '/images/unhas-servico-04.webp', nome: 'Esmaltação em gel', descricao: 'Esmaltação com produtos específicos e cura em cabine, com brilho e maior durabilidade que a esmaltação convencional.' },
+]
+
+const precosMaosPes = [
+  ['Manicure', 'R$ 45,00'],
+  ['Pedicure', 'R$ 50,00'],
+  ['Spa dos pés', 'R$ 70,00'],
+  ['Plástica dos pés (não inclui pedicure)', 'R$ 100,00'],
 ]
 
 const precos = [
@@ -136,8 +175,8 @@ export default function UnhasPage() {
         <div className="max-w-[1260px] mx-auto grid lg:grid-cols-[0.95fr_1.05fr] gap-12 lg:gap-16 items-center">
           <div>
             <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-5">Romana Hair Studio · Vila Romana</p>
-            <h1 className="font-serif text-5xl sm:text-6xl lg:text-[72px] leading-[1.04] tracking-[-0.035em] mb-7">Alongamento e <span className="italic text-[#465947]">unhas de gel</span> na Vila Romana</h1>
-            <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-8">Manicure, pedicure e unhas de gel na Vila Romana, Lapa. Conheça os trabalhos reais da equipe e as opções de alongamento com Molde F1, banho de gel, blindagem e esmaltação em gel.</p>
+            <h1 className="font-serif text-5xl sm:text-6xl lg:text-[72px] leading-[1.04] tracking-[-0.035em] mb-7">Manicure, pedicure e <span className="italic text-[#465947]">unhas de gel</span> na Vila Romana</h1>
+            <p className="max-w-xl text-[#62594f] text-lg lg:text-xl leading-relaxed mb-8">Manicure, pedicure e unhas de gel na Vila Romana, Lapa. Manicure por R$ 45, pedicure por R$ 50, spa e plástica dos pés, além de alongamento com Molde F1, banho de gel, blindagem e esmaltação em gel.</p>
             <div className="flex flex-wrap items-start gap-4">
               <a href="#resultados" className="inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-4 text-[#465947] font-extrabold hover:bg-[#465947] hover:text-white transition">Ver resultados reais</a>
               <BotaoWhatsapp>Agendar pelo WhatsApp</BotaoWhatsapp>
@@ -189,6 +228,13 @@ export default function UnhasPage() {
         <div className="max-w-[900px] mx-auto">
           <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-4">Transparência</p>
           <h2 className="font-serif text-4xl lg:text-5xl mb-9">Valores dos <span className="italic text-[#465947]">procedimentos</span></h2>
+          <h3 className="font-serif text-2xl mb-4">Mãos e pés</h3>
+          <div className="rounded-3xl border border-[#352e2a]/15 overflow-hidden">
+            {precosMaosPes.map(([nome, preco]) => <div key={nome} className="flex items-center justify-between gap-5 px-5 sm:px-8 py-5 border-b last:border-b-0 border-[#352e2a]/15">
+              <span className="text-[#62594f]">{nome}</span><strong className="text-[#465947] whitespace-nowrap">{preco}</strong>
+            </div>)}
+          </div>
+          <h3 className="font-serif text-2xl mt-10 mb-4">Unhas em gel</h3>
           <div className="rounded-3xl border border-[#352e2a]/15 overflow-hidden">
             {precos.map(([nome, preco]) => <div key={nome} className="flex items-center justify-between gap-5 px-5 sm:px-8 py-5 border-b last:border-b-0 border-[#352e2a]/15">
               <span className="text-[#62594f]">{nome}</span><strong className="text-[#465947] whitespace-nowrap">{preco}</strong>
