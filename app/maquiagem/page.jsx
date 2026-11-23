@@ -2,7 +2,7 @@ import HeaderBooking from '../HeaderBooking'
 
 export const metadata = {
   title: 'Maquiagem na Vila Romana | Romana Hair Studio',
-  description: 'Maquiagem profissional na Vila Romana, São Paulo, para festas e ocasiões especiais. Veja trabalhos reais do Romana Hair Studio e consulte horários.',
+  description: 'Maquiagem profissional na Vila Romana, São Paulo, para festas e ocasiões especiais: express por R$ 250 e completa por R$ 300. Veja trabalhos reais e agende.',
   alternates: { canonical: '/maquiagem' },
 }
 
@@ -19,7 +19,11 @@ const serviceSchema = {
   "areaServed": {
     "@type": "Place",
     "name": "Vila Romana, São Paulo - SP"
-  }
+  },
+  "offers": [
+    { "@type": "Offer", "name": "Maquiagem express", "price": 250, "priceCurrency": "BRL", "url": "https://www.romanahairstudio.com.br/maquiagem" },
+    { "@type": "Offer", "name": "Maquiagem completa", "price": 300, "priceCurrency": "BRL", "url": "https://www.romanahairstudio.com.br/maquiagem" }
+  ]
 }
 
 const resultados = [
@@ -80,6 +84,18 @@ export default function MaquiagemPage() {
                 <img src={src} alt={`${alt}, trabalho do Romana Hair Studio`} loading="lazy" className="h-full w-full object-contain" />
               </figure>
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="valores" className="relative z-10 px-5 lg:px-10 pb-16">
+        <div className="max-w-[900px] mx-auto">
+          <p className="text-[#465947] uppercase tracking-[0.25em] text-sm font-bold mb-3">Valores</p>
+          <h2 className="font-serif text-3xl lg:text-4xl mb-8">Escolha sua maquiagem</h2>
+          <div className="rounded-3xl border border-[#352e2a]/15 overflow-hidden">
+            {[['Maquiagem express', 'R$ 250,00'], ['Maquiagem completa', 'R$ 300,00']].map(([nome, preco]) => <div key={nome} className="flex items-center justify-between gap-5 px-5 sm:px-8 py-5 border-b last:border-b-0 border-[#352e2a]/15">
+              <span className="text-[#62594f]">{nome}</span><strong className="text-[#465947] whitespace-nowrap">{preco}</strong>
+            </div>)}
           </div>
         </div>
       </section>
