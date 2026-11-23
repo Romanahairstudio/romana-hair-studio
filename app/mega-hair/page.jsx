@@ -2,8 +2,8 @@ import HeaderBooking from '../HeaderBooking'
 
 export const metadata = {
   title: 'Mega Hair na Vila Romana | Manutenção e Venda de Cabelo',
-  description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.',
-  openGraph: { title: 'Mega Hair na Vila Romana | Manutenção e Venda de Cabelo', description: 'Cabelos brasileiros e vietnamitas para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.' },
+  description: 'Cabelo brasileiro do Sul para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.',
+  openGraph: { title: 'Mega Hair na Vila Romana | Manutenção e Venda de Cabelo', description: 'Cabelo brasileiro do Sul para Mega Hair. Venda, aplicação e manutenção na Vila Romana, Lapa. Consulte opções e agende sua avaliação.' },
   alternates: { canonical: '/mega-hair' },
 }
 
@@ -12,7 +12,7 @@ const serviceSchema = {
   "@type": "Service",
   "@id": "https://www.romanahairstudio.com.br/mega-hair#service",
   "name": "Venda de cabelo, aplicação e manutenção de Mega Hair",
-  "description": "Venda de cabelos brasileiros e vietnamitas, aplicação e manutenção de Mega Hair na Vila Romana, Lapa, São Paulo, com avaliação personalizada.",
+  "description": "Venda de cabelo brasileiro do Sul, aplicação e manutenção de Mega Hair na Vila Romana, Lapa, São Paulo, com avaliação personalizada.",
   "url": "https://www.romanahairstudio.com.br/mega-hair",
   "provider": {
     "@id": "https://www.romanahairstudio.com.br/#business"
@@ -66,10 +66,10 @@ const care = [
 ]
 
 const faqs = [
-  ['Vocês vendem cabelo para Mega Hair?', 'Sim. Trabalhamos com cabelos brasileiros e vietnamitas. Entre em contato para consultar disponibilidade, comprimento, textura, quantidade e valores. Nossa equipe orienta a escolha conforme o resultado desejado.'],
+  ['Vocês vendem cabelo para Mega Hair?', 'Sim. Nosso foco é o cabelo brasileiro do Sul, de alta qualidade, e também trabalhamos com outros tipos de cabelo. Entre em contato para consultar disponibilidade, comprimento, textura, quantidade e valores. Nossa equipe orienta a escolha conforme o resultado desejado.'],
   ['Fazem manutenção de Mega Hair colocado em outro salão?', 'Sim, atendemos clientes que fizeram o alongamento em outros salões, mediante avaliação do cabelo, da técnica e das condições dos pontos de aplicação. O orçamento é definido após essa avaliação.'],
   ['Quais técnicas vocês oferecem?', 'Trabalhamos com queratina, fita adesiva, ponto americano, microlink e nanocápsulas. A indicação é definida após avaliarmos o cabelo, o objetivo e a rotina da cliente.'],
-  ['Quais opções de cabelo estão disponíveis?', 'Trabalhamos com cabelos brasileiros e vietnamitas. A cliente participa da escolha da opção mais adequada ao resultado desejado.'],
+  ['Quais opções de cabelo estão disponíveis?', 'Nosso destaque é o cabelo brasileiro do Sul, de alta qualidade. Também trabalhamos com outros tipos de cabelo. A cliente participa da escolha da opção mais adequada ao resultado desejado.'],
   ['O resultado pode ficar natural?', 'Sim. Cor, textura, quantidade de cabelo e distribuição dos fios são planejadas para buscar integração e movimento natural.'],
   ['Quando devo fazer a manutenção?', 'O intervalo varia de cliente para cliente, mas normalmente consideramos um período de 60 a 90 dias. A orientação final depende da técnica, do crescimento e dos cuidados com os fios.'],
   ['Posso escolher comprimento e volume?', 'Durante a avaliação, alinhamos suas referências e indicamos uma composição compatível com o seu cabelo e com o resultado que você deseja.'],
@@ -140,7 +140,7 @@ export default function MegaHairPage() {
           </article>
           <article className="rounded-[26px] border border-[#465947]/25 bg-[#dce5da] p-8">
             <h2 className="font-serif text-3xl mb-4">Venda de cabelo para Mega Hair</h2>
-            <p className="text-[#62594f] leading-relaxed">Se você quer comprar cabelo para colocar um Mega Hair, aumentar o volume ou renovar seu alongamento, fale com a nossa equipe. Trabalhamos com cabelos brasileiros e vietnamitas. Conte qual cor, comprimento e textura você procura para consultarmos as opções disponíveis e os valores.</p>
+            <p className="text-[#62594f] leading-relaxed">Se você quer comprar cabelo para colocar um Mega Hair, aumentar o volume ou renovar seu alongamento, fale com a nossa equipe. Nosso foco é o cabelo brasileiro do Sul, de alta qualidade, e também trabalhamos com outros tipos de cabelo. Conte qual cor, comprimento e textura você procura para consultarmos as opções disponíveis e os valores.</p>
             <p className="text-[#62594f] leading-relaxed mt-4">Se ainda estiver em dúvida, mande uma foto do seu cabelo e uma referência do resultado que gostaria de alcançar.</p>
             <a href={whatsappCompra} target="_blank" rel="noreferrer" className="inline-flex mt-6 rounded-2xl bg-[#465947] px-6 py-4 text-white font-bold">Quero consultar cabelos e valores</a>
           </article>
