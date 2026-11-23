@@ -108,6 +108,10 @@ const servicos = [
   { imagem: '/images/unhas-servico-02.webp', nome: 'Banho de gel', descricao: 'Aplicação de gel sobre as unhas naturais para reforçar a estrutura e proporcionar acabamento uniforme, sem necessariamente aumentar o comprimento.' },
   { imagem: '/images/unhas-servico-03.webp', nome: 'Blindagem', descricao: 'Proteção e reforço das unhas naturais, sem alongamento, para quem prefere manter o comprimento atual.' },
   { imagem: '/images/unhas-servico-04.webp', nome: 'Esmaltação em gel', descricao: 'Esmaltação com produtos específicos e cura em cabine, com brilho e maior durabilidade que a esmaltação convencional.' },
+  { imagem: '/images/unhas-manicure-tradicional.webp', nome: 'Manicure tradicional', descricao: 'Cuidado com as unhas das mãos, com ajuste do formato, cuidado das cutículas e esmaltação convencional na cor de sua escolha.' },
+  { imagem: '/images/unhas-pedicure.webp', nome: 'Pedicure', descricao: 'Cuidado com as unhas dos pés, com corte, lixamento, cuidado das cutículas e esmaltação convencional.' },
+  { imagem: '/images/unhas-spa-dos-pes.webp', nome: 'Spa dos pés', descricao: 'Cuidado relaxante para os pés com foco na hidratação e na sensação de conforto. Não inclui pedicure.' },
+  { imagem: '/images/unhas-plastica-dos-pes.webp', nome: 'Plástica dos pés', descricao: 'Cuidado estético voltado a suavizar a aspereza e o ressecamento da pele dos pés, especialmente nos calcanhares. Não inclui pedicure.' },
 ]
 
 const precosMaosPes = [
@@ -193,7 +197,7 @@ export default function UnhasPage() {
         <div className="max-w-[1260px] mx-auto">
           <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-4">Nossos serviços</p>
           <h2 className="font-serif text-4xl lg:text-5xl mb-5">Técnicas para <span className="italic text-[#465947]">cada estilo</span></h2>
-          <p className="text-[#62594f] text-lg mb-10 max-w-3xl">Do alongamento à valorização das unhas naturais, nossa equipe ajuda você a escolher o procedimento mais adequado.</p>
+          <p className="text-[#62594f] text-lg mb-10 max-w-3xl">Conheça as técnicas em gel, os cuidados com as unhas naturais e os serviços para a pele dos pés.</p>
           <div className="divide-y divide-[#352e2a]/15 border-y border-[#352e2a]/15">
             {servicos.map((servico, index) => <article key={servico.nome} className="flex items-start gap-4 sm:gap-6 py-7 sm:py-8">
               <div className="w-24 h-24 sm:w-40 sm:h-40 flex-none rounded-2xl overflow-hidden bg-[#fffdf9] border border-[#352e2a]/15">
