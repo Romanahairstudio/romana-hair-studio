@@ -15,18 +15,18 @@ export default function RomanaHairLandingPage() {
   const whatsapp = 'https://wa.me/5511961990862?text=Ol%C3%A1%2C%20vim%20pelo%20site%20do%20Romana%20e%20gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20do%20Salão.'
 
   const services = [
-    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/card-cabelo-novo.webp', alt: 'Cabelo loiro com camadas e finalização', fit: 'contain', href: '/cabeleireiro', linkText: 'Conheça os serviços de cabelo' },
-    { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/card-penteados-novo.webp', alt: 'Coque baixo com acessório floral e mechas soltas', fit: 'contain', href: '/penteados', linkText: 'Resultados de Penteados, confira!' },
-    { title: 'Mega Hair', text: 'Venda de cabelo, aplicação e manutenção de Mega Hair, com avaliação personalizada.', icon: '◖', img: '/images/card-mega-romana.jpg', alt: 'Mega Hair castanho longo com pontas modeladas', fit: 'contain', href: '/mega-hair' },
+    { title: 'Cabelo', text: 'Cortes, coloração, mechas, tratamentos e muito mais para realçar sua beleza.', icon: '✂', img: '/images/home/card-cabelo-novo.webp', alt: 'Cabelo loiro com camadas e finalização', fit: 'contain', href: '/cabeleireiro', linkText: 'Conheça os serviços de cabelo' },
+    { title: 'Penteados', text: 'Produções personalizadas para celebrar cada ocasião com o seu estilo.', icon: '✦', img: '/images/home/card-penteados-novo.webp', alt: 'Coque baixo com acessório floral e mechas soltas', fit: 'contain', href: '/penteados', linkText: 'Resultados de Penteados, confira!' },
+    { title: 'Mega Hair', text: 'Venda de cabelo, aplicação e manutenção de Mega Hair, com avaliação personalizada.', icon: '◖', img: '/images/home/card-mega-romana.webp', alt: 'Mega Hair castanho longo com pontas modeladas', fit: 'contain', href: '/mega-hair' },
     { title: 'Estética Facial', text: 'Limpeza de pele, peeling, microagulhamento, hidratação, revitalização e dermaplaning.', icon: '♕', img: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=700&auto=format&fit=crop', href: '/estetica-facial', linkText: 'Conheça os procedimentos' },
     { title: 'Estética Corporal', text: 'Drenagem linfática, massagens, criolipólise de placa e outros cuidados corporais.', icon: '♕', img: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?q=80&w=700&auto=format&fit=crop', alt: 'Massagem corporal relaxante em ambiente de spa', href: '/estetica-corporal', linkText: 'Conheça os procedimentos' },
-    { title: 'Massagens e Bem-estar', text: 'Reflexologia, ventosaterapia, shiatsu, massagens e auriculoterapia. Confira valores e duração das sessões.', icon: '♡', img: '/images/massagens-bem-estar-romana.webp', alt: 'Massagens e Bem-estar no Romana Hair Studio', fit: 'contain', href: '/massagens-e-bem-estar', linkText: 'Conheça as sessões' },
-    { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Resultados de Unhas, Veja!' },
-    { title: 'Maquiagem', text: 'Produções para valorizar sua beleza em cada ocasião.', icon: '✧', img: '/images/maquiagem-card.webp', alt: 'Maquiagem com olhos iluminados e acabamento delicado', fit: 'contain', href: '/maquiagem', linkText: 'Veja nossos trabalhos!' },
-    { title: 'Podologia', text: 'Cuidados especializados para seus pés, com remoção de calosidades, cuidado com as unhas e atendimento personalizado.', icon: '♧', img: '/images/podologia-1.jpg', alt: 'Procedimento de podologia com cuidado da planta do pé', href: '/podologia', linkText: 'Conheça o atendimento' },
-    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/card-bronze-romana.webp', alt: 'Imagem de ambiente de bronzeamento com máquina horizontal e letreiro Romana', fit: 'contain', href: '/bronzeamento' },
-    { title: 'Depilação a Laser', text: 'Menos pelos, mais praticidade no seu dia a dia. Depilação a laser feminina e masculina, com cuidado personalizado para a sua pele.', icon: '◇', img: '/images/laser-acrus-atendimento.webp', alt: 'Imagem ilustrativa de depilação a laser nas axilas, com óculos de proteção', fit: 'contain', href: '/depilacao-a-laser', linkText: 'Conheça o laser Ácrus' },
-    { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/cbm.webp'}
+    { title: 'Massagens e Bem-estar', text: 'Reflexologia, ventosaterapia, shiatsu, massagens e auriculoterapia. Confira valores e duração das sessões.', icon: '♡', img: '/images/home/massagens-bem-estar-romana.webp', alt: 'Massagens e Bem-estar no Romana Hair Studio', fit: 'contain', href: '/massagens-e-bem-estar', linkText: 'Conheça as sessões' },
+    { title: 'Unhas', text: 'Manicure, pedicure, esmaltação em gel e acabamento impecável.', icon: '◈', img: '/images/home/unhas-resultado-03.webp', alt: 'Unhas em tom nude com formato amendoado', fit: 'contain', href: '/unhas', linkText: 'Resultados de Unhas, Veja!' },
+    { title: 'Maquiagem', text: 'Produções para valorizar sua beleza em cada ocasião.', icon: '✧', img: '/images/home/maquiagem-card.webp', alt: 'Maquiagem com olhos iluminados e acabamento delicado', fit: 'contain', href: '/maquiagem', linkText: 'Veja nossos trabalhos!' },
+    { title: 'Podologia', text: 'Cuidados especializados para seus pés, com remoção de calosidades, cuidado com as unhas e atendimento personalizado.', icon: '♧', img: '/images/home/podologia-1.webp', alt: 'Procedimento de podologia com cuidado da planta do pé', href: '/podologia', linkText: 'Conheça o atendimento' },
+    { title: 'Bronzeamento Artificial', text: 'Pele bronzeada com segurança, beleza e naturalidade.', icon: '☼', img: '/images/home/card-bronze-romana.webp', alt: 'Imagem de ambiente de bronzeamento com máquina horizontal e letreiro Romana', fit: 'contain', href: '/bronzeamento' },
+    { title: 'Depilação a Laser', text: 'Menos pelos, mais praticidade no seu dia a dia. Depilação a laser feminina e masculina, com cuidado personalizado para a sua pele.', icon: '◇', img: '/images/home/laser-acrus-atendimento.webp', alt: 'Imagem ilustrativa de depilação a laser nas axilas, com óculos de proteção', fit: 'contain', href: '/depilacao-a-laser', linkText: 'Conheça o laser Ácrus' },
+    { title: 'Cabelo e Barba', text: 'Corte moderno, acabamento impecável e barba alinhada.', icon: '✦', img: '/images/home/cbm.webp'}
   ]
 
   const benefits = [
@@ -61,13 +61,13 @@ export default function RomanaHairLandingPage() {
           <p className={styles.heroNote}>Cabelo, unhas e bem-estar. Tudo pertinho de você.</p>
         </div>
         <div className={styles.heroVisual}>
-          <Image className={styles.heroImage} src="/images/fachada-romana-letreiro.webp" alt="Fachada e entrada do Romana Hair Studio na Rua Roma, 236, Vila Romana, São Paulo" width={762} height={1020} sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 620px" priority />
+          <Image className={styles.heroImage} src="/images/home/fachada-romana-letreiro.webp" alt="Fachada e entrada do Romana Hair Studio na Rua Roma, 236, Vila Romana, São Paulo" width={762} height={1020} sizes="(max-width: 768px) 90vw, (max-width: 1200px) 45vw, 620px" priority />
           <span className={styles.photoCaption}>CUIDADO EM CADA DETALHE</span>
         </div>
       </section>
 
       <section aria-label="Nosso cuidado" className={styles.benefits}>
-        {benefits.map((b) => <div key={b.title}><span aria-hidden="true">{b.icon}</span><div><h2>{b.title}</h2><p>{b.text}</p></div></div>)}
+        {benefits.map((b) => <div key={b.title}><span aria-hidden="true">{b.icon}</span><div><p className={styles.benefitTitle}>{b.title}</p><p>{b.text}</p></div></div>)}
       </section>
 
       <section id="servicos" className={styles.section}>
@@ -85,7 +85,7 @@ export default function RomanaHairLandingPage() {
       </section>
 
       <section id="sobre" className={styles.about}>
-        <Image src="/images/fundo.jpg" alt="Ambiente do Romana Hair Studio" width={1200} height={900} sizes="(max-width: 768px) 90vw, 45vw" />
+        <Image src="/images/home/fundo.webp" alt="Ambiente do Romana Hair Studio" width={1514} height={559} sizes="(max-width: 768px) 90vw, 45vw" />
         <div><p className={styles.eyebrow}>PRAZER, ROMANA</p><h2>Entre, sinta-se bem.<br /><em>O momento é seu.</em></h2><p>Mais que um salão, somos um espaço de autoestima, cuidado e transformação. Aqui, você encontra atendimento humanizado, profissionais apaixonados e resultados que fazem a diferença.</p>
           <ul>{['Ambiente moderno e aconchegante', 'Técnicas atualizadas', 'Atendimento personalizado', 'Foco na sua satisfação'].map(item => <li key={item}><span aria-hidden="true">✓</span>{item}</li>)}</ul>
           <a className={styles.textLink} href={whatsapp} target="_blank" rel="noreferrer">Venha conhecer o Romana ↗</a>
@@ -94,7 +94,7 @@ export default function RomanaHairLandingPage() {
 
       <section id="transformacoes" className={styles.section}>
         <div className={styles.sectionHeading}><div><p className={styles.eyebrow}>FEITO NO ROMANA</p><h2>Resultados reais.<br /><em>Beleza do seu jeito.</em></h2></div><a className={styles.textLink} href="/resultados-cortes">Veja todos os resultados ↗</a></div>
-        <div className={styles.results} style={{ gridTemplateColumns: 'minmax(0, 420px)' }}><a href="/resultados-cortes"><Image src="/images/j3.webp" alt="Cabelo em camadas com movimento, resultado do Romana Hair Studio" width={600} height={800} sizes="(max-width: 480px) 90vw, 420px" /><span><span>Ver todos os resultados</span><span aria-hidden="true">↗</span></span></a></div>
+        <div className={styles.results} style={{ gridTemplateColumns: 'minmax(0, 420px)' }}><a href="/resultados-cortes"><Image src="/images/home/j3.webp" alt="Cabelo em camadas com movimento, resultado do Romana Hair Studio" width={840} height={1493} sizes="(max-width: 480px) 90vw, 420px" /><span><span>Ver todos os resultados</span><span aria-hidden="true">↗</span></span></a></div>
       </section>
 
       <section id="depoimentos" className={styles.testimonials}>
