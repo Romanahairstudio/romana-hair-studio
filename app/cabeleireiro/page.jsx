@@ -2,7 +2,7 @@ import HeaderBooking from '../HeaderBooking'
 
 export const metadata = {
   title: 'Cabeleireiro e Trancista na Vila Romana, Lapa | Romana Hair Studio',
-  description: 'Corte feminino R$ 160, escova a partir de R$ 100, progressiva a partir de R$ 360, luzes a partir de R$ 599 e tranças a partir de R$ 150 na Vila Romana, Lapa. Agende pelo WhatsApp.',
+  description: 'Corte feminino R$ 160, escova a partir de R$ 100, progressiva a partir de R$ 360, luzes e mechas a partir de R$ 599, balayage a partir de R$ 450, tranças a partir de R$ 150 e corte masculino R$ 85 na Vila Romana, Lapa. Agende pelo WhatsApp.',
   alternates: { canonical: '/cabeleireiro' },
 }
 
@@ -17,12 +17,15 @@ const schema = {
   '@context': 'https://schema.org', '@type': 'Service',
   '@id': 'https://www.romanahairstudio.com.br/cabeleireiro#service',
   name: 'Serviços de cabeleireiro no Romana Hair Studio',
-  serviceType: ['Corte feminino', 'Escova', 'Progressiva', 'Luzes e mechas', 'Coloração', 'Tranças', 'Tratamentos capilares'],
+  serviceType: ['Corte feminino', 'Corte masculino', 'Barba', 'Escova', 'Progressiva', 'Luzes e mechas', 'Balayage', 'Coloração', 'Tranças', 'Tratamentos capilares'],
   offers: [
     { '@type': 'Offer', name: 'Corte feminino', price: 160, priceCurrency: 'BRL' },
     { '@type': 'Offer', name: 'Escova', priceSpecification: { '@type': 'PriceSpecification', minPrice: 100, priceCurrency: 'BRL' } },
     { '@type': 'Offer', name: 'Progressiva', priceSpecification: { '@type': 'PriceSpecification', minPrice: 360, priceCurrency: 'BRL' } },
-    { '@type': 'Offer', name: 'Luzes', priceSpecification: { '@type': 'PriceSpecification', minPrice: 599, priceCurrency: 'BRL' } },
+    { '@type': 'Offer', name: 'Luzes e mechas', priceSpecification: { '@type': 'PriceSpecification', minPrice: 599, priceCurrency: 'BRL' } },
+    { '@type': 'Offer', name: 'Balayage', priceSpecification: { '@type': 'PriceSpecification', minPrice: 450, priceCurrency: 'BRL' } },
+    { '@type': 'Offer', name: 'Corte masculino', price: 85, priceCurrency: 'BRL' },
+    { '@type': 'Offer', name: 'Barba', priceSpecification: { '@type': 'PriceSpecification', minPrice: 45, priceCurrency: 'BRL' } },
     { '@type': 'Offer', name: 'Tranças', priceSpecification: { '@type': 'PriceSpecification', minPrice: 150, priceCurrency: 'BRL' } },
   ],
   url: 'https://www.romanahairstudio.com.br/cabeleireiro',
@@ -32,7 +35,10 @@ const precos = [
   ['Corte feminino', 'R$ 160,00'],
   ['Escova', 'a partir de R$ 100,00'],
   ['Progressiva', 'a partir de R$ 360,00'],
-  ['Luzes', 'a partir de R$ 599,00'],
+  ['Luzes e mechas', 'a partir de R$ 599,00'],
+  ['Balayage', 'a partir de R$ 450,00'],
+  ['Corte masculino', 'R$ 85,00'],
+  ['Barba', 'a partir de R$ 45,00'],
   ['Tranças', 'a partir de R$ 150,00'],
 ]
 const button = 'inline-flex rounded-2xl bg-[#465947] px-7 py-4 text-white font-bold hover:bg-[#352e2a] transition'
@@ -72,7 +78,7 @@ export default function CabeleireiroPage() {
           <div className="rounded-3xl border border-[#352e2a]/15 overflow-hidden bg-[#fffdf9]">
             {precos.map(([nome, preco]) => <div key={nome} className="flex items-center justify-between gap-5 px-5 sm:px-8 py-5 border-b last:border-b-0 border-[#352e2a]/15"><span className="text-[#62594f]">{nome}</span><strong className="text-[#465947] whitespace-nowrap">{preco}</strong></div>)}
           </div>
-          <p className="text-[#62594f] text-sm mt-4">Escova, progressiva, luzes e tranças podem variar conforme o comprimento e o volume do cabelo. Mande uma foto pelo WhatsApp para receber o valor do seu caso.</p>
+          <p className="text-[#62594f] text-sm mt-4">Escova, progressiva, luzes, mechas, balayage, tranças e barba podem variar conforme o comprimento e o volume do cabelo. Mande uma foto pelo WhatsApp para receber o valor do seu caso.</p>
         </div>
       </section>
       <section id="trancas" className="max-w-[1260px] mx-auto px-5 lg:px-10 pb-20 scroll-mt-6">
