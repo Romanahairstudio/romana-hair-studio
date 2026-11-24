@@ -22,6 +22,10 @@ const businessSchema = {
   name: 'Romana Hair Studio',
   url: siteUrl,
   telephone: '+55 11 96199-0862',
+  image: [siteUrl + '/images/home/fachada-romana-letreiro.webp', siteUrl + '/opengraph-image.jpg'],
+  logo: siteUrl + '/icon.png',
+  priceRange: '$$',
+  hasMap: 'https://maps.app.goo.gl/PTYUY4BER2vXNS6g9',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'Rua Roma, 236',
