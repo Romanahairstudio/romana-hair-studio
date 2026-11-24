@@ -5,7 +5,7 @@ const btn = 'inline-flex justify-center rounded-2xl bg-[#465947] px-8 py-4 text-
 const btnSec = 'inline-flex justify-center rounded-2xl border border-[#465947] px-8 py-4 text-[#465947] font-extrabold hover:bg-[#465947] hover:text-white transition'
 
 // Página de serviço com resultados reais (antes e depois), valores e agendamento.
-export default function ServicoPage({ schema, whatsapp, eyebrow, titulo, destaque, intro, capa, servicos, resultadosTitulo, resultados, precos, observacao, relacionado }) {
+export default function ServicoPage({ schema, whatsapp, eyebrow, titulo, destaque, intro, capa, servicos, resultadosTitulo, resultados, precos, observacao, relacionado, tecnicas }) {
   return (
     <main className="min-h-screen bg-[#faf7f2] text-[#352e2a]">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
@@ -48,6 +48,21 @@ export default function ServicoPage({ schema, whatsapp, eyebrow, titulo, destaqu
           </div>
         </div>
       </section>
+
+      {tecnicas && <section id="tecnicas" className="px-5 lg:px-10 py-16 scroll-mt-6">
+        <div className="max-w-[1260px] mx-auto">
+          <p className="text-[#465947] uppercase tracking-[0.3em] text-sm font-bold mb-4">{tecnicas.eyebrow}</p>
+          <h2 className="font-serif text-4xl lg:text-5xl mb-5">{tecnicas.titulo}</h2>
+          <p className="text-[#62594f] text-lg max-w-2xl mb-10">{tecnicas.intro}</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {tecnicas.itens.map(([nome, texto, preco]) => <article key={nome} className="rounded-3xl bg-[#fffdf9] border border-[#352e2a]/10 p-7 flex flex-col">
+              <h3 className="font-serif text-2xl mb-3">{nome}</h3>
+              <p className="text-[#62594f] leading-relaxed mb-6">{texto}</p>
+              <p className="mt-auto font-serif text-2xl text-[#465947]">{preco}</p>
+            </article>)}
+          </div>
+        </div>
+      </section>}
 
       <section id="resultados" className="px-5 lg:px-10 py-20 scroll-mt-6">
         <div className="max-w-[1260px] mx-auto">
