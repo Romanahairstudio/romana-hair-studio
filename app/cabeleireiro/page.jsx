@@ -1,8 +1,8 @@
 import HeaderBooking from '../HeaderBooking'
 
 export const metadata = {
-  title: 'Cabeleireiro na Vila Romana, Lapa | Romana Hair Studio',
-  description: 'Cortes femininos e masculinos, coloração, mechas, escova e tratamentos no Romana Hair Studio. Conheça os resultados na Vila Romana, Lapa e agende pelo WhatsApp.',
+  title: 'Cabeleireiro e Trancista na Vila Romana, Lapa | Romana Hair Studio',
+  description: 'Corte feminino R$ 160, escova a partir de R$ 100, progressiva a partir de R$ 360, luzes a partir de R$ 599 e tranças a partir de R$ 150 na Vila Romana, Lapa. Agende pelo WhatsApp.',
   alternates: { canonical: '/cabeleireiro' },
 }
 
@@ -17,10 +17,24 @@ const schema = {
   '@context': 'https://schema.org', '@type': 'Service',
   '@id': 'https://www.romanahairstudio.com.br/cabeleireiro#service',
   name: 'Serviços de cabeleireiro no Romana Hair Studio',
-  serviceType: 'Cortes, coloração, mechas, escova e tratamentos capilares',
+  serviceType: ['Corte feminino', 'Escova', 'Progressiva', 'Luzes e mechas', 'Coloração', 'Tranças', 'Tratamentos capilares'],
+  offers: [
+    { '@type': 'Offer', name: 'Corte feminino', price: 160, priceCurrency: 'BRL' },
+    { '@type': 'Offer', name: 'Escova', priceSpecification: { '@type': 'PriceSpecification', minPrice: 100, priceCurrency: 'BRL' } },
+    { '@type': 'Offer', name: 'Progressiva', priceSpecification: { '@type': 'PriceSpecification', minPrice: 360, priceCurrency: 'BRL' } },
+    { '@type': 'Offer', name: 'Luzes e mechas', priceSpecification: { '@type': 'PriceSpecification', minPrice: 599, priceCurrency: 'BRL' } },
+    { '@type': 'Offer', name: 'Tranças', priceSpecification: { '@type': 'PriceSpecification', minPrice: 150, priceCurrency: 'BRL' } },
+  ],
   url: 'https://www.romanahairstudio.com.br/cabeleireiro',
   provider: { '@id': 'https://www.romanahairstudio.com.br/#business' },
 }
+const precos = [
+  ['Corte feminino', 'R$ 160,00'],
+  ['Escova', 'a partir de R$ 100,00'],
+  ['Progressiva', 'a partir de R$ 360,00'],
+  ['Luzes e mechas', 'a partir de R$ 599,00'],
+  ['Tranças', 'a partir de R$ 150,00'],
+]
 const button = 'inline-flex rounded-2xl bg-[#465947] px-7 py-4 text-white font-bold hover:bg-[#352e2a] transition'
 
 export default function CabeleireiroPage() {
@@ -50,6 +64,26 @@ export default function CabeleireiroPage() {
         <h2 className="font-serif text-4xl mb-8">Cuidados para o seu cabelo</h2>
         <div className="grid sm:grid-cols-2 gap-5">{services.map(([title, text]) => <article key={title} className="rounded-3xl border border-[#352e2a]/15 bg-[#fffdf9] p-7"><h3 className="font-serif text-2xl mb-3">{title}</h3><p className="text-[#62594f] leading-relaxed">{text}</p></article>)}</div>
         <p className="mt-7 text-[#62594f] leading-relaxed">Para alongamento ou compra de cabelos, conheça também nossos serviços de <a href="/mega-hair" className="font-bold text-[#465947] underline">Mega Hair: venda de cabelos, aplicação e manutenção</a>. Para uma produção especial, veja a página de <a href="/penteados" className="font-bold text-[#465947] underline">penteados</a>.</p>
+      </section>
+      <section id="valores" className="bg-[#eadfd2]/45 px-5 lg:px-10 py-16 mb-20 scroll-mt-6">
+        <div className="max-w-[900px] mx-auto">
+          <p className="text-[#465947] uppercase tracking-[0.2em] text-sm font-bold mb-4">Valores</p>
+          <h2 className="font-serif text-4xl mb-8">Serviços de cabelo</h2>
+          <div className="rounded-3xl border border-[#352e2a]/15 overflow-hidden bg-[#fffdf9]">
+            {precos.map(([nome, preco]) => <div key={nome} className="flex items-center justify-between gap-5 px-5 sm:px-8 py-5 border-b last:border-b-0 border-[#352e2a]/15"><span className="text-[#62594f]">{nome}</span><strong className="text-[#465947] whitespace-nowrap">{preco}</strong></div>)}
+          </div>
+          <p className="text-[#62594f] text-sm mt-4">Escova, progressiva, luzes e tranças variam conforme o comprimento e o volume do cabelo. Mande uma foto pelo WhatsApp para receber o valor do seu caso.</p>
+        </div>
+      </section>
+      <section id="trancas" className="max-w-[1260px] mx-auto px-5 lg:px-10 pb-20 scroll-mt-6">
+        <div className="rounded-3xl bg-[#dce5da] p-8 lg:p-12 grid md:grid-cols-[1.4fr_1fr] gap-8 items-center">
+          <div>
+            <p className="text-[#465947] uppercase tracking-[0.2em] text-sm font-bold mb-4">Trancista na Vila Romana</p>
+            <h2 className="font-serif text-4xl mb-5">Tranças a partir de R$ 150</h2>
+            <p className="text-[#4f5b4c] leading-relaxed">Nossa trancista faz diferentes estilos de tranças. Conte qual modelo, comprimento e volume você deseja, ou mande uma foto de referência, e a equipe confirma o valor e o tempo do atendimento.</p>
+          </div>
+          <div><a href={'https://wa.me/5511961990862?text=' + encodeURIComponent('Olá! Vim pela página de cabeleireiro e gostaria de consultar valores e horários para tranças.')} target="_blank" rel="noreferrer" className={button}>Consultar tranças pelo WhatsApp</a></div>
+        </div>
       </section>
       <section className="max-w-[1260px] mx-auto px-5 lg:px-10 pb-20">
         <h2 className="font-serif text-4xl mb-4">Resultados do Romana</h2>
