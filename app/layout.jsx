@@ -66,21 +66,35 @@ export default function RootLayout({ children }) {
           gtag('config', 'G-6JC8Y63VLR');
         ` }} />
         <script dangerouslySetInnerHTML={{ __html: `
-          // Registra cliques em links de WhatsApp, inclusive quando o clique ocorre em elementos internos do botão.
+          // Registra cliques em links de WhatsApp e de agendamento online (Avec),
+          // inclusive quando o clique ocorre em elementos internos do botão.
           document.addEventListener('click', function (event) {
             var target = event.target;
             if (!(target instanceof Element)) return;
-            var link = target.closest('a[href*="wa.me/"], a[href*="api.whatsapp.com/"], a[href*="whatsapp.com/send"]');
-            if (!link) return;
+            var whatsapp = target.closest('a[href*="wa.me/"], a[href*="api.whatsapp.com/"], a[href*="whatsapp.com/send"]');
+            var agendamento = whatsapp ? null : target.closest('a[href*="agendamento.avec.beauty"]');
+            if (!whatsapp && !agendamento) return;
             // A fila dataLayer recebe o evento mesmo enquanto a biblioteca gtag.js carrega.
             window.dataLayer = window.dataLayer || [];
-            window.dataLayer.push((function () {
-              return arguments;
-            })('event', 'conversion', {
-              send_to: 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
+            var send = function () { window.dataLayer.push(arguments); };
+            if (whatsapp) {
+              send('event', 'conversion', {
+                send_to: 'AW-17233082756/RwwlCPTz8pQdEITzr5lA',
+                value: 1.0,
+                currency: 'BRL'
+              });
+              return;
+            }
+            send('event', 'conversion', {
+              send_to: 'AW-17233082756/PbqWCPisqL8dEITzr5lA',
               value: 1.0,
               currency: 'BRL'
-            }));
+            });
+            send('event', 'agendar_online', {
+              send_to: 'G-6JC8Y63VLR',
+              link_url: agendamento.href,
+              page_path: window.location.pathname
+            });
           }, true);
         ` }} />
       </head>
